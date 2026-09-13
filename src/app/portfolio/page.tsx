@@ -118,7 +118,7 @@ export default function PortfolioPage() {
     <div className="w-full bg-[#faf9f6] text-[#1a1c1a] min-h-screen relative">
       {/* Toast Feedback */}
       {dossierRequested && (
-        <div className="fixed bottom-6 right-6 z-50 bg-[#1c1b19] text-[#faf9f6] px-6 py-4 rounded-none shadow-2xl border-l-4 border-[#715a3e] font-sans text-sm uppercase">
+        <div className="fixed bottom-6 right-6 z-50 bg-[#1c1b19] text-[#faf9f6] px-6 py-4 rounded-none shadow-2xl border-l-4 border-[#715a3e] font-sans text-sm ">
           ✓ Architectural Dossier Download link transmitted to your email.
         </div>
       )}
@@ -135,7 +135,7 @@ export default function PortfolioPage() {
                 <div className="max-w-4xl space-y-3">
                   <div className="flex items-center gap-3">
                     <span className="w-8 h-px bg-[#715a3e]" />
-                    <span className="text-sm font-semibold text-[#715a3e] uppercase">
+                    <span className="text-sm font-semibold text-[#715a3e] ">
                       Portfolio Index
                     </span>
                     <span className="text-sm text-[#494740]">/ Vol. IV</span>
@@ -143,7 +143,7 @@ export default function PortfolioPage() {
                   <h1 className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-[#1a1c1a]">
                     Selected Works & Spatial Studies
                   </h1>
-                  <p className="text-sm font-semibold text-[#715a3e] uppercase pt-2">
+                  <p className="text-sm font-semibold text-[#715a3e]  pt-2">
                     Archival Monograph • 2018—2025
                   </p>
                 </div>
@@ -182,7 +182,7 @@ export default function PortfolioPage() {
                 <div className="flex flex-wrap items-center gap-2">
                   <button
                     onClick={() => setActiveFilter("all")}
-                    className={`px-4 py-2 text-sm font-semibold uppercase transition-all duration-300 ${activeFilter === "all"
+                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "all"
                       ? "bg-[#000000] text-[#ffffff]"
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
@@ -192,7 +192,7 @@ export default function PortfolioPage() {
 
                   <button
                     onClick={() => setActiveFilter("residences")}
-                    className={`px-4 py-2 text-sm font-semibold uppercase transition-all duration-300 ${activeFilter === "residences"
+                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "residences"
                       ? "bg-[#000000] text-[#ffffff]"
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
@@ -203,7 +203,7 @@ export default function PortfolioPage() {
 
                   <button
                     onClick={() => setActiveFilter("hospitality")}
-                    className={`px-4 py-2 text-sm font-semibold uppercase transition-all duration-300 ${activeFilter === "hospitality"
+                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "hospitality"
                       ? "bg-[#000000] text-[#ffffff]"
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
@@ -214,7 +214,7 @@ export default function PortfolioPage() {
 
                   <button
                     onClick={() => setActiveFilter("heritage")}
-                    className={`px-4 py-2 text-sm font-semibold uppercase transition-all duration-300 ${activeFilter === "heritage"
+                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "heritage"
                       ? "bg-[#000000] text-[#ffffff]"
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
@@ -225,7 +225,7 @@ export default function PortfolioPage() {
 
                   <button
                     onClick={() => setActiveFilter("millwork")}
-                    className={`px-4 py-2 text-sm font-semibold uppercase transition-all duration-300 ${activeFilter === "millwork"
+                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "millwork"
                       ? "bg-[#000000] text-[#ffffff]"
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
@@ -283,10 +283,10 @@ export default function PortfolioPage() {
                           src={project.image}
                           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                         />
-                        <div className="absolute top-4 left-4 bg-[#faf9f6]/90 backdrop-blur-sm px-3 py-1 text-[10px] uppercase text-[#1a1c1a]">
+                        <div className="absolute top-4 left-4 bg-[#faf9f6]/90 backdrop-blur-sm px-3 py-1 text-[10px]  text-[#1a1c1a]">
                           {project.code || "ARCH"}
                         </div>
-                        <div className="absolute bottom-4 right-4 bg-[#000000]/90 backdrop-blur-sm text-[#ffffff] px-3 py-1 text-[10px] uppercase font-semibold">
+                        <div className="absolute bottom-4 right-4 bg-[#000000]/90 backdrop-blur-sm text-[#ffffff] px-3 py-1 text-[10px]  font-semibold">
                           {project.surface || project.footprint}
                         </div>
                       </div>
@@ -294,7 +294,7 @@ export default function PortfolioPage() {
                       <div className="p-6 flex flex-col flex-1 justify-between bg-[#f4f3f0] space-y-4">
                         <div>
                           <div className="flex items-baseline justify-between mb-2">
-                            <span className="text-[10px] font-semibold text-[#715a3e] uppercase">
+                            <span className="text-[10px] font-semibold text-[#715a3e] ">
                               {project.type || project.scope || project.tag}
                             </span>
                             <span className="text-[10px] text-[#494740]">
@@ -311,7 +311,7 @@ export default function PortfolioPage() {
 
                         <div className="pt-2 space-y-3">
                           <div className="flex items-center justify-between pt-2 border-t border-[#cbc6bd]/30">
-                            <span className="text-[11px] font-semibold uppercase text-[#000000] group-hover:underline underline-offset-4">
+                            <span className="text-[11px] font-semibold  text-[#000000] group-hover:underline underline-offset-4">
                               Explore Monograph &rarr;
                             </span>
                             <span className="material-symbols-outlined text-sm text-[#715a3e]">
@@ -326,7 +326,7 @@ export default function PortfolioPage() {
               ) : (
                 /* Architectural List Mode Display */
                 <div className="flex flex-col divide-y divide-[#e3e2e0] bg-[#ffffff] shadow-sm border border-[#cbc6bd]/40">
-                  <div className="grid grid-cols-12 px-6 py-4 text-[11px] font-semibold text-[#715a3e] uppercase bg-[#f4f3f0]">
+                  <div className="grid grid-cols-12 px-6 py-4 text-[11px] font-semibold text-[#715a3e]  bg-[#f4f3f0]">
                     <span className="col-span-1">Ref</span>
                     <span className="col-span-4">Project / Typology</span>
                     <span className="col-span-3">Location & Year</span>
@@ -358,13 +358,13 @@ export default function PortfolioPage() {
                         {project.surface}
                       </div>
                       <div className="col-span-2 text-right">
-                        <span className="text-sm font-semibold uppercase text-[#715a3e] group-hover:underline">
+                        <span className="text-sm font-semibold  text-[#715a3e] group-hover:underline">
                           View File &rarr;
                         </span>
                       </div>
                     </div>
                   ))}
-                </div> 
+                </div>
               )}
             </div>
           </section>
@@ -374,7 +374,7 @@ export default function PortfolioPage() {
             <div className="max-w-[1600px] mx-auto space-y-12">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-4 border-b border-[#e3e2e0]">
                 <div>
-                  <span className="text-sm font-semibold text-[#715a3e] uppercase block mb-2">
+                  <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
                     Monographic Deep Dive • 01/28
                   </span>
                   <h2 className="font-sans font-bold text-2xl sm:text-3xl text-[#1a1c1a]">
@@ -400,7 +400,7 @@ export default function PortfolioPage() {
                       className="w-full h-full object-cover"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPHdz16ZrKWe2oYrGElDyCweHsWf9bRE_oTD7OKH2lL-s51oIRZiOGTWrvav3MNErLUXsyXAUlPJKSAc1nKacWT4q575zVH0RnRmrYWAT0OtReARAwD7I1K7nnha5wxD7eihbQb1CINVr7o_OGRfJQ87mu7RUSbcBRLUfE22DHNZOz4Zb56k1uUffFTulZ3cyCZBVQ6Qb3-1dQpEbnROU4fDKcXyvpD_OuNFCpEw9mFbO2HEvZ4soV"
                     />
-                    <div className="absolute top-6 left-6 bg-[#faf9f6]/90 backdrop-blur-md px-4 py-2 text-sm uppercase text-[#1a1c1a] shadow-xs">
+                    <div className="absolute top-6 left-6 bg-[#faf9f6]/90 backdrop-blur-md px-4 py-2 text-sm  text-[#1a1c1a] shadow-xs">
                       Primary Living Pavilion • Level 01
                     </div>
 
@@ -410,7 +410,7 @@ export default function PortfolioPage() {
                           architecture
                         </span>
                         <div>
-                          <div className="text-sm uppercase font-semibold">
+                          <div className="text-sm  font-semibold">
                             Axonometric Distribution Scheme
                           </div>
                           <div className="text-[11px] text-[#868380]">
@@ -418,7 +418,7 @@ export default function PortfolioPage() {
                           </div>
                         </div>
                       </div>
-                      <span className="text-sm text-[#715a3e] uppercase font-semibold">
+                      <span className="text-sm text-[#715a3e]  font-semibold">
                         Plate 14-B
                       </span>
                     </div>
@@ -426,7 +426,7 @@ export default function PortfolioPage() {
 
                   {/* SVG Floorplan Spatial Distribution Diagram */}
                   <div className="bg-[#efeeeb] p-6 shadow-xs flex flex-col space-y-3 border border-[#cbc6bd]/40">
-                    <div className="flex items-center justify-between text-sm uppercase text-[#1a1c1a] font-semibold">
+                    <div className="flex items-center justify-between text-sm  text-[#1a1c1a] font-semibold">
                       <span>Spatial Partition & Circulation Diagram</span>
                       <span className="text-[#715a3e]">Scale 1:100</span>
                     </div>
@@ -553,7 +553,7 @@ export default function PortfolioPage() {
                 <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
                   <div className="space-y-4">
                     <div className="bg-[#faf9f6] p-6 shadow-xs border border-[#cbc6bd]/40">
-                      <span className="text-sm font-semibold text-[#715a3e] uppercase block mb-2">
+                      <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
                         01 / The Challenge
                       </span>
                       <h3 className="font-sans font-bold text-xl text-[#1a1c1a] mb-2">
@@ -565,7 +565,7 @@ export default function PortfolioPage() {
                     </div>
 
                     <div className="bg-[#faf9f6] p-6 shadow-xs border border-[#cbc6bd]/40">
-                      <span className="text-sm font-semibold text-[#715a3e] uppercase block mb-2">
+                      <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
                         02 / Spatial Strategy
                       </span>
                       <h3 className="font-sans font-bold text-xl text-[#1a1c1a] mb-2">
@@ -577,12 +577,12 @@ export default function PortfolioPage() {
                     </div>
 
                     <div className="bg-[#faf9f6] p-6 shadow-xs border border-[#cbc6bd]/40">
-                      <span className="text-sm font-semibold text-[#715a3e] uppercase block mb-2">
+                      <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
                         03 / Material Symphony
                       </span>
                       <div className="grid grid-cols-3 gap-2 pt-2">
                         <div className="bg-[#efeeeb] p-2 text-center">
-                          <div className="text-[10px] text-[#715a3e] uppercase">
+                          <div className="text-[10px] text-[#715a3e] ">
                             Stone
                           </div>
                           <div className="text-sm font-semibold text-[#1a1c1a] mt-1">
@@ -590,7 +590,7 @@ export default function PortfolioPage() {
                           </div>
                         </div>
                         <div className="bg-[#efeeeb] p-2 text-center">
-                          <div className="text-[10px] text-[#715a3e] uppercase">
+                          <div className="text-[10px] text-[#715a3e] ">
                             Timber
                           </div>
                           <div className="text-sm font-semibold text-[#1a1c1a] mt-1">
@@ -598,7 +598,7 @@ export default function PortfolioPage() {
                           </div>
                         </div>
                         <div className="bg-[#efeeeb] p-2 text-center">
-                          <div className="text-[10px] text-[#715a3e] uppercase">
+                          <div className="text-[10px] text-[#715a3e] ">
                             Metal
                           </div>
                           <div className="text-sm font-semibold text-[#1a1c1a] mt-1">
@@ -609,7 +609,7 @@ export default function PortfolioPage() {
                     </div>
 
                     <div className="bg-[#faf9f6] p-6 shadow-xs border border-[#cbc6bd]/40">
-                      <span className="text-sm font-semibold text-[#715a3e] uppercase block mb-2">
+                      <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
                         04 / The Outcome
                       </span>
                       <p className="text-sm text-[#494740]">
@@ -620,7 +620,7 @@ export default function PortfolioPage() {
 
                   <div className="p-6 bg-[#efeeeb] flex items-center justify-between border border-[#cbc6bd]/40">
                     <div>
-                      <span className="text-sm uppercase font-semibold text-[#1a1c1a] block">
+                      <span className="text-sm  font-semibold text-[#1a1c1a] block">
                         Request Architectural Dossier
                       </span>
                       <span className="text-[11px] text-[#494740]">
@@ -629,7 +629,7 @@ export default function PortfolioPage() {
                     </div>
                     <button
                       onClick={handleRequestDossier}
-                      className="px-5 py-3 bg-[#000000] text-[#ffffff] text-sm font-semibold uppercase hover:bg-[#715a3e] transition-colors flex items-center gap-2"
+                      className="px-5 py-3 bg-[#000000] text-[#ffffff] text-sm font-semibold  hover:bg-[#715a3e] transition-colors flex items-center gap-2"
                     >
                       <span className="material-symbols-outlined text-sm">
                         download
@@ -646,7 +646,7 @@ export default function PortfolioPage() {
           <section className="w-full bg-[#000000] text-[#ffffff] py-24 px-5 md:px-12 lg:px-20 relative overflow-hidden">
             <div className="max-w-[1200px] mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
               <div className="space-y-4 text-center lg:text-left max-w-2xl">
-                <span className="text-sm font-semibold text-[#fdddb9] uppercase block">
+                <span className="text-sm font-semibold text-[#fdddb9]  block">
                   Commissions • 2025 / 2026
                 </span>
                 <h2 className="font-sans font-bold text-2xl sm:text-3xl text-[#ffffff]">
@@ -660,13 +660,13 @@ export default function PortfolioPage() {
               <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
                 <Link
                   href="/#contact"
-                  className="w-full sm:w-auto text-center px-8 py-4 bg-[#715a3e] text-[#ffffff] text-sm font-semibold uppercase hover:bg-[#fdddb9] hover:text-[#281803] transition-all duration-300 shadow-md"
+                  className="w-full sm:w-auto text-center px-8 py-4 bg-[#715a3e] text-[#ffffff] text-sm font-semibold  hover:bg-[#fdddb9] hover:text-[#281803] transition-all duration-300 shadow-md"
                 >
                   Initiate Consultation
                 </Link>
                 <Link
                   href="/#philosophy"
-                  className="w-full sm:w-auto text-center px-8 py-4 bg-transparent text-[#ffffff] border border-[#ffffff]/20 text-sm font-semibold uppercase hover:bg-[#ffffff] hover:text-[#000000] transition-all duration-300"
+                  className="w-full sm:w-auto text-center px-8 py-4 bg-transparent text-[#ffffff] border border-[#ffffff]/20 text-sm font-semibold  hover:bg-[#ffffff] hover:text-[#000000] transition-all duration-300"
                 >
                   Studio Philosophy
                 </Link>
@@ -691,7 +691,7 @@ export default function PortfolioPage() {
             </button>
 
             <div className="space-y-2">
-              <span className="text-sm font-semibold text-[#715a3e] uppercase">
+              <span className="text-sm font-semibold text-[#715a3e] ">
                 {selectedProject.code} • {selectedProject.location}
               </span>
               <h2 className="font-sans font-bold text-3xl text-[#1a1c1a]">
@@ -715,7 +715,7 @@ export default function PortfolioPage() {
             </p>
 
             <div className="space-y-2 pt-2">
-              <h4 className="text-sm font-semibold text-[#715a3e] uppercase">
+              <h4 className="text-sm font-semibold text-[#715a3e] ">
                 Engineering & Material Architectural Highlights:
               </h4>
               <ul className="space-y-1.5 text-sm text-[#1a1c1a]">
@@ -734,7 +734,7 @@ export default function PortfolioPage() {
               </span>
               <button
                 onClick={() => setSelectedProject(null)}
-                className="bg-[#000000] text-[#ffffff] text-sm font-semibold uppercase px-6 py-2.5 hover:bg-[#715a3e]"
+                className="bg-[#000000] text-[#ffffff] text-sm font-semibold  px-6 py-2.5 hover:bg-[#715a3e]"
               >
                 Close Monograph
               </button>

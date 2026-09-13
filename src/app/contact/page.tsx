@@ -234,7 +234,7 @@ export default function ContactPage() {
               <div className="max-w-3xl">
                 <div className="flex items-center gap-3 mb-2">
                   <span className="w-8 h-[1px] bg-[#715a3e]" />
-                  <span className="text-sm font-bold text-[#715a3e] uppercase">
+                  <span className="text-sm font-bold text-[#715a3e] ">
                     Client Commission & Advisory
                   </span>
                 </div>
@@ -252,7 +252,7 @@ export default function ContactPage() {
             {/* Studio Presence Metric Bar */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-[#f4f3f0] border border-[#cbc6bd]/40 shadow-sm">
               <div>
-                <span className="text-[10px] font-bold text-[#715a3e] uppercase block mb-1">
+                <span className="text-[10px] font-bold text-[#715a3e]  block mb-1">
                   Delhi Headquarters
                 </span>
                 <p className="text-xl font-bold text-[#1a1c1a]">
@@ -263,7 +263,7 @@ export default function ContactPage() {
                 </span>
               </div>
               <div>
-                <span className="text-[10px] font-bold text-[#715a3e] uppercase block mb-1">
+                <span className="text-[10px] font-bold text-[#715a3e]  block mb-1">
                   Gurugram Studio
                 </span>
                 <p className="text-xl font-bold text-[#1a1c1a]">
@@ -274,7 +274,7 @@ export default function ContactPage() {
                 </span>
               </div>
               <div>
-                <span className="text-[10px] font-bold text-[#715a3e] uppercase block mb-1">
+                <span className="text-[10px] font-bold text-[#715a3e]  block mb-1">
                   Response SLA
                 </span>
                 <p className="text-xl font-bold text-[#1a1c1a]">
@@ -285,7 +285,7 @@ export default function ContactPage() {
                 </span>
               </div>
               <div>
-                <span className="text-[10px] font-bold text-[#715a3e] uppercase block mb-1">
+                <span className="text-[10px] font-bold text-[#715a3e]  block mb-1">
                   Privacy Protocol
                 </span>
                 <p className="text-xl font-bold text-[#1a1c1a]">
@@ -307,7 +307,7 @@ export default function ContactPage() {
                 domain_verification
               </span>
               <div>
-                <span className="text-sm font-bold text-[#fdddb9] uppercase block">
+                <span className="text-sm font-bold text-[#fdddb9]  block">
                   Active Site & Emergency Engineering Hotline
                 </span>
                 <p className="text-sm text-[#868380]">
@@ -317,7 +317,7 @@ export default function ContactPage() {
             </div>
             <button
               onClick={openMeetingModal}
-              className="px-5 py-2.5 bg-[#715a3e] text-[#ffffff] text-sm font-bold uppercase hover:bg-[#fdddb9] hover:text-[#281803] transition-colors shrink-0"
+              className="px-5 py-2.5 bg-[#715a3e] text-[#ffffff] text-sm font-bold  hover:bg-[#fdddb9] hover:text-[#281803] transition-colors shrink-0"
             >
               Book Partner Meeting
             </button>
@@ -332,7 +332,7 @@ export default function ContactPage() {
               {/* Studio Locations Switcher */}
               <div className="space-y-6">
                 <div>
-                  <span className="text-sm font-bold text-[#715a3e] uppercase block mb-1">
+                  <span className="text-sm font-bold text-[#715a3e]  block mb-1">
                     Ateliers & Salons Privés
                   </span>
                   <h2 className="text-3xl font-bold text-[#1a1c1a]">
@@ -346,7 +346,7 @@ export default function ContactPage() {
                     <button
                       key={key}
                       onClick={() => setSelectedStudio(key)}
-                      className={`px-4 py-2.5 text-sm font-bold uppercase transition-all border text-left ${selectedStudio === key
+                      className={`px-4 py-2.5 text-sm font-bold  transition-all border text-left ${selectedStudio === key
                         ? "bg-[#000000] text-[#ffffff] border-[#000000] shadow-sm"
                         : "bg-[#f4f3f0] text-[#494740] border-[#cbc6bd]/40 hover:bg-[#e9e8e5]"
                         }`}
@@ -411,7 +411,7 @@ export default function ContactPage() {
               {/* Comprehensive Commission FAQ Accordion */}
               <div className="space-y-4 pt-4">
                 <div>
-                  <span className="text-sm font-bold text-[#715a3e] uppercase block mb-1">
+                  <span className="text-sm font-bold text-[#715a3e]  block mb-1">
                     Advisory Inquiries
                   </span>
                   <h2 className="text-3xl font-bold text-[#1a1c1a]">
@@ -455,10 +455,10 @@ export default function ContactPage() {
             <div className="lg:col-span-7 bg-[#f4f3f0] p-6 md:p-10 border border-[#cbc6bd]/40 shadow-sm space-y-8">
               <div>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-bold text-[#715a3e] uppercase">
+                  <span className="text-sm font-bold text-[#715a3e] ">
                     Project Intake
                   </span>
-                  <span className="text-[10px] font-bold text-[#494740] bg-[#faf9f6] px-3 py-1 uppercase border border-[#cbc6bd]/40">
+                  <span className="text-[10px] font-bold text-[#494740] bg-[#faf9f6] px-3 py-1  border border-[#cbc6bd]/40">
                     Encrypted Protocol
                   </span>
                 </div>
@@ -484,13 +484,13 @@ export default function ContactPage() {
 
                   {/* Step 1: Principal Identification */}
                   <div className="space-y-4">
-                    <span className="text-sm font-bold text-[#715a3e] uppercase block border-b border-[#cbc6bd]/40 pb-2">
+                    <span className="text-sm font-bold text-[#715a3e]  block border-b border-[#cbc6bd]/40 pb-2">
                       01. Principal & Entity Details
                     </span>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-1.5">
-                        <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                        <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                           Principal Full Name *
                         </label>
                         <input
@@ -512,7 +512,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-1.5">
-                        <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                        <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                           Family Office / Firm Entity
                         </label>
                         <input
@@ -532,7 +532,7 @@ export default function ContactPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-1.5">
-                        <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                        <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                           Direct Email Address *
                         </label>
                         <input
@@ -554,7 +554,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-1.5">
-                        <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                        <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                           Direct Telephone Number *
                         </label>
                         <input
@@ -579,13 +579,13 @@ export default function ContactPage() {
 
                   {/* Step 2: Project Parameters */}
                   <div className="space-y-4 pt-2">
-                    <span className="text-sm font-bold text-[#715a3e] uppercase block border-b border-[#cbc6bd]/40 pb-2">
+                    <span className="text-sm font-bold text-[#715a3e]  block border-b border-[#cbc6bd]/40 pb-2">
                       02. Project Typology & Location
                     </span>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-1.5">
-                        <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                        <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                           Project Typology *
                         </label>
                         <div className="relative">
@@ -623,7 +623,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-1.5">
-                        <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                        <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                           Project Location (City, Country) *
                         </label>
                         <input
@@ -645,13 +645,13 @@ export default function ContactPage() {
 
                   {/* Step 3: Scale & Budget Allocation */}
                   <div className="space-y-4 pt-2">
-                    <span className="text-sm font-bold text-[#715a3e] uppercase block border-b border-[#cbc6bd]/40 pb-2">
+                    <span className="text-sm font-bold text-[#715a3e]  block border-b border-[#cbc6bd]/40 pb-2">
                       03. Estimated Scale & Investment Allocation
                     </span>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="space-y-1.5">
-                        <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                        <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                           Estimated Surface Area *
                         </label>
                         <div className="grid grid-cols-3 gap-2">
@@ -662,7 +662,7 @@ export default function ContactPage() {
                               onClick={() =>
                                 setFormData({ ...formData, area: val })
                               }
-                              className={`p-3 text-center transition-colors text-[10px] uppercase font-bold border shadow-sm ${formData.area === val
+                              className={`p-3 text-center transition-colors text-[10px]  font-bold border shadow-sm ${formData.area === val
                                 ? "bg-[#000000] text-[#ffffff] border-[#000000]"
                                 : "bg-[#faf9f6] text-[#494740] border-[#cbc6bd]/40 hover:bg-[#e9e8e5]"
                                 }`}
@@ -678,7 +678,7 @@ export default function ContactPage() {
                       </div>
 
                       <div className="space-y-1.5">
-                        <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                        <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                           Investment Tier *
                         </label>
                         <div className="relative">
@@ -708,12 +708,12 @@ export default function ContactPage() {
 
                   {/* Step 4: Narrative & CAD Upload */}
                   <div className="space-y-4 pt-2">
-                    <span className="text-sm font-bold text-[#715a3e] uppercase block border-b border-[#cbc6bd]/40 pb-2">
+                    <span className="text-sm font-bold text-[#715a3e]  block border-b border-[#cbc6bd]/40 pb-2">
                       04. Spatial Vision & Blueprint Files
                     </span>
 
                     <div className="space-y-1.5">
-                      <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                      <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                         Spatial Narrative & Site Context *
                       </label>
                       <textarea
@@ -735,7 +735,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="space-y-1.5">
-                      <label className="text-[11px] font-bold text-[#1a1c1a] uppercase block">
+                      <label className="text-[11px] font-bold text-[#1a1c1a]  block">
                         CAD Drawings, Floorplans, or PDFs (Optional)
                       </label>
                       <div className="relative bg-[#faf9f6] p-6 text-center cursor-pointer hover:bg-[#ffffff] transition-all border border-dashed border-[#cbc6bd] shadow-sm">
@@ -790,7 +790,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-[#000000] text-[#ffffff] text-sm font-bold uppercase py-4 hover:bg-[#715a3e] transition-colors duration-300 flex items-center justify-center gap-3 shadow-md"
+                      className="w-full bg-[#000000] text-[#ffffff] text-sm font-bold  py-4 hover:bg-[#715a3e] transition-colors duration-300 flex items-center justify-center gap-3 shadow-md"
                     >
                       {isSubmitting ? (
                         <span>Transmitting Dossier to Partner Vault...</span>
@@ -829,7 +829,7 @@ export default function ContactPage() {
                   </p>
                   <button
                     onClick={() => setFormSubmitted(false)}
-                    className="mt-4 px-6 py-3 bg-[#000000] text-[#ffffff] text-sm font-bold uppercase"
+                    className="mt-4 px-6 py-3 bg-[#000000] text-[#ffffff] text-sm font-bold "
                   >
                     Submit Another Project Inquiry
                   </button>
@@ -844,7 +844,7 @@ export default function ContactPage() {
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
               <div className="space-y-2">
-                <span className="text-sm font-bold text-[#715a3e] uppercase">
+                <span className="text-sm font-bold text-[#715a3e] ">
                   Monastic Precision
                 </span>
                 <h3 className="text-2xl font-bold text-[#1a1c1a]">

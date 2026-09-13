@@ -30,14 +30,14 @@ export default function Navbar() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V3M5 21V3M5 12h14M3 21h18M3 3h18" />
                 </svg>
               </div>
-              <span className="font-bold text-sm sm:text-lg md:text-xl text-[#1a1c1a] uppercase font-sans">
+              <span className="font-bold text-sm sm:text-lg md:text-xl text-[#1a1c1a] font-sans">
                 Havenley <span className="text-[#715a3e]">Infrastructure</span>
               </span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8 lg:gap-12 text-sm font-semibold uppercase font-sans">
+          <nav className="hidden md:flex items-center gap-8 lg:gap-12 text-sm font-semibold font-sans">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
@@ -45,8 +45,8 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={`py-1 transition-colors ${isActive
-                      ? "text-[#000000] font-bold border-b-2 border-[#715a3e]"
-                      : "text-[#494740] hover:text-[#1a1c1a]"
+                    ? "text-[#000000] font-bold border-b-2 border-[#715a3e]"
+                    : "text-[#494740] hover:text-[#1a1c1a]"
                     }`}
                 >
                   {item.label}
@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4 lg:gap-6">
             <button
               onClick={() => setIsMeetingModalOpen(true)}
-              className="hidden sm:inline-flex items-center justify-center bg-[#000000] text-[#ffffff] text-[11px] font-bold uppercase px-6 py-3 hover:bg-[#715a3e] transition-all duration-300 shadow-sm font-sans"
+              className="hidden sm:inline-flex items-center justify-center bg-[#000000] text-[#ffffff] text-[11px] font-bold px-6 py-3 hover:bg-[#715a3e] transition-all duration-300 shadow-sm font-sans"
             >
               Schedule Meeting
             </button>
@@ -79,7 +79,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation Drawer */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-[#faf9f6] border-b border-[#cbc6bd] px-6 py-4 space-y-3 font-sans text-sm font-semibold uppercase">
+          <div className="md:hidden bg-[#faf9f6] border-b border-[#cbc6bd] px-6 py-4 space-y-3 font-sans text-sm font-semibold">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
               return (
@@ -99,7 +99,7 @@ export default function Navbar() {
                 setIsMobileMenuOpen(false);
                 setIsMeetingModalOpen(true);
               }}
-              className="block w-full bg-[#000000] text-[#ffffff] py-2.5 text-xs sm:text-sm text-center uppercase mt-2 font-bold tracking-wider rounded-lg"
+              className="block w-full bg-[#000000] text-[#ffffff] py-2.5 text-xs sm:text-sm text-center mt-2 font-bold tracking-wider rounded-lg"
             >
               Schedule Meeting
             </button>

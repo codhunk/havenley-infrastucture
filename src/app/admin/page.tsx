@@ -444,7 +444,7 @@ export default function AdminPage() {
             <div className="w-12 h-12 bg-[#1c1b19] text-[#cbb392] rounded-xl flex items-center justify-center mx-auto mb-3">
               <span className="material-symbols-outlined text-2xl">admin_panel_settings</span>
             </div>
-            <h1 className="text-2xl font-bold uppercase tracking-wide">Studio Management Portal</h1>
+            <h1 className="text-2xl font-bold  tracking-wide">Studio Management Portal</h1>
             <p className="text-xs text-[#494740] font-medium">Havenley Infrastructure Executive Control Center</p>
           </div>
 
@@ -455,7 +455,7 @@ export default function AdminPage() {
               </div>
             )}
             <div className="space-y-1">
-              <label className="text-[11px] font-bold uppercase text-[#715a3e] block">
+              <label className="text-[11px] font-bold  text-[#715a3e] block">
                 Administrative Passkey
               </label>
               <input
@@ -469,7 +469,7 @@ export default function AdminPage() {
             </div>
             <button
               type="submit"
-              className="w-full bg-[#1c1b19] text-[#faf9f6] py-3.5 text-xs font-bold uppercase hover:bg-[#715a3e] transition-colors shadow-md"
+              className="w-full bg-[#1c1b19] text-[#faf9f6] py-3.5 text-xs font-bold  hover:bg-[#715a3e] transition-colors shadow-md"
             >
               Authenticate Executive Access
             </button>
@@ -495,8 +495,8 @@ export default function AdminPage() {
               <span className="material-symbols-outlined text-xl">admin_panel_settings</span>
             </div>
             <div>
-              <h1 className="text-lg font-bold uppercase tracking-wider">Havenley Control Center</h1>
-              <span className="text-[10px] text-[#cbb392] font-semibold uppercase block">
+              <h1 className="text-lg font-bold  tracking-wider">Havenley Control Center</h1>
+              <span className="text-[10px] text-[#cbb392] font-semibold  block">
                 MongoDB Atlas • Cloudinary SDK Live System
               </span>
             </div>
@@ -506,13 +506,13 @@ export default function AdminPage() {
             <Link
               href="/"
               target="_blank"
-              className="text-xs font-bold uppercase text-[#cbb392] hover:text-[#ffffff] px-3.5 py-1.5 border border-[#715a3e]/40 transition-colors rounded"
+              className="text-xs font-bold  text-[#cbb392] hover:text-[#ffffff] px-3.5 py-1.5 border border-[#715a3e]/40 transition-colors rounded"
             >
               Live Website ↗
             </Link>
             <button
               onClick={handleLogout}
-              className="text-xs font-bold uppercase bg-red-950/60 hover:bg-red-800 text-red-200 px-4 py-1.5 border border-red-700/50 transition-colors rounded"
+              className="text-xs font-bold  bg-red-950/60 hover:bg-red-800 text-red-200 px-4 py-1.5 border border-red-700/50 transition-colors rounded"
             >
               Log Out
             </button>
@@ -532,7 +532,7 @@ export default function AdminPage() {
               }`}
           >
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[10px] font-bold uppercase tracking-wider opacity-80">
+              <span className="text-[10px] font-bold  tracking-wider opacity-80">
                 Contact Details
               </span>
               <span className="material-symbols-outlined text-2xl text-[#cbb392]">contact_page</span>
@@ -549,7 +549,7 @@ export default function AdminPage() {
               }`}
           >
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[10px] font-bold uppercase tracking-wider opacity-80">
+              <span className="text-[10px] font-bold  tracking-wider opacity-80">
                 Consultations
               </span>
               <span className="material-symbols-outlined text-2xl text-[#cbb392]">calendar_month</span>
@@ -566,7 +566,7 @@ export default function AdminPage() {
               }`}
           >
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[10px] font-bold uppercase tracking-wider opacity-80">
+              <span className="text-[10px] font-bold  tracking-wider opacity-80">
                 Journal Subscribers
               </span>
               <span className="material-symbols-outlined text-2xl text-[#cbb392]">mark_email_read</span>
@@ -583,7 +583,7 @@ export default function AdminPage() {
               }`}
           >
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[10px] font-bold uppercase tracking-wider opacity-80">
+              <span className="text-[10px] font-bold  tracking-wider opacity-80">
                 Projects
               </span>
               <span className="material-symbols-outlined text-2xl text-[#cbb392]">domain</span>
@@ -597,7 +597,7 @@ export default function AdminPage() {
               <span className="material-symbols-outlined text-xl">cloud_done</span>
             </div>
             <div>
-              <span className="text-[9px] font-bold text-emerald-700 uppercase block">
+              <span className="text-[9px] font-bold text-emerald-700  block">
                 Database Status
               </span>
               <span className="text-xs font-bold text-emerald-900 block mt-0.5">MongoDB Connected</span>
@@ -611,7 +611,7 @@ export default function AdminPage() {
           <div className="flex items-center gap-2 flex-wrap">
             <button
               onClick={() => setActiveTab("inquiries")}
-              className={`px-4 py-2 text-xs font-bold uppercase transition-colors rounded-lg border flex items-center gap-1.5 ${activeTab === "inquiries"
+              className={`px-4 py-2 text-xs font-bold  transition-colors rounded-lg border flex items-center gap-1.5 ${activeTab === "inquiries"
                 ? "bg-[#1c1b19] text-[#faf9f6] border-[#1c1b19]"
                 : "bg-[#ffffff] text-[#1a1c1a] border-[#cbc6bd]/40 hover:bg-[#e9e8e5]"
                 }`}
@@ -622,7 +622,7 @@ export default function AdminPage() {
 
             <button
               onClick={() => setActiveTab("bookings")}
-              className={`px-4 py-2 text-xs font-bold uppercase transition-colors rounded-lg border flex items-center gap-1.5 ${activeTab === "bookings"
+              className={`px-4 py-2 text-xs font-bold  transition-colors rounded-lg border flex items-center gap-1.5 ${activeTab === "bookings"
                 ? "bg-[#1c1b19] text-[#faf9f6] border-[#1c1b19]"
                 : "bg-[#ffffff] text-[#1a1c1a] border-[#cbc6bd]/40 hover:bg-[#e9e8e5]"
                 }`}
@@ -633,7 +633,7 @@ export default function AdminPage() {
 
             <button
               onClick={() => setActiveTab("subscribers")}
-              className={`px-4 py-2 text-xs font-bold uppercase transition-colors rounded-lg border flex items-center gap-1.5 ${activeTab === "subscribers"
+              className={`px-4 py-2 text-xs font-bold  transition-colors rounded-lg border flex items-center gap-1.5 ${activeTab === "subscribers"
                 ? "bg-[#1c1b19] text-[#faf9f6] border-[#1c1b19]"
                 : "bg-[#ffffff] text-[#1a1c1a] border-[#cbc6bd]/40 hover:bg-[#e9e8e5]"
                 }`}
@@ -644,7 +644,7 @@ export default function AdminPage() {
 
             <button
               onClick={() => setActiveTab("projects")}
-              className={`px-4 py-2 text-xs font-bold uppercase transition-colors rounded-lg border flex items-center gap-1.5 ${activeTab === "projects"
+              className={`px-4 py-2 text-xs font-bold  transition-colors rounded-lg border flex items-center gap-1.5 ${activeTab === "projects"
                 ? "bg-[#1c1b19] text-[#faf9f6] border-[#1c1b19]"
                 : "bg-[#ffffff] text-[#1a1c1a] border-[#cbc6bd]/40 hover:bg-[#e9e8e5]"
                 }`}
@@ -675,7 +675,7 @@ export default function AdminPage() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={handleCopySubscribers}
-                  className="bg-[#1c1b19] hover:bg-[#715a3e] text-[#ffffff] px-4 py-2 text-xs font-bold uppercase transition-colors rounded-lg flex items-center gap-1.5 shadow-md shrink-0"
+                  className="bg-[#1c1b19] hover:bg-[#715a3e] text-[#ffffff] px-4 py-2 text-xs font-bold  transition-colors rounded-lg flex items-center gap-1.5 shadow-md shrink-0"
                 >
                   <span className="material-symbols-outlined text-base">content_copy</span>
                   Copy Emails
@@ -685,7 +685,7 @@ export default function AdminPage() {
                     setSubscriberError("");
                     setIsSubscriberModalOpen(true);
                   }}
-                  className="bg-[#715a3e] hover:bg-[#1c1b19] text-[#ffffff] px-4 py-2 text-xs font-bold uppercase transition-colors rounded-lg flex items-center gap-1.5 shadow-md shrink-0"
+                  className="bg-[#715a3e] hover:bg-[#1c1b19] text-[#ffffff] px-4 py-2 text-xs font-bold  transition-colors rounded-lg flex items-center gap-1.5 shadow-md shrink-0"
                 >
                   <span className="material-symbols-outlined text-base">person_add</span>
                   Add Subscriber
@@ -699,7 +699,7 @@ export default function AdminPage() {
                   setAdminMeetingError("");
                   setIsNewMeetingModalOpen(true);
                 }}
-                className="bg-[#715a3e] hover:bg-[#1c1b19] text-[#ffffff] px-5 py-2 text-xs font-bold uppercase transition-colors rounded-lg flex items-center gap-1.5 shadow-md shrink-0"
+                className="bg-[#715a3e] hover:bg-[#1c1b19] text-[#ffffff] px-5 py-2 text-xs font-bold  transition-colors rounded-lg flex items-center gap-1.5 shadow-md shrink-0"
               >
                 <span className="material-symbols-outlined text-base">calendar_add_on</span>
                 Log New Meeting
@@ -709,7 +709,7 @@ export default function AdminPage() {
             {activeTab === "projects" && (
               <button
                 onClick={() => openProjectModal()}
-                className="bg-[#715a3e] hover:bg-[#1c1b19] text-[#ffffff] px-6 py-2.5 text-xs font-bold uppercase transition-colors rounded-lg flex items-center gap-2 shadow-md shrink-0"
+                className="bg-[#715a3e] hover:bg-[#1c1b19] text-[#ffffff] px-6 py-2.5 text-xs font-bold  transition-colors rounded-lg flex items-center gap-2 shadow-md shrink-0"
               >
                 <span className="material-symbols-outlined text-base">add</span>
                 Add New Project
@@ -724,12 +724,12 @@ export default function AdminPage() {
             {/* Filter Pills */}
             <div className="flex items-center justify-between flex-wrap gap-2">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-[#715a3e] uppercase mr-2">Filter Status:</span>
+                <span className="text-xs font-bold text-[#715a3e]  mr-2">Filter Status:</span>
                 {["all", "pending", "reviewed", "contacted", "archived"].map((st) => (
                   <button
                     key={st}
                     onClick={() => setInquiryStatusFilter(st)}
-                    className={`px-3 py-1 text-[11px] font-bold uppercase rounded-full border transition-colors ${inquiryStatusFilter === st
+                    className={`px-3 py-1 text-[11px] font-bold  rounded-full border transition-colors ${inquiryStatusFilter === st
                       ? "bg-[#1c1b19] text-[#faf9f6] border-[#1c1b19]"
                       : "bg-[#ffffff] text-[#494740] border-[#cbc6bd]/40 hover:bg-[#e9e8e5]"
                       }`}
@@ -748,7 +748,7 @@ export default function AdminPage() {
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">
                   <thead>
-                    <tr className="bg-[#1c1b19] text-[#faf9f6] text-[11px] font-bold uppercase tracking-wider">
+                    <tr className="bg-[#1c1b19] text-[#faf9f6] text-[11px] font-bold  tracking-wider">
                       <th className="p-4">Received Date</th>
                       <th className="p-4">Patron Full Name</th>
                       <th className="p-4">Email & Phone</th>
@@ -775,7 +775,7 @@ export default function AdminPage() {
                             <div className="flex items-center gap-2">
                               <span>{inq.name}</span>
                               {inq.nda && (
-                                <span className="bg-[#715a3e]/10 text-[#715a3e] px-1.5 py-0.5 rounded text-[9px] font-bold uppercase border border-[#715a3e]/30">
+                                <span className="bg-[#715a3e]/10 text-[#715a3e] px-1.5 py-0.5 rounded text-[9px] font-bold  border border-[#715a3e]/30">
                                   NDA
                                 </span>
                               )}
@@ -791,7 +791,7 @@ export default function AdminPage() {
                             <span className="block text-[#494740] font-mono text-[11px]">{inq.phone}</span>
                           </td>
                           <td className="p-4">
-                            <span className="block font-semibold uppercase text-[#715a3e]">
+                            <span className="block font-semibold  text-[#715a3e]">
                               {inq.typology}
                             </span>
                             <span className="block text-[10px] text-[#494740]">
@@ -803,7 +803,7 @@ export default function AdminPage() {
                           </td>
                           <td className="p-4">
                             <span
-                              className={`px-2.5 py-1 text-[10px] font-bold uppercase rounded-full border ${inq.status === "pending"
+                              className={`px-2.5 py-1 text-[10px] font-bold  rounded-full border ${inq.status === "pending"
                                 ? "bg-amber-50 text-amber-800 border-amber-300"
                                 : inq.status === "reviewed"
                                   ? "bg-blue-50 text-blue-800 border-blue-300"
@@ -816,13 +816,13 @@ export default function AdminPage() {
                           <td className="p-4 text-right space-x-2">
                             <button
                               onClick={() => setSelectedInquiry(inq)}
-                              className="px-3 py-1.5 bg-[#1c1b19] text-[#ffffff] text-[10px] font-bold uppercase rounded hover:bg-[#715a3e] transition-colors"
+                              className="px-3 py-1.5 bg-[#1c1b19] text-[#ffffff] text-[10px] font-bold  rounded hover:bg-[#715a3e] transition-colors"
                             >
                               View Dossier
                             </button>
                             <button
                               onClick={() => handleDeleteInquiry(inq._id)}
-                              className="px-2.5 py-1.5 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-[10px] font-bold uppercase rounded transition-colors"
+                              className="px-2.5 py-1.5 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-[10px] font-bold  rounded transition-colors"
                             >
                               Delete
                             </button>
@@ -843,12 +843,12 @@ export default function AdminPage() {
             {/* Filter Pills */}
             <div className="flex items-center justify-between flex-wrap gap-2">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-[#715a3e] uppercase mr-2">Filter Status:</span>
+                <span className="text-xs font-bold text-[#715a3e]  mr-2">Filter Status:</span>
                 {["all", "confirmed", "completed", "cancelled"].map((st) => (
                   <button
                     key={st}
                     onClick={() => setBookingStatusFilter(st)}
-                    className={`px-3 py-1 text-[11px] font-bold uppercase rounded-full border transition-colors ${bookingStatusFilter === st
+                    className={`px-3 py-1 text-[11px] font-bold  rounded-full border transition-colors ${bookingStatusFilter === st
                       ? "bg-[#1c1b19] text-[#faf9f6] border-[#1c1b19]"
                       : "bg-[#ffffff] text-[#494740] border-[#cbc6bd]/40 hover:bg-[#e9e8e5]"
                       }`}
@@ -867,7 +867,7 @@ export default function AdminPage() {
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">
                   <thead>
-                    <tr className="bg-[#1c1b19] text-[#faf9f6] text-[11px] font-bold uppercase tracking-wider">
+                    <tr className="bg-[#1c1b19] text-[#faf9f6] text-[11px] font-bold  tracking-wider">
                       <th className="p-4">Requested Date</th>
                       <th className="p-4">Patron Name</th>
                       <th className="p-4">Direct Contact</th>
@@ -901,14 +901,14 @@ export default function AdminPage() {
                             <span className="block font-semibold text-[#1a1c1a]">{book.email}</span>
                             <span className="block text-[#494740] font-mono text-[11px]">{book.phone}</span>
                           </td>
-                          <td className="p-4 uppercase font-semibold text-[#715a3e]">
+                          <td className="p-4  font-semibold text-[#715a3e]">
                             <span className="bg-[#715a3e]/10 text-[#715a3e] px-2.5 py-1 rounded text-[10px] font-bold border border-[#715a3e]/20">
                               {book.meetingType || "Virtual Consultation"}
                             </span>
                           </td>
                           <td className="p-4">
                             <span
-                              className={`px-2.5 py-1 text-[10px] font-bold uppercase rounded-full border ${book.status === "confirmed"
+                              className={`px-2.5 py-1 text-[10px] font-bold  rounded-full border ${book.status === "confirmed"
                                 ? "bg-emerald-50 text-emerald-800 border-emerald-300"
                                 : book.status === "completed"
                                   ? "bg-blue-50 text-blue-800 border-blue-300"
@@ -921,14 +921,14 @@ export default function AdminPage() {
                           <td className="p-4 text-right space-x-2">
                             <button
                               onClick={() => setSelectedBooking(book)}
-                              className="px-3 py-1.5 bg-[#1c1b19] text-[#ffffff] text-[10px] font-bold uppercase rounded hover:bg-[#715a3e] transition-colors"
+                              className="px-3 py-1.5 bg-[#1c1b19] text-[#ffffff] text-[10px] font-bold  rounded hover:bg-[#715a3e] transition-colors"
                             >
                               Details
                             </button>
                             <select
                               value={book.status}
                               onChange={(e) => handleUpdateBookingStatus(book._id, e.target.value)}
-                              className="bg-[#f4f3f0] border border-[#cbc6bd] text-[10px] font-bold uppercase p-1 rounded cursor-pointer"
+                              className="bg-[#f4f3f0] border border-[#cbc6bd] text-[10px] font-bold  p-1 rounded cursor-pointer"
                             >
                               <option value="confirmed">Confirmed</option>
                               <option value="completed">Completed</option>
@@ -936,7 +936,7 @@ export default function AdminPage() {
                             </select>
                             <button
                               onClick={() => handleDeleteBooking(book._id)}
-                              className="px-2 py-1 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-[10px] font-bold uppercase rounded transition-colors"
+                              className="px-2 py-1 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-[10px] font-bold  rounded transition-colors"
                             >
                               Delete
                             </button>
@@ -955,7 +955,7 @@ export default function AdminPage() {
         {activeTab === "subscribers" && (
           <div className="space-y-4">
             <div className="flex items-center justify-between flex-wrap gap-2">
-              <span className="text-xs font-bold text-[#715a3e] uppercase">
+              <span className="text-xs font-bold text-[#715a3e] ">
                 Active Journal Subscribers ({filteredSubscribers.length})
               </span>
               <span className="text-xs text-[#494740] font-medium">
@@ -967,7 +967,7 @@ export default function AdminPage() {
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">
                   <thead>
-                    <tr className="bg-[#1c1b19] text-[#faf9f6] text-[11px] font-bold uppercase tracking-wider">
+                    <tr className="bg-[#1c1b19] text-[#faf9f6] text-[11px] font-bold  tracking-wider">
                       <th className="p-4">Subscribed Date</th>
                       <th className="p-4">Subscriber Email</th>
                       <th className="p-4">Subscription Status</th>
@@ -989,14 +989,14 @@ export default function AdminPage() {
                           </td>
                           <td className="p-4 font-bold text-[#1a1c1a]">{sub.email}</td>
                           <td className="p-4">
-                            <span className="bg-emerald-50 text-emerald-800 border border-emerald-300 px-2.5 py-1 text-[10px] font-bold uppercase rounded-full">
+                            <span className="bg-emerald-50 text-emerald-800 border border-emerald-300 px-2.5 py-1 text-[10px] font-bold  rounded-full">
                               {sub.status || "active"}
                             </span>
                           </td>
                           <td className="p-4 text-right">
                             <button
                               onClick={() => handleDeleteSubscriber(sub._id)}
-                              className="px-3 py-1.5 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-[10px] font-bold uppercase rounded transition-colors"
+                              className="px-3 py-1.5 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-[10px] font-bold  rounded transition-colors"
                             >
                               Remove Subscriber
                             </button>
@@ -1023,7 +1023,7 @@ export default function AdminPage() {
                 <p className="text-base text-[#494740] font-semibold">No projects found in database.</p>
                 <button
                   onClick={() => openProjectModal()}
-                  className="mt-4 px-6 py-2.5 bg-[#715a3e] text-[#ffffff] text-xs font-bold uppercase rounded-lg"
+                  className="mt-4 px-6 py-2.5 bg-[#715a3e] text-[#ffffff] text-xs font-bold  rounded-lg"
                 >
                   Create First Project
                 </button>
@@ -1042,13 +1042,13 @@ export default function AdminPage() {
                           alt={proj.title}
                           className="w-full h-full object-cover"
                         />
-                        <span className="absolute top-3 left-3 bg-[#1c1b19]/90 text-[#cbb392] text-[10px] font-bold uppercase px-3 py-1 rounded">
+                        <span className="absolute top-3 left-3 bg-[#1c1b19]/90 text-[#cbb392] text-[10px] font-bold  px-3 py-1 rounded">
                           {proj.tag}
                         </span>
                       </div>
                       <div className="p-5 space-y-2">
                         <h3 className="font-bold text-lg text-[#1a1c1a]">{proj.title}</h3>
-                        <p className="text-xs text-[#715a3e] font-semibold uppercase">{proj.subtitle}</p>
+                        <p className="text-xs text-[#715a3e] font-semibold ">{proj.subtitle}</p>
                         <p className="text-xs text-[#494740] line-clamp-2 mt-2">{proj.description}</p>
                         <div className="pt-2 flex items-center justify-between text-[11px] text-[#494740] font-medium border-t border-[#e5e2db]">
                           <span>{proj.location}</span>
@@ -1060,13 +1060,13 @@ export default function AdminPage() {
                     <div className="p-4 bg-[#f4f3f0] border-t border-[#cbc6bd]/30 flex items-center justify-end gap-2">
                       <button
                         onClick={() => openProjectModal(proj)}
-                        className="px-4 py-2 bg-[#1c1b19] text-[#ffffff] text-xs font-bold uppercase rounded hover:bg-[#715a3e] transition-colors"
+                        className="px-4 py-2 bg-[#1c1b19] text-[#ffffff] text-xs font-bold  rounded hover:bg-[#715a3e] transition-colors"
                       >
                         Edit
                       </button>
                       <button
                         onClick={() => handleDeleteProject(proj._id)}
-                        className="px-4 py-2 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-xs font-bold uppercase rounded transition-colors"
+                        className="px-4 py-2 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-xs font-bold  rounded transition-colors"
                       >
                         Delete
                       </button>
@@ -1084,7 +1084,7 @@ export default function AdminPage() {
         <div className="fixed inset-0 z-50 bg-[#1c1b19]/80 backdrop-blur-sm flex items-center justify-center p-4 font-sans">
           <div className="bg-[#faf9f6] text-[#1a1c1a] max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-8 rounded-2xl shadow-2xl border border-[#715a3e]/40 space-y-6">
             <div className="flex items-center justify-between border-b border-[#cbc6bd]/40 pb-4">
-              <h2 className="text-xl font-bold uppercase">
+              <h2 className="text-xl font-bold ">
                 {editingProject ? "Edit Project Details" : "Add New Showcase Project"}
               </h2>
               <button
@@ -1109,7 +1109,7 @@ export default function AdminPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Project Title *
                   </label>
                   <input
@@ -1123,7 +1123,7 @@ export default function AdminPage() {
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Subtitle / Architecture Scope *
                   </label>
                   <input
@@ -1139,7 +1139,7 @@ export default function AdminPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Location *
                   </label>
                   <input
@@ -1153,7 +1153,7 @@ export default function AdminPage() {
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Year *
                   </label>
                   <input
@@ -1167,7 +1167,7 @@ export default function AdminPage() {
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Surface Footprint *
                   </label>
                   <input
@@ -1183,7 +1183,7 @@ export default function AdminPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Material Palette *
                   </label>
                   <input
@@ -1197,7 +1197,7 @@ export default function AdminPage() {
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Engineering Scope *
                   </label>
                   <input
@@ -1211,7 +1211,7 @@ export default function AdminPage() {
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Category Tag *
                   </label>
                   <select
@@ -1230,7 +1230,7 @@ export default function AdminPage() {
 
               {/* Cloudinary Image Picker Section */}
               <div className="space-y-2 pt-2 border-t border-[#cbc6bd]/40">
-                <label className="text-[11px] font-bold uppercase text-[#715a3e] block">
+                <label className="text-[11px] font-bold  text-[#715a3e] block">
                   Project Feature Image (Upload to Cloudinary or Enter URL) *
                 </label>
                 <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
@@ -1243,7 +1243,7 @@ export default function AdminPage() {
                     className="flex-1 bg-[#ffffff] border border-[#cbc6bd] p-3 text-xs font-semibold focus:outline-none"
                   />
 
-                  <label className="px-4 py-3 bg-[#1c1b19] text-[#ffffff] text-xs font-bold uppercase rounded cursor-pointer hover:bg-[#715a3e] transition-colors shrink-0">
+                  <label className="px-4 py-3 bg-[#1c1b19] text-[#ffffff] text-xs font-bold  rounded cursor-pointer hover:bg-[#715a3e] transition-colors shrink-0">
                     {uploadingImage ? "Uploading to Cloudinary..." : "📷 Upload Image"}
                     <input
                       type="file"
@@ -1263,7 +1263,7 @@ export default function AdminPage() {
               </div>
 
               <div>
-                <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                   Project Description *
                 </label>
                 <textarea
@@ -1277,7 +1277,7 @@ export default function AdminPage() {
               </div>
 
               <div>
-                <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                   Key Technical Specifications (One per line)
                 </label>
                 <textarea
@@ -1293,13 +1293,13 @@ export default function AdminPage() {
                 <button
                   type="button"
                   onClick={() => setIsProjectModalOpen(false)}
-                  className="px-5 py-2.5 bg-[#e9e8e5] text-[#1a1c1a] text-xs font-bold uppercase rounded hover:bg-[#cbc6bd]"
+                  className="px-5 py-2.5 bg-[#e9e8e5] text-[#1a1c1a] text-xs font-bold  rounded hover:bg-[#cbc6bd]"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2.5 bg-[#1c1b19] text-[#faf9f6] text-xs font-bold uppercase rounded hover:bg-[#715a3e] transition-colors"
+                  className="px-6 py-2.5 bg-[#1c1b19] text-[#faf9f6] text-xs font-bold  rounded hover:bg-[#715a3e] transition-colors"
                 >
                   {editingProject ? "Save Changes" : "Create Project"}
                 </button>
@@ -1315,7 +1315,7 @@ export default function AdminPage() {
           <div className="bg-[#faf9f6] text-[#1a1c1a] max-w-2xl w-full p-6 md:p-8 rounded-2xl shadow-2xl border border-[#715a3e]/40 space-y-6 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between border-b border-[#cbc6bd]/40 pb-4">
               <div>
-                <span className="text-[10px] font-bold uppercase text-[#715a3e] block tracking-wide">
+                <span className="text-[10px] font-bold  text-[#715a3e] block tracking-wide">
                   Client Contact Dossier • ID #{selectedInquiry._id?.slice(-6)}
                 </span>
                 <h2 className="text-2xl font-bold text-[#1a1c1a] mt-0.5">{selectedInquiry.name}</h2>
@@ -1331,33 +1331,33 @@ export default function AdminPage() {
             <div className="space-y-5 text-xs">
               <div className="grid grid-cols-2 gap-4 bg-[#ffffff] p-5 border border-[#cbc6bd]/40 rounded-xl shadow-xs">
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Direct Email</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Direct Email</span>
                   <p className="font-semibold text-sm text-[#1a1c1a] mt-0.5">{selectedInquiry.email}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Telephone</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Telephone</span>
                   <p className="font-semibold text-sm text-[#1a1c1a] font-mono mt-0.5">{selectedInquiry.phone}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Family Office / Firm</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Family Office / Firm</span>
                   <p className="font-semibold text-xs text-[#1a1c1a] mt-0.5">{selectedInquiry.organization || "Private Patron"}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Typology</span>
-                  <p className="font-semibold text-xs uppercase text-[#715a3e] mt-0.5">{selectedInquiry.typology}</p>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Typology</span>
+                  <p className="font-semibold text-xs  text-[#715a3e] mt-0.5">{selectedInquiry.typology}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Location</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Location</span>
                   <p className="font-semibold text-xs text-[#1a1c1a] mt-0.5">{selectedInquiry.location || "Not specified"}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Investment Tier</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Investment Tier</span>
                   <p className="font-semibold text-xs font-mono text-[#1a1c1a] mt-0.5">{selectedInquiry.investment || "Tier-2"}</p>
                 </div>
               </div>
 
               <div>
-                <span className="text-[10px] font-bold text-[#715a3e] uppercase block mb-1">
+                <span className="text-[10px] font-bold text-[#715a3e]  block mb-1">
                   Spatial Vision & Site Narrative Context
                 </span>
                 <div className="bg-[#ffffff] p-4 border border-[#cbc6bd]/40 rounded-xl text-xs font-medium text-[#1a1c1a] whitespace-pre-wrap leading-relaxed shadow-xs">
@@ -1369,7 +1369,7 @@ export default function AdminPage() {
             <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-[#cbc6bd]/40">
               <button
                 onClick={() => handleDeleteInquiry(selectedInquiry._id)}
-                className="px-4 py-2 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-xs font-bold uppercase rounded transition-colors"
+                className="px-4 py-2 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-xs font-bold  rounded transition-colors"
               >
                 Delete Dossier
               </button>
@@ -1377,19 +1377,19 @@ export default function AdminPage() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => handleUpdateInquiryStatus(selectedInquiry._id, "reviewed")}
-                  className="px-3.5 py-2 bg-blue-50 text-blue-800 border border-blue-300 text-xs font-bold uppercase rounded hover:bg-blue-100"
+                  className="px-3.5 py-2 bg-blue-50 text-blue-800 border border-blue-300 text-xs font-bold  rounded hover:bg-blue-100"
                 >
                   Mark Reviewed
                 </button>
                 <button
                   onClick={() => handleUpdateInquiryStatus(selectedInquiry._id, "contacted")}
-                  className="px-4 py-2 bg-[#715a3e] text-[#ffffff] text-xs font-bold uppercase rounded hover:bg-[#1c1b19]"
+                  className="px-4 py-2 bg-[#715a3e] text-[#ffffff] text-xs font-bold  rounded hover:bg-[#1c1b19]"
                 >
                   Mark Contacted
                 </button>
                 <button
                   onClick={() => setSelectedInquiry(null)}
-                  className="px-4 py-2 bg-[#1c1b19] text-[#ffffff] text-xs font-bold uppercase rounded"
+                  className="px-4 py-2 bg-[#1c1b19] text-[#ffffff] text-xs font-bold  rounded"
                 >
                   Close
                 </button>
@@ -1405,7 +1405,7 @@ export default function AdminPage() {
           <div className="bg-[#faf9f6] text-[#1a1c1a] max-w-lg w-full p-6 md:p-8 rounded-2xl shadow-2xl border border-[#715a3e]/40 space-y-6">
             <div className="flex items-center justify-between border-b border-[#cbc6bd]/40 pb-4">
               <div>
-                <span className="text-[10px] font-bold uppercase text-[#715a3e] block tracking-wide">
+                <span className="text-[10px] font-bold  text-[#715a3e] block tracking-wide">
                   Consultation Meeting Dossier • ID #{selectedBooking._id?.slice(-6)}
                 </span>
                 <h2 className="text-xl font-bold text-[#1a1c1a] mt-0.5">{selectedBooking.name}</h2>
@@ -1421,29 +1421,29 @@ export default function AdminPage() {
             <div className="space-y-4 text-xs">
               <div className="grid grid-cols-2 gap-4 bg-[#ffffff] p-4 border border-[#cbc6bd]/40 rounded-xl shadow-xs">
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Requested Date</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Requested Date</span>
                   <p className="font-mono text-sm font-bold text-[#1a1c1a] mt-0.5">{selectedBooking.meetingDate}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Meeting Format</span>
-                  <p className="font-semibold text-xs uppercase text-[#715a3e] mt-0.5">{selectedBooking.meetingType || "Virtual"}</p>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Meeting Format</span>
+                  <p className="font-semibold text-xs  text-[#715a3e] mt-0.5">{selectedBooking.meetingType || "Virtual"}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Email</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Email</span>
                   <p className="font-semibold text-xs text-[#1a1c1a] mt-0.5">{selectedBooking.email}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Telephone</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Telephone</span>
                   <p className="font-semibold text-xs font-mono text-[#1a1c1a] mt-0.5">{selectedBooking.phone}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Current Status</span>
-                  <span className={`inline-block mt-1 px-2.5 py-0.5 text-[10px] font-bold uppercase rounded-full border ${selectedBooking.status === "confirmed" ? "bg-emerald-50 text-emerald-800 border-emerald-300" : selectedBooking.status === "completed" ? "bg-blue-50 text-blue-800 border-blue-300" : "bg-red-50 text-red-800 border-red-300"}`}>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Current Status</span>
+                  <span className={`inline-block mt-1 px-2.5 py-0.5 text-[10px] font-bold  rounded-full border ${selectedBooking.status === "confirmed" ? "bg-emerald-50 text-emerald-800 border-emerald-300" : selectedBooking.status === "completed" ? "bg-blue-50 text-blue-800 border-blue-300" : "bg-red-50 text-red-800 border-red-300"}`}>
                     {selectedBooking.status}
                   </span>
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block">Created On</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block">Created On</span>
                   <p className="font-mono text-[11px] text-[#494740] mt-0.5">
                     {selectedBooking.createdAt ? new Date(selectedBooking.createdAt).toLocaleString() : "N/A"}
                   </p>
@@ -1452,7 +1452,7 @@ export default function AdminPage() {
 
               {selectedBooking.notes && (
                 <div>
-                  <span className="text-[10px] font-bold text-[#715a3e] uppercase block mb-1">Agenda Notes & Context</span>
+                  <span className="text-[10px] font-bold text-[#715a3e]  block mb-1">Agenda Notes & Context</span>
                   <div className="bg-[#ffffff] p-3 border border-[#cbc6bd]/40 rounded-lg text-xs font-medium text-[#1a1c1a] whitespace-pre-wrap">
                     {selectedBooking.notes}
                   </div>
@@ -1463,7 +1463,7 @@ export default function AdminPage() {
             <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-[#cbc6bd]/40">
               <button
                 onClick={() => handleDeleteBooking(selectedBooking._id)}
-                className="px-4 py-2 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-xs font-bold uppercase rounded transition-colors"
+                className="px-4 py-2 bg-red-100 text-red-800 hover:bg-red-800 hover:text-[#ffffff] text-xs font-bold  rounded transition-colors"
               >
                 Delete Record
               </button>
@@ -1471,19 +1471,19 @@ export default function AdminPage() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => handleUpdateBookingStatus(selectedBooking._id, "completed")}
-                  className="px-3.5 py-2 bg-blue-50 text-blue-800 border border-blue-300 text-xs font-bold uppercase rounded hover:bg-blue-100"
+                  className="px-3.5 py-2 bg-blue-50 text-blue-800 border border-blue-300 text-xs font-bold  rounded hover:bg-blue-100"
                 >
                   Mark Completed
                 </button>
                 <button
                   onClick={() => handleUpdateBookingStatus(selectedBooking._id, "confirmed")}
-                  className="px-4 py-2 bg-[#715a3e] text-[#ffffff] text-xs font-bold uppercase rounded hover:bg-[#1c1b19]"
+                  className="px-4 py-2 bg-[#715a3e] text-[#ffffff] text-xs font-bold  rounded hover:bg-[#1c1b19]"
                 >
                   Confirm Meeting
                 </button>
                 <button
                   onClick={() => setSelectedBooking(null)}
-                  className="px-4 py-2 bg-[#1c1b19] text-[#ffffff] text-xs font-bold uppercase rounded"
+                  className="px-4 py-2 bg-[#1c1b19] text-[#ffffff] text-xs font-bold  rounded"
                 >
                   Close
                 </button>
@@ -1499,10 +1499,10 @@ export default function AdminPage() {
           <div className="bg-[#faf9f6] text-[#1a1c1a] max-w-lg w-full p-6 md:p-8 rounded-2xl shadow-2xl border border-[#715a3e]/40 space-y-6">
             <div className="flex items-center justify-between border-b border-[#cbc6bd]/40 pb-4">
               <div>
-                <span className="text-[10px] font-bold uppercase text-[#715a3e] block tracking-wide">
+                <span className="text-[10px] font-bold  text-[#715a3e] block tracking-wide">
                   Executive Administrative Action
                 </span>
-                <h2 className="text-xl font-bold uppercase text-[#1a1c1a] mt-0.5">Log New Consultation Meeting</h2>
+                <h2 className="text-xl font-bold  text-[#1a1c1a] mt-0.5">Log New Consultation Meeting</h2>
               </div>
               <button
                 onClick={() => setIsNewMeetingModalOpen(false)}
@@ -1521,7 +1521,7 @@ export default function AdminPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Patron Full Name *
                   </label>
                   <input
@@ -1535,7 +1535,7 @@ export default function AdminPage() {
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Direct Email *
                   </label>
                   <input
@@ -1551,7 +1551,7 @@ export default function AdminPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Direct Phone *
                   </label>
                   <input
@@ -1565,7 +1565,7 @@ export default function AdminPage() {
                 </div>
 
                 <div>
-                  <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                  <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                     Meeting Format *
                   </label>
                   <select
@@ -1581,7 +1581,7 @@ export default function AdminPage() {
               </div>
 
               <div>
-                <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                   Preferred Meeting Date & Time *
                 </label>
                 <input
@@ -1594,7 +1594,7 @@ export default function AdminPage() {
               </div>
 
               <div>
-                <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                   Meeting Agenda & Notes (Optional)
                 </label>
                 <textarea
@@ -1610,13 +1610,13 @@ export default function AdminPage() {
                 <button
                   type="button"
                   onClick={() => setIsNewMeetingModalOpen(false)}
-                  className="px-5 py-2.5 bg-[#e9e8e5] text-[#1a1c1a] text-xs font-bold uppercase rounded hover:bg-[#cbc6bd]"
+                  className="px-5 py-2.5 bg-[#e9e8e5] text-[#1a1c1a] text-xs font-bold  rounded hover:bg-[#cbc6bd]"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2.5 bg-[#1c1b19] text-[#faf9f6] text-xs font-bold uppercase rounded hover:bg-[#715a3e] transition-colors"
+                  className="px-6 py-2.5 bg-[#1c1b19] text-[#faf9f6] text-xs font-bold  rounded hover:bg-[#715a3e] transition-colors"
                 >
                   Save & Log Meeting
                 </button>
@@ -1632,10 +1632,10 @@ export default function AdminPage() {
           <div className="bg-[#faf9f6] text-[#1a1c1a] max-w-md w-full p-6 md:p-8 rounded-2xl shadow-2xl border border-[#715a3e]/40 space-y-6">
             <div className="flex items-center justify-between border-b border-[#cbc6bd]/40 pb-4">
               <div>
-                <span className="text-[10px] font-bold uppercase text-[#715a3e] block tracking-wide">
+                <span className="text-[10px] font-bold  text-[#715a3e] block tracking-wide">
                   Havenley Journal Audience
                 </span>
-                <h2 className="text-xl font-bold uppercase text-[#1a1c1a] mt-0.5">Add Journal Subscriber</h2>
+                <h2 className="text-xl font-bold  text-[#1a1c1a] mt-0.5">Add Journal Subscriber</h2>
               </div>
               <button
                 onClick={() => setIsSubscriberModalOpen(false)}
@@ -1653,7 +1653,7 @@ export default function AdminPage() {
               )}
 
               <div>
-                <label className="text-[11px] font-bold uppercase text-[#715a3e] block mb-1">
+                <label className="text-[11px] font-bold  text-[#715a3e] block mb-1">
                   Subscriber Email Address *
                 </label>
                 <input
@@ -1670,13 +1670,13 @@ export default function AdminPage() {
                 <button
                   type="button"
                   onClick={() => setIsSubscriberModalOpen(false)}
-                  className="px-5 py-2.5 bg-[#e9e8e5] text-[#1a1c1a] text-xs font-bold uppercase rounded hover:bg-[#cbc6bd]"
+                  className="px-5 py-2.5 bg-[#e9e8e5] text-[#1a1c1a] text-xs font-bold  rounded hover:bg-[#cbc6bd]"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2.5 bg-[#1c1b19] text-[#faf9f6] text-xs font-bold uppercase rounded hover:bg-[#715a3e] transition-colors"
+                  className="px-6 py-2.5 bg-[#1c1b19] text-[#faf9f6] text-xs font-bold  rounded hover:bg-[#715a3e] transition-colors"
                 >
                   Add Subscriber
                 </button>

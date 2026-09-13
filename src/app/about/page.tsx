@@ -172,19 +172,19 @@ export default function AboutPage() {
                 alt={selectedMaterial.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-2.5 left-2.5 bg-[#1c1b19]/90 text-[#cbb392] text-[9px] font-bold uppercase px-2.5 py-0.5 rounded-full border border-[#715a3e]/30">
+              <div className="absolute top-2.5 left-2.5 bg-[#1c1b19]/90 text-[#cbb392] text-[9px] font-bold  px-2.5 py-0.5 rounded-full border border-[#715a3e]/30">
                 Specular Materiality
               </div>
             </div>
 
             <div className="space-y-1.5">
-              <span className="text-[11px] font-bold text-[#715a3e] uppercase bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
+              <span className="text-[11px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
                 {selectedMaterial.origin}
               </span>
               <h3 className="text-xl font-bold text-[#1a1c1a]">
                 {selectedMaterial.title}
               </h3>
-              <p className="text-[11px] text-[#715a3e] font-semibold uppercase">
+              <p className="text-[11px] text-[#715a3e] font-semibold ">
                 Finish: {selectedMaterial.finish}
               </p>
               <p className="text-sm text-[#494740] font-normal">
@@ -194,7 +194,7 @@ export default function AboutPage() {
 
             <button
               onClick={() => setSelectedMaterial(null)}
-              className="mt-1 w-full bg-[#1c1b19] text-white py-2.5 rounded-xl text-sm font-bold uppercase hover:bg-[#715a3e] transition-colors shadow-md"
+              className="mt-1 w-full bg-[#1c1b19] text-white py-2.5 rounded-xl text-sm font-bold  hover:bg-[#715a3e] transition-colors shadow-md"
             >
               Close Material Inspection
             </button>
@@ -215,7 +215,7 @@ export default function AboutPage() {
               <div className="flex items-center gap-4 mb-4">
                 <div className="inline-flex items-center gap-2 bg-[#715a3e]/10 px-3.5 py-1 rounded-full border border-[#715a3e]/20">
                   <span className="w-2 h-2 rounded-full bg-[#715a3e] animate-pulse" />
-                  <span className="text-[11px] uppercase text-[#715a3e] font-bold">
+                  <span className="text-[11px]  text-[#715a3e] font-bold">
                     Monograph 01 • Studio Genesis
                   </span>
                 </div>
@@ -248,7 +248,7 @@ export default function AboutPage() {
                     <span className="material-symbols-outlined text-xl">domain</span>
                   </div>
                   <div className="min-w-0">
-                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block tracking-wide">
+                    <span className="text-[9px] font-bold text-[#715a3e]  block tracking-wide">
                       Dual Sanctums
                     </span>
                     <span className="text-xl text-[#1a1c1a] font-bold block">
@@ -265,7 +265,7 @@ export default function AboutPage() {
                     <span className="material-symbols-outlined text-xl">castle</span>
                   </div>
                   <div className="min-w-0">
-                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block tracking-wide">
+                    <span className="text-[9px] font-bold text-[#715a3e]  block tracking-wide">
                       Permanent Works
                     </span>
                     <span className="text-xl text-[#1a1c1a] font-bold block tabular-nums flex items-baseline">
@@ -285,7 +285,7 @@ export default function AboutPage() {
                     <span className="material-symbols-outlined text-xl">eco</span>
                   </div>
                   <div className="min-w-0">
-                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block tracking-wide">
+                    <span className="text-[9px] font-bold text-[#715a3e]  block tracking-wide">
                       Circularity Index
                     </span>
                     <span className="text-xl text-[#1a1c1a] font-bold block tabular-nums flex items-baseline">
@@ -305,7 +305,7 @@ export default function AboutPage() {
                     <span className="material-symbols-outlined text-xl">groups</span>
                   </div>
                   <div className="min-w-0">
-                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block tracking-wide">
+                    <span className="text-[9px] font-bold text-[#715a3e]  block tracking-wide">
                       Artisan Guild
                     </span>
                     <span className="text-xl text-[#1a1c1a] font-bold block tabular-nums flex items-baseline">
@@ -342,7 +342,7 @@ export default function AboutPage() {
                         <p className="text-base text-[#1a1c1a] font-bold">
                           Aditya Vardhan
                         </p>
-                        <p className="text-[10px] font-bold text-[#715a3e] uppercase">
+                        <p className="text-[10px] font-bold text-[#715a3e] ">
                           Principal Architect & Founder
                         </p>
                       </div>
@@ -356,7 +356,7 @@ export default function AboutPage() {
                 {/* Narrative Column */}
                 <div className="lg:col-span-8 flex flex-col justify-between h-full">
                   <div className="space-y-3">
-                    <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e] uppercase bg-[#715a3e]/10 px-3 py-1 rounded-full">
+                    <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                       Leadership • Lineage • Discipline
                     </div>
@@ -390,7 +390,7 @@ export default function AboutPage() {
                   {/* Milestone Academic & Institutional Credential Bar */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5 bg-[#ffffff] p-3.5 rounded-xl border border-[#e5e2db] shadow-md">
                     <div>
-                      <span className="text-[10px] font-bold text-[#715a3e] uppercase block">
+                      <span className="text-[10px] font-bold text-[#715a3e]  block">
                         Academic Chair
                       </span>
                       <p className="text-[11px] text-[#1a1c1a] font-semibold">
@@ -398,7 +398,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                     <div>
-                      <span className="text-[10px] font-bold text-[#715a3e] uppercase block">
+                      <span className="text-[10px] font-bold text-[#715a3e]  block">
                         Specialization
                       </span>
                       <p className="text-[11px] text-[#1a1c1a] font-semibold">
@@ -406,7 +406,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                     <div>
-                      <span className="text-[10px] font-bold text-[#715a3e] uppercase block">
+                      <span className="text-[10px] font-bold text-[#715a3e]  block">
                         Monograph
                       </span>
                       <p className="text-[11px] text-[#1a1c1a] font-semibold">
@@ -427,7 +427,7 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20 relative z-10">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
                 <div className="space-y-2">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#cbb392] uppercase bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#cbb392] animate-pulse" />
                     Tectonic Model 04 • Interactive CAD Schematic
                   </div>
@@ -445,7 +445,7 @@ export default function AboutPage() {
                     <button
                       key={layerKey}
                       onClick={() => setActiveWireframeLayer(layerKey)}
-                      className={`px-3.5 py-2 rounded-lg text-sm font-bold uppercase transition-all duration-300 flex items-center gap-1.5 ${activeWireframeLayer === layerKey
+                      className={`px-3.5 py-2 rounded-lg text-sm font-bold  transition-all duration-300 flex items-center gap-1.5 ${activeWireframeLayer === layerKey
                         ? "bg-[#715a3e] text-[#ffffff] shadow-md border border-[#cbb392]/50"
                         : "text-[#a39f99] hover:text-[#ffffff] hover:bg-[#252d28]"
                         }`}
@@ -462,7 +462,7 @@ export default function AboutPage() {
                 {/* SVG Blueprint Canvas Column */}
                 <div className="lg:col-span-7 bg-[#0b0f0d] rounded-2xl border border-[#715a3e]/40 p-5 shadow-2xl relative flex flex-col justify-between overflow-hidden group">
                   {/* Top Bar Blueprint HUD */}
-                  <div className="flex items-center justify-between pb-3 mb-3 border-b border-[#252d28] text-[10px] uppercase font-mono text-[#715a3e]">
+                  <div className="flex items-center justify-between pb-3 mb-3 border-b border-[#252d28] text-[10px]  font-mono text-[#715a3e]">
                     <div className="flex items-center gap-3">
                       <span className="text-[#cbb392] font-bold">GRID: 0.5M CAD</span>
                       <span>•</span>
@@ -575,7 +575,7 @@ export default function AboutPage() {
                 {/* Right Specification & Engineering Details Column */}
                 <div className="lg:col-span-5 bg-[#171e19] rounded-2xl border border-[#715a3e]/40 p-6 flex flex-col justify-between shadow-2xl space-y-6">
                   <div className="space-y-4">
-                    <span className="inline-block text-[10px] font-bold text-[#cbb392] uppercase bg-[#715a3e]/20 px-3 py-1 rounded-md border border-[#715a3e]/30">
+                    <span className="inline-block text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md border border-[#715a3e]/30">
                       {activeWireframe.badge}
                     </span>
                     <h3 className="text-xl text-[#ffffff] font-bold">
@@ -588,7 +588,7 @@ export default function AboutPage() {
 
                   {/* Technical Specs List */}
                   <div className="space-y-3 pt-4 border-t border-[#252d28]">
-                    <h4 className="text-[11px] font-bold text-[#cbb392] uppercase">
+                    <h4 className="text-[11px] font-bold text-[#cbb392] ">
                       Calculated Tectonic Metrics
                     </h4>
                     <div className="grid grid-cols-1 gap-2.5">
@@ -626,7 +626,7 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
                 <div className="space-y-2">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e] uppercase bg-[#ffffff] px-3 py-1 rounded-full border border-[#e5e2db] shadow-sm">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#ffffff] px-3 py-1 rounded-full border border-[#e5e2db] shadow-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                     Chronological Monograph • 2011 — 2025
                   </div>
@@ -660,7 +660,7 @@ export default function AboutPage() {
                           {item.year}
                         </span>
                         <span
-                          className={`text-[9px] uppercase font-semibold ${isActive ? "text-[#cbb392]" : "text-[#715a3e]"
+                          className={`text-[9px]  font-semibold ${isActive ? "text-[#cbb392]" : "text-[#715a3e]"
                             }`}
                         >
                           {item.city.split(",")[0]}
@@ -681,7 +681,7 @@ export default function AboutPage() {
                         {activeMilestone.year}
                       </span>
                       <span className="w-px h-4 bg-[#e5e2db]" />
-                      <span className="text-sm font-bold text-[#1a1c1a] uppercase">
+                      <span className="text-sm font-bold text-[#1a1c1a] ">
                         {activeMilestone.city}
                       </span>
                     </div>
@@ -689,7 +689,7 @@ export default function AboutPage() {
                     <h3 className="text-xl sm:text-2xl text-[#1a1c1a] font-bold">
                       {activeMilestone.title}
                     </h3>
-                    <p className="text-sm font-bold text-[#715a3e] uppercase">
+                    <p className="text-sm font-bold text-[#715a3e] ">
                       {activeMilestone.tagline}
                     </p>
                     <p className="text-sm text-[#494740] font-normal">
@@ -704,7 +704,7 @@ export default function AboutPage() {
                         key={idx}
                         className="bg-[#faf9f6] p-3 rounded-xl border border-[#e5e2db]"
                       >
-                        <span className="text-[9px] font-bold text-[#715a3e] uppercase block">
+                        <span className="text-[9px] font-bold text-[#715a3e]  block">
                           {m.label}
                         </span>
                         <span className="text-sm font-bold text-[#1a1c1a] block mt-0.5">
@@ -724,7 +724,7 @@ export default function AboutPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b19]/80 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 bg-[#ffffff]/90 backdrop-blur-md p-3.5 rounded-xl border border-[#715a3e]/30 shadow-md">
-                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block">
+                    <span className="text-[9px] font-bold text-[#715a3e]  block">
                       Archival Monograph Reference
                     </span>
                     <h4 className="text-sm text-[#1a1c1a] font-bold mt-0.5">
@@ -741,7 +741,7 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-3">
                 <div>
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e] uppercase bg-[#715a3e]/10 px-3 py-1 rounded-full mb-2">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full mb-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                     The Spatial Doctrine
                   </div>
@@ -759,7 +759,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
                 {/* Principle 01 */}
                 <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between h-full shadow-lg hover:shadow-xl border border-[#e5e2db] hover:border-[#715a3e]/50 transition-all duration-300 group overflow-hidden">
-                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full uppercase shadow-md flex items-center gap-1 z-10">
+                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
                     <span className="w-1 h-1 rounded-full bg-[#ffffff]" />
                     Principle 01
                   </div>
@@ -778,7 +778,7 @@ export default function AboutPage() {
                     </p>
                   </div>
                   <div className="mt-5 pt-3 border-t border-[#e5e2db]">
-                    <span className="text-[10px] font-bold text-[#715a3e] uppercase bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
+                    <span className="text-[10px] font-bold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
                       Spatial Geometry • Light
                     </span>
                   </div>
@@ -786,7 +786,7 @@ export default function AboutPage() {
 
                 {/* Principle 02 */}
                 <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between h-full shadow-lg hover:shadow-xl border border-[#e5e2db] hover:border-[#715a3e]/50 transition-all duration-300 group overflow-hidden">
-                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full uppercase shadow-md flex items-center gap-1 z-10">
+                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
                     <span className="w-1 h-1 rounded-full bg-[#ffffff]" />
                     Principle 02
                   </div>
@@ -805,7 +805,7 @@ export default function AboutPage() {
                     </p>
                   </div>
                   <div className="mt-5 pt-3 border-t border-[#e5e2db]">
-                    <span className="text-[10px] font-bold text-[#715a3e] uppercase bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
+                    <span className="text-[10px] font-bold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
                       Raw Provenance • Truth
                     </span>
                   </div>
@@ -813,7 +813,7 @@ export default function AboutPage() {
 
                 {/* Principle 03 */}
                 <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between h-full shadow-lg hover:shadow-xl border border-[#e5e2db] hover:border-[#715a3e]/50 transition-all duration-300 group overflow-hidden">
-                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full uppercase shadow-md flex items-center gap-1 z-10">
+                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
                     <span className="w-1 h-1 rounded-full bg-[#ffffff]" />
                     Principle 03
                   </div>
@@ -832,7 +832,7 @@ export default function AboutPage() {
                     </p>
                   </div>
                   <div className="mt-5 pt-3 border-t border-[#e5e2db]">
-                    <span className="text-[10px] font-bold text-[#715a3e] uppercase bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
+                    <span className="text-[10px] font-bold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
                       Couture Guilds • Hands
                     </span>
                   </div>
@@ -840,7 +840,7 @@ export default function AboutPage() {
 
                 {/* Principle 04 */}
                 <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between h-full shadow-lg hover:shadow-xl border border-[#e5e2db] hover:border-[#715a3e]/50 transition-all duration-300 group overflow-hidden">
-                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full uppercase shadow-md flex items-center gap-1 z-10">
+                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
                     <span className="w-1 h-1 rounded-full bg-[#ffffff]" />
                     Principle 04
                   </div>
@@ -859,7 +859,7 @@ export default function AboutPage() {
                     </p>
                   </div>
                   <div className="mt-5 pt-3 border-t border-[#e5e2db]">
-                    <span className="text-[10px] font-bold text-[#715a3e] uppercase bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
+                    <span className="text-[10px] font-bold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
                       Noble Patina • Trust
                     </span>
                   </div>
@@ -873,7 +873,7 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                 <div className="md:col-span-5 space-y-3">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e] uppercase bg-[#ffffff] px-3 py-1 rounded-full shadow-sm border border-[#e5e2db]">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#ffffff] px-3 py-1 rounded-full shadow-sm border border-[#e5e2db]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                     Tactile Laboratory
                   </div>
@@ -890,7 +890,7 @@ export default function AboutPage() {
                   {/* Material Specimen 01 */}
                   <div className="bg-[#ffffff] p-6 shadow-sm border border-[#cbc6bd]/40 space-y-4 hover:border-[#715a3e] transition-colors cursor-pointer group">
                     <div className="space-y-1">
-                      <span className="text-[10px] font-bold text-[#715a3e] uppercase block">
+                      <span className="text-[10px] font-bold text-[#715a3e]  block">
                         Specimen 01 • Natural Stone
                       </span>
                       <h4 className="text-lg text-[#1a1c1a] font-bold">
@@ -925,7 +925,7 @@ export default function AboutPage() {
                         alt="Slaked Mineral Marmorino detail"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoLJuIH5qoUyXdT2JV4rPZfMeSEdAydAgaJ6IXa4QeeoxzIb7P8N7MeDNAvc-If-QwEV1woGCnwc1NYcXkmioPryYKbRKyaNEF-43YdoX4S09oGLZN3SkkqZx4VNpuCo7vuKr0fFCJMIKok9bja_jOvE2DwsNHAHmfLzr2k8HGjdyd9ELbzKJA2kdmKDnrT2RGAsGXmSOmSkbKM2sdFH_WLvqcV9VOGzoQt3JCbIAIB_7E6c9El00B"
                       />
-                      <div className="absolute top-2 left-2 bg-[#1c1b19]/90 backdrop-blur-md text-[#cbb392] px-2.5 py-0.5 rounded-full text-[9px] font-bold uppercase border border-[#715a3e]/30 shadow-md">
+                      <div className="absolute top-2 left-2 bg-[#1c1b19]/90 backdrop-blur-md text-[#cbb392] px-2.5 py-0.5 rounded-full text-[9px] font-bold  border border-[#715a3e]/30 shadow-md">
                         Inspect Specimen
                       </div>
                     </div>
@@ -933,7 +933,7 @@ export default function AboutPage() {
                       <span className="text-sm font-bold text-[#1a1c1a] block">
                         Slaked Mineral Marmorino
                       </span>
-                      <span className="text-[9px] font-bold text-[#715a3e] uppercase">
+                      <span className="text-[9px] font-bold text-[#715a3e] ">
                         Veneto Guild • Hand Troweled
                       </span>
                     </div>
@@ -947,7 +947,7 @@ export default function AboutPage() {
           <section className="w-full bg-[#faf9f6] py-12 border-b border-[#e5e2db]">
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="max-w-2xl mb-10 space-y-1.5">
-                <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e] uppercase bg-[#715a3e]/10 px-3 py-1 rounded-full">
+                <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                   The Multidisciplinary Collegium
                 </div>
@@ -957,7 +957,7 @@ export default function AboutPage() {
                 <p className="text-sm text-[#494740] font-normal">
                   Uniting structural engineering, artisanal textile science, and acoustic physics.
                 </p>
-                <div className="mt-4 flex flex-wrap items-center gap-6 text-sm font-semibold uppercase text-[#715a3e]">
+                <div className="mt-4 flex flex-wrap items-center gap-6 text-sm font-semibold  text-[#715a3e]">
                   <span>Delhi & Gurugram</span>
                   <span>•</span>
                   <span>India</span>
@@ -969,7 +969,7 @@ export default function AboutPage() {
                 {/* Member 1 */}
                 <div className="bg-[#ffffff] p-5 border border-[#cbc6bd]/40 space-y-4 shadow-sm">
                   <div className="space-y-1">
-                    <span className="text-[10px] font-bold text-[#715a3e] uppercase block">
+                    <span className="text-[10px] font-bold text-[#715a3e]  block">
                       Principal Architect
                     </span>
                     <h4 className="text-lg font-bold text-[#1a1c1a]">
@@ -990,7 +990,7 @@ export default function AboutPage() {
                 {/* Member 2 */}
                 <div className="bg-[#ffffff] p-5 border border-[#cbc6bd]/40 space-y-4 shadow-sm">
                   <div className="space-y-1">
-                    <span className="text-[10px] font-bold text-[#715a3e] uppercase block">
+                    <span className="text-[10px] font-bold text-[#715a3e]  block">
                       Chief Structural Engineer
                     </span>
                     <h4 className="text-lg font-bold text-[#1a1c1a]">
@@ -1008,7 +1008,7 @@ export default function AboutPage() {
                 {/* Member 3 */}
                 <div className="bg-[#ffffff] p-5 border border-[#cbc6bd]/40 space-y-4 shadow-sm">
                   <div className="space-y-1">
-                    <span className="text-[10px] font-bold text-[#715a3e] uppercase block">
+                    <span className="text-[10px] font-bold text-[#715a3e]  block">
                       Director of Interiors
                     </span>
                     <h4 className="text-lg font-bold text-[#1a1c1a]">
@@ -1029,7 +1029,7 @@ export default function AboutPage() {
                 {/* Member 4 */}
                 <div className="bg-[#ffffff] p-5 border border-[#cbc6bd]/40 space-y-4 shadow-sm">
                   <div className="space-y-1">
-                    <span className="text-[10px] font-bold text-[#715a3e] uppercase block">
+                    <span className="text-[10px] font-bold text-[#715a3e]  block">
                       Lead of Lighting & Automation
                     </span>
                     <h4 className="text-lg font-bold text-[#1a1c1a]">
@@ -1055,7 +1055,7 @@ export default function AboutPage() {
             <div className="px-5 md:px-12 lg:px-16">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-10">
                 <div className="lg:col-span-4 space-y-2">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#cbb392] uppercase bg-[#715a3e]/20 px-3 py-1 rounded-full border border-[#715a3e]/40">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-full border border-[#715a3e]/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e] animate-pulse" />
                     Recognition
                   </div>
@@ -1085,7 +1085,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-bold text-[#cbb392] uppercase bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
+                  <span className="text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
                     Grand Prix
                   </span>
                 </div>
@@ -1103,7 +1103,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-bold text-[#cbb392] uppercase bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
+                  <span className="text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
                     Global List
                   </span>
                 </div>
@@ -1121,7 +1121,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-bold text-[#cbb392] uppercase bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
+                  <span className="text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
                     Global Winner
                   </span>
                 </div>
@@ -1136,7 +1136,7 @@ export default function AboutPage() {
                 {/* Left Column */}
                 <div className="lg:col-span-5 flex flex-col justify-between">
                   <div className="space-y-2">
-                    <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e] uppercase bg-[#715a3e]/10 px-3 py-1 rounded-full">
+                    <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                       Environmental Consciousness
                     </div>
@@ -1177,7 +1177,7 @@ export default function AboutPage() {
                           <span className="text-base font-bold text-[#1a1c1a]">
                             85%
                           </span>
-                          <span className="text-[8px] font-bold text-[#715a3e] uppercase">
+                          <span className="text-[8px] font-bold text-[#715a3e] ">
                             Local
                           </span>
                         </div>
@@ -1247,7 +1247,7 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="bg-[#ffffff] p-6 md:p-8 rounded-2xl border border-[#715a3e]/40 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
                 <div className="space-y-1.5 max-w-2xl text-center lg:text-left">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e] uppercase bg-[#715a3e]/10 px-3 py-0.5 rounded-full">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-0.5 rounded-full">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                     Initiate a Dialogue
                   </div>
@@ -1261,14 +1261,14 @@ export default function AboutPage() {
                 <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
                   <Link
                     href="/contact"
-                    className="bg-[#1c1b19] text-white text-sm font-bold uppercase px-6 py-3 rounded-xl hover:bg-[#715a3e] transition-all duration-300 shadow-md text-center flex items-center gap-2"
+                    className="bg-[#1c1b19] text-white text-sm font-bold  px-6 py-3 rounded-xl hover:bg-[#715a3e] transition-all duration-300 shadow-md text-center flex items-center gap-2"
                   >
                     <span>Request Consultation</span>
                     <span className="material-symbols-outlined text-base">arrow_forward</span>
                   </Link>
                   <Link
                     href="/portfolio"
-                    className="bg-[#f4f3f0] text-[#1a1c1a] border border-[#e5e2db] text-sm font-bold uppercase px-6 py-3 rounded-xl hover:bg-[#1c1b19] hover:text-white transition-all duration-300 text-center flex items-center gap-2"
+                    className="bg-[#f4f3f0] text-[#1a1c1a] border border-[#e5e2db] text-sm font-bold  px-6 py-3 rounded-xl hover:bg-[#1c1b19] hover:text-white transition-all duration-300 text-center flex items-center gap-2"
                   >
                     <span>Monographs</span>
                     <span className="material-symbols-outlined text-base">folder_open</span>

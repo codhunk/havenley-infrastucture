@@ -49,7 +49,7 @@ export default function Footer() {
     <footer className="w-full bg-[#121110] text-[#faf9f6] pt-14 pb-8 border-t border-[#282522] font-sans relative">
       {/* Toast Feedback */}
       {subscribed && (
-        <div className="fixed bottom-6 right-6 z-50 bg-[#cbb392] text-[#121110] px-6 py-4 text-sm font-bold uppercase shadow-2xl border-l-4 border-[#715a3e]">
+        <div className="fixed bottom-6 right-6 z-50 bg-[#cbb392] text-[#121110] px-6 py-4 text-sm font-bold  shadow-2xl border-l-4 border-[#715a3e]">
           ✓ {subscribeMessage || "Subscribed to Havenley Journal."}
         </div>
       )}
@@ -64,7 +64,7 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V3M5 21V3M5 12h14M3 21h18M3 3h18" />
                 </svg>
               </div>
-              <span className="font-bold text-base sm:text-lg uppercase text-[#ffffff]">
+              <span className="font-bold text-base sm:text-lg  text-[#ffffff]">
                 Havenley <span className="text-[#cbb392]">Infrastructure</span>
               </span>
             </div>
@@ -72,7 +72,7 @@ export default function Footer() {
               Premier civil construction, structural engineering, and luxury architectural transformations in India.
             </p>
             <div className="text-xs sm:text-sm text-[#d4d0c8] space-y-1 pt-1">
-              <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392] uppercase block tracking-wider">
+              <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392]  block tracking-wider">
                 Delhi Atelier & Headquarters
               </span>
               <p className="text-xs sm:text-sm text-[#a39f99]">
@@ -92,7 +92,7 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div className="lg:col-span-3 space-y-3">
-            <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392] uppercase block tracking-wider">
+            <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392]  block tracking-wider">
               Navigation
             </span>
             <ul className="space-y-2 text-xs sm:text-sm text-[#a39f99]">
@@ -121,7 +121,7 @@ export default function Footer() {
 
           {/* Newsletter & Social Media Icons */}
           <div className="lg:col-span-4 space-y-4">
-            <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392] uppercase block tracking-wider">
+            <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392]  block tracking-wider">
               Subscribe to Journal
             </span>
             <form onSubmit={handleSubscribe} className="flex items-center gap-2 w-full max-w-xs">
@@ -138,7 +138,7 @@ export default function Footer() {
               />
               <button
                 disabled={isSubmitting}
-                className="bg-[#715a3e] text-[#ffffff] text-[10px] sm:text-xs font-bold uppercase px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg hover:bg-[#cbb392] hover:text-[#121110] transition-all duration-300 shrink-0 tracking-wider"
+                className="bg-[#715a3e] text-[#ffffff] text-[10px] sm:text-xs font-bold  px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg hover:bg-[#cbb392] hover:text-[#121110] transition-all duration-300 shrink-0 tracking-wider"
                 type="submit"
               >
                 {isSubmitting ? "..." : "Join"}
@@ -149,7 +149,7 @@ export default function Footer() {
             )}
 
             <div className="pt-2">
-              <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392] uppercase block mb-3 tracking-wider">
+              <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392]  block mb-3 tracking-wider">
                 Connect With Us
               </span>
               <div className="flex items-center gap-3">

@@ -106,10 +106,10 @@ export default function ScheduleMeetingModal({
             </button>
 
             <div className="space-y-1">
-              <span className="text-xs font-bold text-[#715a3e] uppercase tracking-wider block">
+              <span className="text-xs font-bold text-[#715a3e]  tracking-wider block">
                 Private Advisory Session
               </span>
-              <h2 className="text-lg sm:text-2xl font-bold uppercase tracking-wide text-[#1a1c1a]">
+              <h2 className="text-lg sm:text-2xl font-bold  tracking-wide text-[#1a1c1a]">
                 Schedule Partner Consultation
               </h2>
               <p className="text-xs text-[#494740] font-medium">
@@ -125,7 +125,7 @@ export default function ScheduleMeetingModal({
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-1">
-                <label className="text-[11px] font-bold uppercase text-[#1a1c1a] block">
+                <label className="text-[11px] font-bold  text-[#1a1c1a] block">
                   Full Name *
                 </label>
                 <input
@@ -138,11 +138,10 @@ export default function ScheduleMeetingModal({
                       setFieldErrors({ ...fieldErrors, name: [] });
                   }}
                   placeholder="e.g. Eleanor Vance"
-                  className={`w-full bg-[#f4f3f0] px-4 py-3 text-xs text-[#1a1c1a] border focus:outline-none transition-colors ${
-                    fieldErrors.name?.length
+                  className={`w-full bg-[#f4f3f0] px-4 py-3 text-xs text-[#1a1c1a] border focus:outline-none transition-colors ${fieldErrors.name?.length
                       ? "border-red-600 bg-red-50/20"
                       : "border-[#cbc6bd]/60 focus:border-[#715a3e]"
-                  }`}
+                    }`}
                 />
                 {fieldErrors.name?.length && (
                   <p className="text-[10px] text-red-600 font-bold mt-1">
@@ -153,7 +152,7 @@ export default function ScheduleMeetingModal({
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div className="space-y-1">
-                  <label className="text-[11px] font-bold uppercase text-[#1a1c1a] block">
+                  <label className="text-[11px] font-bold  text-[#1a1c1a] block">
                     Mobile Number *
                   </label>
                   <input
@@ -166,11 +165,10 @@ export default function ScheduleMeetingModal({
                         setFieldErrors({ ...fieldErrors, phone: [] });
                     }}
                     placeholder="+91 9876543210"
-                    className={`w-full bg-[#f4f3f0] px-4 py-3 text-xs text-[#1a1c1a] border focus:outline-none transition-colors ${
-                      fieldErrors.phone?.length
+                    className={`w-full bg-[#f4f3f0] px-4 py-3 text-xs text-[#1a1c1a] border focus:outline-none transition-colors ${fieldErrors.phone?.length
                         ? "border-red-600 bg-red-50/20"
                         : "border-[#cbc6bd]/60 focus:border-[#715a3e]"
-                    }`}
+                      }`}
                   />
                   {fieldErrors.phone?.length && (
                     <p className="text-[10px] text-red-600 font-bold mt-1">
@@ -180,7 +178,7 @@ export default function ScheduleMeetingModal({
                 </div>
 
                 <div className="space-y-1">
-                  <label className="text-[11px] font-bold uppercase text-[#1a1c1a] block">
+                  <label className="text-[11px] font-bold  text-[#1a1c1a] block">
                     Email Address *
                   </label>
                   <input
@@ -193,11 +191,10 @@ export default function ScheduleMeetingModal({
                         setFieldErrors({ ...fieldErrors, email: [] });
                     }}
                     placeholder="eleanor@domain.com"
-                    className={`w-full bg-[#f4f3f0] px-4 py-3 text-xs text-[#1a1c1a] border focus:outline-none transition-colors ${
-                      fieldErrors.email?.length
+                    className={`w-full bg-[#f4f3f0] px-4 py-3 text-xs text-[#1a1c1a] border focus:outline-none transition-colors ${fieldErrors.email?.length
                         ? "border-red-600 bg-red-50/20"
                         : "border-[#cbc6bd]/60 focus:border-[#715a3e]"
-                    }`}
+                      }`}
                   />
                   {fieldErrors.email?.length && (
                     <p className="text-[10px] text-red-600 font-bold mt-1">
@@ -208,40 +205,37 @@ export default function ScheduleMeetingModal({
               </div>
 
               <div>
-                <label className="text-[11px] font-bold uppercase text-[#1a1c1a] block mb-1">
+                <label className="text-[11px] font-bold  text-[#1a1c1a] block mb-1">
                   Consultation Format *
                 </label>
                 <div className="grid grid-cols-3 gap-2">
                   <button
                     type="button"
                     onClick={() => setForm({ ...form, meetingType: "virtual" })}
-                    className={`p-2.5 text-[10px] font-bold uppercase border text-center transition-colors ${
-                      form.meetingType === "virtual"
+                    className={`p-2.5 text-[10px] font-bold  border text-center transition-colors ${form.meetingType === "virtual"
                         ? "bg-[#000000] text-[#ffffff] border-[#000000]"
                         : "bg-[#f4f3f0] text-[#494740] border-[#cbc6bd]/60 hover:bg-[#e9e8e5]"
-                    }`}
+                      }`}
                   >
                     Virtual Dialogue
                   </button>
                   <button
                     type="button"
                     onClick={() => setForm({ ...form, meetingType: "in-person" })}
-                    className={`p-2.5 text-[10px] font-bold uppercase border text-center transition-colors ${
-                      form.meetingType === "in-person"
+                    className={`p-2.5 text-[10px] font-bold  border text-center transition-colors ${form.meetingType === "in-person"
                         ? "bg-[#000000] text-[#ffffff] border-[#000000]"
                         : "bg-[#f4f3f0] text-[#494740] border-[#cbc6bd]/60 hover:bg-[#e9e8e5]"
-                    }`}
+                      }`}
                   >
                     Atelier Visit
                   </button>
                   <button
                     type="button"
                     onClick={() => setForm({ ...form, meetingType: "site-audit" })}
-                    className={`p-2.5 text-[10px] font-bold uppercase border text-center transition-colors ${
-                      form.meetingType === "site-audit"
+                    className={`p-2.5 text-[10px] font-bold  border text-center transition-colors ${form.meetingType === "site-audit"
                         ? "bg-[#000000] text-[#ffffff] border-[#000000]"
                         : "bg-[#f4f3f0] text-[#494740] border-[#cbc6bd]/60 hover:bg-[#e9e8e5]"
-                    }`}
+                      }`}
                   >
                     On-Site Audit
                   </button>
@@ -249,7 +243,7 @@ export default function ScheduleMeetingModal({
               </div>
 
               <div className="space-y-1">
-                <label className="text-[11px] font-bold uppercase text-[#1a1c1a] block">
+                <label className="text-[11px] font-bold  text-[#1a1c1a] block">
                   Preferred Date & Time *
                 </label>
                 <input
@@ -261,11 +255,10 @@ export default function ScheduleMeetingModal({
                     if (fieldErrors.meetingDate)
                       setFieldErrors({ ...fieldErrors, meetingDate: [] });
                   }}
-                  className={`w-full bg-[#f4f3f0] px-4 py-3 text-xs text-[#1a1c1a] border focus:outline-none transition-colors ${
-                    fieldErrors.meetingDate?.length
+                  className={`w-full bg-[#f4f3f0] px-4 py-3 text-xs text-[#1a1c1a] border focus:outline-none transition-colors ${fieldErrors.meetingDate?.length
                       ? "border-red-600 bg-red-50/20"
                       : "border-[#cbc6bd]/60 focus:border-[#715a3e]"
-                  }`}
+                    }`}
                 />
                 {fieldErrors.meetingDate?.length && (
                   <p className="text-[10px] text-red-600 font-bold mt-1">
@@ -275,7 +268,7 @@ export default function ScheduleMeetingModal({
               </div>
 
               <div className="space-y-1">
-                <label className="text-[11px] font-bold uppercase text-[#1a1c1a] block">
+                <label className="text-[11px] font-bold  text-[#1a1c1a] block">
                   Agenda Notes & Special Requests (Optional)
                 </label>
                 <textarea
@@ -291,14 +284,14 @@ export default function ScheduleMeetingModal({
                 <button
                   type="button"
                   onClick={onClose}
-                  className="px-5 py-2.5 bg-[#f4f3f0] text-xs font-bold uppercase text-[#494740] hover:bg-[#e9e8e5] transition-colors"
+                  className="px-5 py-2.5 bg-[#f4f3f0] text-xs font-bold  text-[#494740] hover:bg-[#e9e8e5] transition-colors"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-4 sm:px-6 py-2.5 sm:py-3 bg-[#000000] text-[#ffffff] text-[11px] sm:text-xs font-bold uppercase hover:bg-[#715a3e] transition-colors shadow-md tracking-wider shrink-0"
+                  className="px-4 sm:px-6 py-2.5 sm:py-3 bg-[#000000] text-[#ffffff] text-[11px] sm:text-xs font-bold  hover:bg-[#715a3e] transition-colors shadow-md tracking-wider shrink-0"
                 >
                   {isSubmitting ? "Transmitting..." : "Confirm & Schedule Meeting"}
                 </button>
@@ -324,10 +317,10 @@ export default function ScheduleMeetingModal({
             </div>
 
             <div className="space-y-1">
-              <span className="text-[10px] font-bold uppercase text-[#715a3e] tracking-widest block">
+              <span className="text-[10px] font-bold  text-[#715a3e] tracking-widest block">
                 Booking Reference #{confirmationData._id?.slice(-6).toUpperCase() || "CONFIRMED"}
               </span>
-              <h2 className="text-2xl font-bold uppercase tracking-wide text-[#1a1c1a]">
+              <h2 className="text-2xl font-bold  tracking-wide text-[#1a1c1a]">
                 Consultation Confirmed!
               </h2>
               <p className="text-xs text-[#494740] font-medium">
@@ -337,26 +330,26 @@ export default function ScheduleMeetingModal({
 
             <div className="bg-[#ffffff] border border-[#cbc6bd]/60 p-4 rounded-xl text-left space-y-2 text-xs shadow-xs">
               <div className="flex justify-between border-b border-[#e5e2db] pb-1.5">
-                <span className="text-[#715a3e] font-bold uppercase">Patron Name:</span>
+                <span className="text-[#715a3e] font-bold ">Patron Name:</span>
                 <span className="font-bold text-[#1a1c1a]">{confirmationData.name}</span>
               </div>
               <div className="flex justify-between border-b border-[#e5e2db] pb-1.5">
-                <span className="text-[#715a3e] font-bold uppercase">Mobile Number:</span>
+                <span className="text-[#715a3e] font-bold ">Mobile Number:</span>
                 <span className="font-mono font-bold text-[#1a1c1a]">{confirmationData.phone}</span>
               </div>
               <div className="flex justify-between border-b border-[#e5e2db] pb-1.5">
-                <span className="text-[#715a3e] font-bold uppercase">Direct Email:</span>
+                <span className="text-[#715a3e] font-bold ">Direct Email:</span>
                 <span className="font-semibold text-[#1a1c1a]">{confirmationData.email}</span>
               </div>
               <div className="flex justify-between border-b border-[#e5e2db] pb-1.5">
-                <span className="text-[#715a3e] font-bold uppercase">Requested Date:</span>
+                <span className="text-[#715a3e] font-bold ">Requested Date:</span>
                 <span className="font-mono font-bold text-[#1a1c1a]">
                   {confirmationData.meetingDate?.replace("T", " ")}
                 </span>
               </div>
               <div className="flex justify-between">
-                <span className="text-[#715a3e] font-bold uppercase">Format:</span>
-                <span className="font-bold uppercase text-[#715a3e]">
+                <span className="text-[#715a3e] font-bold ">Format:</span>
+                <span className="font-bold  text-[#715a3e]">
                   {confirmationData.meetingType}
                 </span>
               </div>
@@ -368,7 +361,7 @@ export default function ScheduleMeetingModal({
 
             <button
               onClick={handleCloseAll}
-              className="w-full bg-[#1c1b19] text-[#faf9f6] text-xs font-bold uppercase py-3.5 hover:bg-[#715a3e] transition-colors shadow-md"
+              className="w-full bg-[#1c1b19] text-[#faf9f6] text-xs font-bold  py-3.5 hover:bg-[#715a3e] transition-colors shadow-md"
             >
               Acknowledge & Close
             </button>

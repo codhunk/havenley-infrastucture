@@ -135,18 +135,18 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div className="inline-flex items-center gap-3 bg-[#faf9f6]/10 backdrop-blur-md px-4 py-1.5 shadow-sm border border-[#faf9f6]/20">
                 <span className="w-2 h-2 rounded-full bg-[#cbb392]" />
-                <span className="text-[10px] font-bold text-[#faf9f6] uppercase">
+                <span className="text-[10px] font-bold text-[#faf9f6] ">
                   [ SECTION 01 // OVERVIEW ] • Est. 2009 • New Delhi • Mumbai
                 </span>
               </div>
-              <span className="hidden md:inline-block text-[11px] font-semibold text-[#e3e2e0]/80 uppercase">
+              <span className="hidden md:inline-block text-[11px] font-semibold text-[#e3e2e0]/80 ">
                 [ Architectural Monograph N° 18 ]
               </span>
             </div>
 
             {/* Core Display Statement */}
             <div className="max-w-3xl space-y-4 my-auto py-2 md:py-4">
-              <p className="text-xs sm:text-sm font-bold text-[#cbb392] uppercase tracking-wide">
+              <p className="text-xs sm:text-sm font-bold text-[#cbb392]  tracking-wide">
                 Architectural Precision • Atmospheric Calm
               </p>
               <h1 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#faf9f6] leading-tight">
@@ -160,7 +160,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
                 <button
                   onClick={() => scrollToSection("portfolio")}
-                  className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-xs sm:text-sm font-bold uppercase px-6 py-3 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-md"
+                  className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-xs sm:text-sm font-bold  px-6 py-3 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-md"
                 >
                   <span>Explore Projects</span>
                   <span className="material-symbols-outlined ml-2 text-base">
@@ -169,7 +169,7 @@ export default function Home() {
                 </button>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-xs sm:text-sm font-bold uppercase px-6 py-3 transition-colors duration-300 border border-[#faf9f6]/20"
+                  className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-xs sm:text-sm font-bold  px-6 py-3 transition-colors duration-300 border border-[#faf9f6]/20"
                 >
                   Schedule Consultation
                 </Link>
@@ -183,7 +183,7 @@ export default function Home() {
                   <AnimatedCounter target={15} suffix="+" minWidth="3.5ch" />
                 </span>
                 <div className="space-y-0.5 min-w-0">
-                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block uppercase tracking-wide">
+                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block  tracking-wide">
                     Years Crafting
                   </span>
                   <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
@@ -197,7 +197,7 @@ export default function Home() {
                   <AnimatedCounter target={120} suffix="+" minWidth="4.5ch" />
                 </span>
                 <div className="space-y-0.5 min-w-0">
-                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block uppercase tracking-wide">
+                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block  tracking-wide">
                     International Accolades
                   </span>
                   <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
@@ -211,7 +211,7 @@ export default function Home() {
                   <AnimatedCounter target={98} suffix="%" minWidth="4ch" />
                 </span>
                 <div className="space-y-0.5 min-w-0">
-                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block uppercase tracking-wide">
+                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block  tracking-wide">
                     Private Commissions
                   </span>
                   <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
@@ -229,7 +229,7 @@ export default function Home() {
             {/* Section Header */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
               <div className="lg:col-span-8 space-y-2">
-                <span className="text-xs font-bold text-[#715a3e] uppercase bg-[#715a3e]/10 px-3.5 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
+                <span className="text-xs font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3.5 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
                   [ SECTION 02 // ATELIER ETHOS ]
                 </span>
                 <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
@@ -247,7 +247,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch pt-6">
               {/* Pillar 01 */}
               <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#e5e2db] hover:border-[#715a3e]/50 group">
-                <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-bold uppercase shadow-lg border border-[#715a3e]/40 z-10">
+                <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-bold  shadow-lg border border-[#715a3e]/40 z-10">
                   Pillar 01
                 </div>
                 <div className="space-y-3 pt-2">
@@ -268,10 +268,10 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="pt-3 border-t border-[#e5e2db] mt-4 flex items-center justify-between">
-                  <span className="text-[10px] font-semibold text-[#715a3e] uppercase bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
+                  <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
                     Unsealed Porosities
                   </span>
-                  <span className="text-[10px] font-semibold text-[#715a3e] uppercase bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
+                  <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
                     Living Patinas
                   </span>
                 </div>
@@ -279,7 +279,7 @@ export default function Home() {
 
               {/* Pillar 02 - Featured Overlapping Center Card */}
               <div className="relative z-10 bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between shadow-2xl transition-all duration-500 border-2 border-[#715a3e] lg:-mt-4 group hover:scale-[1.02]">
-                <div className="-top-3.5 left-6 absolute bg-[#715a3e] text-[#ffffff] text-[10px] px-3.5 py-0.5 rounded-full font-bold uppercase shadow-xl z-10 flex items-center gap-1.5">
+                <div className="-top-3.5 left-6 absolute bg-[#715a3e] text-[#ffffff] text-[10px] px-3.5 py-0.5 rounded-full font-bold  shadow-xl z-10 flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#ffffff] animate-ping" />
                   Pillar 02 • Core Axis
                 </div>
@@ -301,10 +301,10 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="pt-3 border-t border-[#e5e2db] mt-4 flex items-center justify-between">
-                  <span className="text-[10px] font-semibold text-[#715a3e] uppercase bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
+                  <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
                     Diurnal Shading
                   </span>
-                  <span className="text-[10px] font-semibold text-[#715a3e] uppercase bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
+                  <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
                     Spatial Intervals
                   </span>
                 </div>
@@ -312,7 +312,7 @@ export default function Home() {
 
               {/* Pillar 03 */}
               <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#e5e2db] hover:border-[#715a3e]/50 group">
-                <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-bold uppercase shadow-lg border border-[#715a3e]/40 z-10">
+                <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-bold  shadow-lg border border-[#715a3e]/40 z-10">
                   Pillar 03
                 </div>
                 <div className="space-y-3 pt-2">
@@ -333,10 +333,10 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="pt-3 border-t border-[#e5e2db] mt-4 flex items-center justify-between">
-                  <span className="text-[10px] font-semibold text-[#715a3e] uppercase bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
+                  <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
                     Museum Joinery
                   </span>
-                  <span className="text-[10px] font-semibold text-[#715a3e] uppercase bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
+                  <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
                     Monoprints
                   </span>
                 </div>
@@ -352,14 +352,14 @@ export default function Home() {
             {/* Section Header */}
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
               <div>
-                <span className="text-xs font-bold text-[#715a3e] uppercase bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#e5e2db] shadow-sm inline-block mb-2">
+                <span className="text-xs font-bold text-[#715a3e]  bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#e5e2db] shadow-sm inline-block mb-2">
                   [ SECTION 03 // PORTFOLIO ]
                 </span>
                 <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
                   Construction & Interior Architecture Portfolio
                 </h2>
               </div>
-              <span className="text-xs font-bold text-[#715a3e] uppercase bg-[#ffffff] px-4 py-2 rounded-full border border-[#715a3e]/30 shadow-sm">
+              <span className="text-xs font-bold text-[#715a3e]  bg-[#ffffff] px-4 py-2 rounded-full border border-[#715a3e]/30 shadow-sm">
                 Featured Commissions [Delhi NCR]
               </span>
             </div>
@@ -381,7 +381,7 @@ export default function Home() {
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-3 left-3 bg-[#1c1b19]/90 backdrop-blur-md text-[#cbb392] px-2.5 py-1 rounded-md text-[10px] font-bold uppercase border border-[#715a3e]/30 shadow-md">
+                    <div className="absolute top-3 left-3 bg-[#1c1b19]/90 backdrop-blur-md text-[#cbb392] px-2.5 py-1 rounded-md text-[10px] font-bold  border border-[#715a3e]/30 shadow-md">
                       {project.tag}
                     </div>
                   </div>
@@ -389,7 +389,7 @@ export default function Home() {
                   {/* Body Content */}
                   <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
                     <div className="space-y-1.5">
-                      <div className="flex items-center gap-2 text-[10px] font-bold text-[#715a3e] uppercase">
+                      <div className="flex items-center gap-2 text-[10px] font-bold text-[#715a3e] ">
                         <span>{project.location}</span>
                         <span>•</span>
                         <span>{project.year}</span>
@@ -397,7 +397,7 @@ export default function Home() {
                       <h3 className="text-lg font-bold text-[#1a1c1a] group-hover:text-[#715a3e] transition-colors">
                         {project.title}
                       </h3>
-                      <p className="text-[11px] font-semibold text-[#715a3e] uppercase">
+                      <p className="text-[11px] font-semibold text-[#715a3e] ">
                         {project.subtitle}
                       </p>
                       <p className="text-xs text-[#494740] line-clamp-2 leading-relaxed">
@@ -412,7 +412,7 @@ export default function Home() {
                       </span>
                       <button
                         onClick={() => setSelectedProject(project)}
-                        className="bg-[#1c1b19] text-[#ffffff] text-xs font-bold uppercase px-3.5 py-1.5 rounded-lg hover:bg-[#715a3e] transition-colors flex items-center gap-1 shadow-sm"
+                        className="bg-[#1c1b19] text-[#ffffff] text-xs font-bold  px-3.5 py-1.5 rounded-lg hover:bg-[#715a3e] transition-colors flex items-center gap-1 shadow-sm"
                       >
                         <span>View Project</span>
                         <span className="material-symbols-outlined text-xs">arrow_forward</span>
@@ -440,7 +440,7 @@ export default function Home() {
               </div>
               <Link
                 href="/portfolio"
-                className="bg-[#1c1b19] text-[#ffffff] text-xs font-bold uppercase px-6 py-3 rounded-xl hover:bg-[#715a3e] transition-all duration-300 shadow-md shrink-0 flex items-center gap-1.5"
+                className="bg-[#1c1b19] text-[#ffffff] text-xs font-bold  px-6 py-3 rounded-xl hover:bg-[#715a3e] transition-all duration-300 shadow-md shrink-0 flex items-center gap-1.5"
               >
                 <span>View All Projects</span>
                 <span className="material-symbols-outlined text-xs">arrow_forward</span>
@@ -453,7 +453,7 @@ export default function Home() {
         <section id="methodology" className="w-full bg-[#faf9f6] py-24 border-b border-[#e5e2db] relative z-10">
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             <div className="max-w-2xl mb-16 space-y-2">
-              <span className="text-xs font-bold text-[#715a3e] uppercase bg-[#715a3e]/10 px-3 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
+              <span className="text-xs font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
                 [ SECTION 05 // METHODOLOGY ]
               </span>
               <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
@@ -468,7 +468,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
               {/* Step 01 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
-                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1 uppercase shadow-md rounded-md">
+                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1  shadow-md rounded-md">
                   Phase 01
                 </div>
                 <div className="pt-2">
@@ -497,7 +497,7 @@ export default function Home() {
 
               {/* Step 02 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
-                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1 uppercase shadow-md rounded-md">
+                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1  shadow-md rounded-md">
                   Phase 02
                 </div>
                 <div className="pt-2">
@@ -526,7 +526,7 @@ export default function Home() {
 
               {/* Step 03 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
-                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1 uppercase shadow-md rounded-md">
+                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1  shadow-md rounded-md">
                   Phase 03
                 </div>
                 <div className="pt-2">
@@ -555,7 +555,7 @@ export default function Home() {
 
               {/* Step 04 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
-                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1 uppercase shadow-md rounded-md">
+                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1  shadow-md rounded-md">
                   Phase 04
                 </div>
                 <div className="pt-2">
@@ -590,7 +590,7 @@ export default function Home() {
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             {/* Section Badge */}
             <div className="mb-8">
-              <span className="text-xs font-bold text-[#715a3e] uppercase bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#cbc6bd] shadow-sm inline-block">
+              <span className="text-xs font-bold text-[#715a3e]  bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#cbc6bd] shadow-sm inline-block">
                 [ SECTION 06 // TESTIMONIALS & RECOGNITION ]
               </span>
             </div>
@@ -598,7 +598,7 @@ export default function Home() {
             {/* Press Quotes Banner */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pb-12 border-b border-[#cbc6bd]/60 text-center items-center">
               <div className="space-y-1">
-                <span className="text-base font-bold uppercase text-[#1a1c1a] block">
+                <span className="text-base font-bold  text-[#1a1c1a] block">
                   Architectural Digest
                 </span>
                 <span className="text-xs text-[#494740]">
@@ -606,7 +606,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="space-y-1">
-                <span className="text-base font-bold uppercase text-[#1a1c1a] block">
+                <span className="text-base font-bold  text-[#1a1c1a] block">
                   Elle Decor
                 </span>
                 <span className="text-xs text-[#494740]">
@@ -614,7 +614,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="space-y-1">
-                <span className="text-base font-bold uppercase text-[#1a1c1a] block">
+                <span className="text-base font-bold  text-[#1a1c1a] block">
                   Wallpaper*
                 </span>
                 <span className="text-xs text-[#494740]">
@@ -622,7 +622,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="space-y-1">
-                <span className="text-base font-bold uppercase text-[#1a1c1a] block">
+                <span className="text-base font-bold  text-[#1a1c1a] block">
                   The World of Interiors
                 </span>
                 <span className="text-xs text-[#494740]">
@@ -648,7 +648,7 @@ export default function Home() {
                     <span className="text-sm font-bold text-[#1a1c1a] block">
                       Rajesh & Sunita Kapoor
                     </span>
-                    <span className="text-[10px] text-[#494740] uppercase font-semibold">
+                    <span className="text-[10px] text-[#494740]  font-semibold">
                       Vasant Vihar Villa • New Delhi
                     </span>
                   </div>
@@ -673,7 +673,7 @@ export default function Home() {
                     <span className="text-sm font-bold text-[#1a1c1a] block">
                       Vikramaditya Singhania
                     </span>
-                    <span className="text-[10px] text-[#494740] uppercase font-semibold">
+                    <span className="text-[10px] text-[#494740]  font-semibold">
                       Managing Director • Cyber City Suite
                     </span>
                   </div>
@@ -698,7 +698,7 @@ export default function Home() {
                     <span className="text-sm font-bold text-[#1a1c1a] block">
                       Ananya & Devendra Roy
                     </span>
-                    <span className="text-[10px] text-[#494740] uppercase font-semibold">
+                    <span className="text-[10px] text-[#494740]  font-semibold">
                       Golf Course Road Penthouse • Gurugram
                     </span>
                   </div>
@@ -717,7 +717,7 @@ export default function Home() {
           className="relative w-full bg-[#1c1b19] text-[#ffffff] py-20 overflow-hidden z-10 border-t border-[#715a3e]/30"
         >
           <div className="relative z-10 max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20 text-center space-y-6">
-            <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#cbb392] uppercase bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
+            <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
               <span className="w-1.5 h-1.5 rounded-full bg-[#cbb392] animate-pulse" />
               Private Commissions • Accepting 2025 / 2026
             </div>
@@ -730,14 +730,14 @@ export default function Home() {
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-sm font-bold uppercase px-8 py-4 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-xl rounded-xl"
+                className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-sm font-bold  px-8 py-4 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-xl rounded-xl"
               >
                 <span>Schedule Consultation</span>
                 <span className="material-symbols-outlined ml-2 text-base">arrow_forward</span>
               </Link>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-sm font-bold uppercase px-8 py-4 transition-colors duration-300 border border-[#faf9f6]/20 rounded-xl"
+                className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-sm font-bold  px-8 py-4 transition-colors duration-300 border border-[#faf9f6]/20 rounded-xl"
               >
                 Explore Works
               </Link>
@@ -761,7 +761,7 @@ export default function Home() {
             </button>
 
             <div className="space-y-2">
-              <span className="text-sm font-bold text-[#715a3e] uppercase">
+              <span className="text-sm font-bold text-[#715a3e] ">
                 {selectedProject.tag} • {selectedProject.location}
               </span>
               <h2 className="text-2xl md:text-3xl text-[#1a1c1a] font-bold">
@@ -784,7 +784,7 @@ export default function Home() {
             </p>
 
             <div className="space-y-2 pt-2">
-              <h4 className="text-sm font-bold text-[#715a3e] uppercase">
+              <h4 className="text-sm font-bold text-[#715a3e] ">
                 Engineering & Material Architectural Highlights:
               </h4>
               <ul className="space-y-1.5 text-sm text-[#1a1c1a]">
@@ -803,7 +803,7 @@ export default function Home() {
               </span>
               <button
                 onClick={() => setSelectedProject(null)}
-                className="bg-[#000000] text-[#ffffff] text-sm font-bold uppercase px-6 py-2.5 hover:bg-[#715a3e]"
+                className="bg-[#000000] text-[#ffffff] text-sm font-bold  px-6 py-2.5 hover:bg-[#715a3e]"
               >
                 Close Monograph
               </button>
