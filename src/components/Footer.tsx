@@ -221,7 +221,7 @@ export default function Footer() {
 
         {/* Bottom Legal & Single Copyright */}
         <div className="pt-6 border-t border-[#282522] flex flex-col md:flex-row items-center justify-between gap-4 text-[12px] text-[#86827a]">
-          <p>© 2025 Havenley Infrastructure, New Delhi. All rights reserved. • Maintained by <a href="https://www.webduality.in" target="_blank" rel="noreferrer" className="text-[#cbb392] font-semibold hover:underline transition-colors">WebDuality</a></p>
+          <p>© 2025 Havenley Infrastructure, New Delhi. All rights reserved. • Maintained by <a href="https://www.webduality.in" target="_blank" rel="noreferrer" className="text-[#d4d0c8] font-semibold hover:text-emerald-400 hover:underline transition-colors italic">WebDuality</a></p>
           <div className="flex items-center gap-6">
             <Link href="/admin" className="hover:text-[#cbb392] text-[#d4d0c8] font-semibold transition-colors flex items-center gap-1">
               <span className="material-symbols-outlined text-xs">admin_panel_settings</span>

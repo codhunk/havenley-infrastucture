@@ -246,7 +246,7 @@ export default function Home() {
             {/* Three Pillars Mosaic with Overlap Designing & High Quality Images */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch pt-6">
               {/* Pillar 01 */}
-              <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#e5e2db] hover:border-[#715a3e]/50 group">
+              <div className="relative bg-[#ffffff] p-2 rounded-xl flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#e5e2db] hover:border-[#715a3e]/50 group">
                 <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-semibold  shadow-lg border border-[#715a3e]/40 z-10">
                   Pillar 01
                 </div>
@@ -278,7 +278,7 @@ export default function Home() {
               </div>
 
               {/* Pillar 02 - Featured Overlapping Center Card */}
-              <div className="relative z-10 bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between shadow-2xl transition-all duration-500 border-2 border-[#715a3e] lg:-mt-4 group hover:scale-[1.02]">
+              <div className="relative z-10 bg-[#ffffff] p-2 rounded-xl flex flex-col justify-between shadow-2xl transition-all duration-500 border-2 border-[#715a3e] lg:-mt-4 group hover:scale-[1.02]">
                 <div className="-top-3.5 left-6 absolute bg-[#715a3e] text-[#ffffff] text-[10px] px-3.5 py-0.5 rounded-full font-semibold  shadow-xl z-10 flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#ffffff] animate-ping" />
                   Pillar 02 • Core Axis
@@ -311,7 +311,7 @@ export default function Home() {
               </div>
 
               {/* Pillar 03 */}
-              <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#e5e2db] hover:border-[#715a3e]/50 group">
+              <div className="relative bg-[#ffffff] p-2 rounded-xl flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#e5e2db] hover:border-[#715a3e]/50 group">
                 <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-semibold  shadow-lg border border-[#715a3e]/40 z-10">
                   Pillar 03
                 </div>
@@ -373,7 +373,7 @@ export default function Home() {
                 >
                   {/* Image Header */}
                   <div
-                    className="h-48 overflow-hidden relative cursor-pointer"
+                    className="h-58 overflow-hidden relative cursor-pointer"
                     onClick={() => setSelectedProject(project)}
                   >
                     <img
@@ -400,9 +400,9 @@ export default function Home() {
                       <p className="text-[11px] font-semibold text-[#715a3e] ">
                         {project.subtitle}
                       </p>
-                      <p className="text-xs text-[#494740] line-clamp-2 leading-relaxed">
+                      {/* <p className="text-xs text-[#494740] line-clamp-2 leading-relaxed">
                         {project.description}
-                      </p>
+                      </p> */}
                     </div>
 
                     {/* Footer Row */}
