@@ -177,9 +177,9 @@ export default function Home() {
             </div>
 
             {/* Key Architectural Metrics Ribbon */}
-            <div className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 bg-[#1c1b19]/95 backdrop-blur-md px-6 md:px-8 py-4 md:py-5 border border-[#715a3e]/40 shadow-2xl rounded-xl transform-gpu isolate">
+            <div className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 bg-[#1c1b19]/95 backdrop-blur-md px-5 md:px-8 py-4 md:py-5 border border-[#715a3e]/40 shadow-2xl rounded-xl transform-gpu isolate">
               <div className="flex items-center gap-4">
-                <span className="text-2xl md:text-3xl text-[#cbb392] font-semibold shrink-0 w-16 text-left inline-block">
+                <span className="text-2xl md:text-3xl text-[#cbb392] font-semibold shrink-0 w-20 text-left inline-block">
                   <AnimatedCounter target={15} suffix="+" minWidth="3.5ch" />
                 </span>
                 <div className="space-y-0.5 min-w-0">
