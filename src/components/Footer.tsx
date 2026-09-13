@@ -124,21 +124,21 @@ export default function Footer() {
             <span className="text-[11px] font-bold text-[#cbb392] uppercase block">
               Subscribe to Journal
             </span>
-            <form onSubmit={handleSubscribe} className="flex items-center gap-2">
+            <form onSubmit={handleSubscribe} className="flex items-center gap-2 w-full max-w-xs">
               <input
                 value={newsletterEmail}
                 onChange={(e) => {
                   setNewsletterEmail(e.target.value);
                   if (errorMsg) setErrorMsg("");
                 }}
-                className="flex-1 bg-[#1c1b19] border border-[#383430] px-4 py-2.5 text-sm text-[#ffffff] placeholder:text-[#86827a] focus:outline-none focus:border-[#cbb392] transition-colors rounded-lg"
+                className="w-full min-w-0 bg-[#1c1b19] border border-[#383430] px-3.5 py-2 text-xs sm:text-sm text-[#ffffff] placeholder:text-[#86827a] focus:outline-none focus:border-[#cbb392] transition-colors rounded-lg"
                 placeholder="Enter email address"
                 type="email"
                 required
               />
               <button
                 disabled={isSubmitting}
-                className="bg-[#715a3e] text-[#ffffff] text-sm font-semibold uppercase px-5 py-2.5 rounded-lg hover:bg-[#cbb392] hover:text-[#121110] transition-all duration-300 shrink-0"
+                className="bg-[#715a3e] text-[#ffffff] text-xs sm:text-sm font-semibold uppercase px-4 py-2 rounded-lg hover:bg-[#cbb392] hover:text-[#121110] transition-all duration-300 shrink-0"
                 type="submit"
               >
                 {isSubmitting ? "..." : "Join"}
