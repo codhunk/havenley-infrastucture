@@ -109,7 +109,7 @@ export default function ScheduleMeetingModal({
               <span className="text-xs font-bold text-[#715a3e] uppercase tracking-wider block">
                 Private Advisory Session
               </span>
-              <h2 className="text-2xl font-bold uppercase tracking-wide text-[#1a1c1a]">
+              <h2 className="text-lg sm:text-2xl font-bold uppercase tracking-wide text-[#1a1c1a]">
                 Schedule Partner Consultation
               </h2>
               <p className="text-xs text-[#494740] font-medium">
@@ -298,7 +298,7 @@ export default function ScheduleMeetingModal({
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="px-6 py-3 bg-[#000000] text-[#ffffff] text-xs font-bold uppercase hover:bg-[#715a3e] transition-colors shadow-md"
+                  className="px-4 sm:px-6 py-2.5 sm:py-3 bg-[#000000] text-[#ffffff] text-[11px] sm:text-xs font-bold uppercase hover:bg-[#715a3e] transition-colors shadow-md tracking-wider shrink-0"
                 >
                   {isSubmitting ? "Transmitting..." : "Confirm & Schedule Meeting"}
                 </button>

@@ -64,21 +64,21 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V3M5 21V3M5 12h14M3 21h18M3 3h18" />
                 </svg>
               </div>
-              <span className="font-bold text-lg uppercase text-[#ffffff]">
+              <span className="font-bold text-base sm:text-lg uppercase text-[#ffffff]">
                 Havenley <span className="text-[#cbb392]">Infrastructure</span>
               </span>
             </div>
-            <p className="text-sm text-[#a39f99] leading-relaxed max-w-md">
+            <p className="text-xs sm:text-sm text-[#a39f99] leading-relaxed max-w-md">
               Premier civil construction, structural engineering, and luxury architectural transformations in India.
             </p>
-            <div className="text-sm text-[#d4d0c8] space-y-1 pt-1">
-              <span className="text-[11px] font-bold text-[#cbb392] uppercase block">
+            <div className="text-xs sm:text-sm text-[#d4d0c8] space-y-1 pt-1">
+              <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392] uppercase block tracking-wider">
                 Delhi Atelier & Headquarters
               </span>
-              <p className="text-sm text-[#a39f99]">
+              <p className="text-xs sm:text-sm text-[#a39f99]">
                 Barakhamba Road, Connaught Place, New Delhi – 110001, India
               </p>
-              <p className="text-sm text-[#a39f99]">
+              <p className="text-xs sm:text-sm text-[#a39f99]">
                 Phone: +91 11 4152 8800 • Email:{" "}
                 <a
                   href="mailto:havenleyinfrastructure@gmail.com"
@@ -92,10 +92,10 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div className="lg:col-span-3 space-y-3">
-            <span className="text-[11px] font-bold text-[#cbb392] uppercase block">
+            <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392] uppercase block tracking-wider">
               Navigation
             </span>
-            <ul className="space-y-2 text-sm text-[#a39f99]">
+            <ul className="space-y-2 text-xs sm:text-sm text-[#a39f99]">
               <li>
                 <Link href="/" className="hover:text-[#ffffff] transition-colors">
                   Home
@@ -121,7 +121,7 @@ export default function Footer() {
 
           {/* Newsletter & Social Media Icons */}
           <div className="lg:col-span-4 space-y-4">
-            <span className="text-[11px] font-bold text-[#cbb392] uppercase block">
+            <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392] uppercase block tracking-wider">
               Subscribe to Journal
             </span>
             <form onSubmit={handleSubscribe} className="flex items-center gap-2 w-full max-w-xs">
@@ -131,14 +131,14 @@ export default function Footer() {
                   setNewsletterEmail(e.target.value);
                   if (errorMsg) setErrorMsg("");
                 }}
-                className="w-full min-w-0 bg-[#1c1b19] border border-[#383430] px-3.5 py-2 text-xs sm:text-sm text-[#ffffff] placeholder:text-[#86827a] focus:outline-none focus:border-[#cbb392] transition-colors rounded-lg"
+                className="w-full min-w-0 bg-[#1c1b19] border border-[#383430] px-3 py-1.5 sm:px-3.5 sm:py-2 text-[11px] sm:text-sm text-[#ffffff] placeholder:text-[#86827a] focus:outline-none focus:border-[#cbb392] transition-colors rounded-lg"
                 placeholder="Enter email address"
                 type="email"
                 required
               />
               <button
                 disabled={isSubmitting}
-                className="bg-[#715a3e] text-[#ffffff] text-xs sm:text-sm font-semibold uppercase px-4 py-2 rounded-lg hover:bg-[#cbb392] hover:text-[#121110] transition-all duration-300 shrink-0"
+                className="bg-[#715a3e] text-[#ffffff] text-[10px] sm:text-xs font-bold uppercase px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg hover:bg-[#cbb392] hover:text-[#121110] transition-all duration-300 shrink-0 tracking-wider"
                 type="submit"
               >
                 {isSubmitting ? "..." : "Join"}
@@ -149,7 +149,7 @@ export default function Footer() {
             )}
 
             <div className="pt-2">
-              <span className="text-[11px] font-bold text-[#cbb392] uppercase block mb-3">
+              <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392] uppercase block mb-3 tracking-wider">
                 Connect With Us
               </span>
               <div className="flex items-center gap-3">

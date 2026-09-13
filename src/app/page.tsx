@@ -149,7 +149,7 @@ export default function Home() {
               <p className="text-xs sm:text-sm font-bold text-[#cbb392] uppercase tracking-wide">
                 Architectural Precision • Atmospheric Calm
               </p>
-              <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#faf9f6] leading-tight">
+              <h1 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#faf9f6] leading-tight">
                 Spaces Conceived in Harmony, Sculpted in Light.
               </h1>
               <p className="text-xs sm:text-base text-[#e9e8e5]/90 max-w-2xl font-medium leading-relaxed">

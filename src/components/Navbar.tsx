@@ -30,7 +30,7 @@ export default function Navbar() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V3M5 21V3M5 12h14M3 21h18M3 3h18" />
                 </svg>
               </div>
-              <span className="font-bold text-lg md:text-xl text-[#1a1c1a] uppercase font-sans">
+              <span className="font-bold text-sm sm:text-lg md:text-xl text-[#1a1c1a] uppercase font-sans">
                 Havenley <span className="text-[#715a3e]">Infrastructure</span>
               </span>
             </Link>
@@ -99,7 +99,7 @@ export default function Navbar() {
                 setIsMobileMenuOpen(false);
                 setIsMeetingModalOpen(true);
               }}
-              className="block w-full bg-[#000000] text-[#ffffff] py-3 text-center uppercase mt-2 font-bold"
+              className="block w-full bg-[#000000] text-[#ffffff] py-2.5 text-xs sm:text-sm text-center uppercase mt-2 font-bold tracking-wider rounded-lg"
             >
               Schedule Meeting
             </button>
