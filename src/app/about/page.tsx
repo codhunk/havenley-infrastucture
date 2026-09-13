@@ -172,16 +172,16 @@ export default function AboutPage() {
                 alt={selectedMaterial.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-2.5 left-2.5 bg-[#1c1b19]/90 text-[#cbb392] text-[9px] font-bold  px-2.5 py-0.5 rounded-full border border-[#715a3e]/30">
+              <div className="absolute top-2.5 left-2.5 bg-[#1c1b19]/90 text-[#cbb392] text-[9px] font-semibold  px-2.5 py-0.5 rounded-full border border-[#715a3e]/30">
                 Specular Materiality
               </div>
             </div>
 
             <div className="space-y-1.5">
-              <span className="text-[11px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
+              <span className="text-[11px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
                 {selectedMaterial.origin}
               </span>
-              <h3 className="text-xl font-bold text-[#1a1c1a]">
+              <h3 className="text-xl font-semibold text-[#1a1c1a]">
                 {selectedMaterial.title}
               </h3>
               <p className="text-[11px] text-[#715a3e] font-semibold ">
@@ -194,7 +194,7 @@ export default function AboutPage() {
 
             <button
               onClick={() => setSelectedMaterial(null)}
-              className="mt-1 w-full bg-[#1c1b19] text-white py-2.5 rounded-xl text-sm font-bold  hover:bg-[#715a3e] transition-colors shadow-md"
+              className="mt-1 w-full bg-[#1c1b19] text-white py-2.5 rounded-xl text-sm font-semibold  hover:bg-[#715a3e] transition-colors shadow-md"
             >
               Close Material Inspection
             </button>
@@ -215,7 +215,7 @@ export default function AboutPage() {
               <div className="flex items-center gap-4 mb-4">
                 <div className="inline-flex items-center gap-2 bg-[#715a3e]/10 px-3.5 py-1 rounded-full border border-[#715a3e]/20">
                   <span className="w-2 h-2 rounded-full bg-[#715a3e] animate-pulse" />
-                  <span className="text-[11px]  text-[#715a3e] font-bold">
+                  <span className="text-[11px]  text-[#715a3e] font-semibold">
                     Monograph 01 • Studio Genesis
                   </span>
                 </div>
@@ -228,7 +228,7 @@ export default function AboutPage() {
               {/* Hero Headline with Architectural Scale */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
                 <div className="lg:col-span-9">
-                  <h1 className="text-3xl sm:text-4xl lg:text-[3rem] text-[#1a1c1a] font-bold">
+                  <h1 className="text-3xl sm:text-4xl lg:text-[3rem] text-[#1a1c1a] font-semibold">
                     Civil Poise & Material Integrity
                   </h1>
                 </div>
@@ -248,10 +248,10 @@ export default function AboutPage() {
                     <span className="material-symbols-outlined text-xl">domain</span>
                   </div>
                   <div className="min-w-0">
-                    <span className="text-[9px] font-bold text-[#715a3e]  block tracking-wide">
+                    <span className="text-[9px] font-semibold text-[#715a3e]  block tracking-wide">
                       Dual Sanctums
                     </span>
-                    <span className="text-xl text-[#1a1c1a] font-bold block">
+                    <span className="text-xl text-[#1a1c1a] font-semibold block">
                       Delhi & Gurugram
                     </span>
                     <p className="text-[10px] text-[#494740] mt-0.5 font-medium">
@@ -265,10 +265,10 @@ export default function AboutPage() {
                     <span className="material-symbols-outlined text-xl">castle</span>
                   </div>
                   <div className="min-w-0">
-                    <span className="text-[9px] font-bold text-[#715a3e]  block tracking-wide">
+                    <span className="text-[9px] font-semibold text-[#715a3e]  block tracking-wide">
                       Permanent Works
                     </span>
-                    <span className="text-xl text-[#1a1c1a] font-bold block tabular-nums flex items-baseline">
+                    <span className="text-xl text-[#1a1c1a] font-semibold block tabular-nums flex items-baseline">
                       <span className="inline-block shrink-0 min-w-[2.5ch] text-left">
                         <AnimatedCounter target={54} minWidth="2.5ch" />
                       </span>
@@ -285,10 +285,10 @@ export default function AboutPage() {
                     <span className="material-symbols-outlined text-xl">eco</span>
                   </div>
                   <div className="min-w-0">
-                    <span className="text-[9px] font-bold text-[#715a3e]  block tracking-wide">
+                    <span className="text-[9px] font-semibold text-[#715a3e]  block tracking-wide">
                       Circularity Index
                     </span>
-                    <span className="text-xl text-[#1a1c1a] font-bold block tabular-nums flex items-baseline">
+                    <span className="text-xl text-[#1a1c1a] font-semibold block tabular-nums flex items-baseline">
                       <span className="inline-block shrink-0 min-w-[2.5ch] text-left">
                         <AnimatedCounter target={85} minWidth="2.5ch" />
                       </span>
@@ -305,10 +305,10 @@ export default function AboutPage() {
                     <span className="material-symbols-outlined text-xl">groups</span>
                   </div>
                   <div className="min-w-0">
-                    <span className="text-[9px] font-bold text-[#715a3e]  block tracking-wide">
+                    <span className="text-[9px] font-semibold text-[#715a3e]  block tracking-wide">
                       Artisan Guild
                     </span>
-                    <span className="text-xl text-[#1a1c1a] font-bold block tabular-nums flex items-baseline">
+                    <span className="text-xl text-[#1a1c1a] font-semibold block tabular-nums flex items-baseline">
                       <span className="inline-block shrink-0 min-w-[2.5ch] text-left">
                         <AnimatedCounter target={40} minWidth="2.5ch" />
                       </span>
@@ -339,14 +339,14 @@ export default function AboutPage() {
                     </div>
                     <div className="mt-3 pb-1 px-2 flex justify-between items-baseline">
                       <div>
-                        <p className="text-base text-[#1a1c1a] font-bold">
+                        <p className="text-base text-[#1a1c1a] font-semibold">
                           Aditya Vardhan
                         </p>
-                        <p className="text-[10px] font-bold text-[#715a3e] ">
+                        <p className="text-[10px] font-semibold text-[#715a3e] ">
                           Principal Architect & Founder
                         </p>
                       </div>
-                      <span className="text-[10px] text-[#715a3e] font-bold bg-[#715a3e]/10 px-2 py-0.5 rounded-md">
+                      <span className="text-[10px] text-[#715a3e] font-semibold bg-[#715a3e]/10 px-2 py-0.5 rounded-md">
                         B.Arch / IIT
                       </span>
                     </div>
@@ -356,21 +356,21 @@ export default function AboutPage() {
                 {/* Narrative Column */}
                 <div className="lg:col-span-8 flex flex-col justify-between h-full">
                   <div className="space-y-3">
-                    <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full">
+                    <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                       Leadership • Lineage • Discipline
                     </div>
-                    <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
+                    <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
                       A Dialogue Between Classical Heritage & Monastic Reductionism
                     </h2>
                     <div className="space-y-3 text-sm sm:text-sm text-[#494740] font-normal">
                       <p>
                         Educated at the storied{" "}
-                        <strong className="font-bold text-[#1a1c1a]">
+                        <strong className="font-semibold text-[#1a1c1a]">
                           IIT Delhi
                         </strong>{" "}
                         before refining his tectonic sensibilities at{" "}
-                        <strong className="font-bold text-[#1a1c1a]">
+                        <strong className="font-semibold text-[#1a1c1a]">
                           SPA New Delhi
                         </strong>{" "}
                         in India, Aditya Vardhan emerged from an
@@ -390,7 +390,7 @@ export default function AboutPage() {
                   {/* Milestone Academic & Institutional Credential Bar */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5 bg-[#ffffff] p-3.5 rounded-xl border border-[#e5e2db] shadow-md">
                     <div>
-                      <span className="text-[10px] font-bold text-[#715a3e]  block">
+                      <span className="text-[10px] font-semibold text-[#715a3e]  block">
                         Academic Chair
                       </span>
                       <p className="text-[11px] text-[#1a1c1a] font-semibold">
@@ -398,7 +398,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                     <div>
-                      <span className="text-[10px] font-bold text-[#715a3e]  block">
+                      <span className="text-[10px] font-semibold text-[#715a3e]  block">
                         Specialization
                       </span>
                       <p className="text-[11px] text-[#1a1c1a] font-semibold">
@@ -406,7 +406,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                     <div>
-                      <span className="text-[10px] font-bold text-[#715a3e]  block">
+                      <span className="text-[10px] font-semibold text-[#715a3e]  block">
                         Monograph
                       </span>
                       <p className="text-[11px] text-[#1a1c1a] font-semibold">
@@ -427,11 +427,11 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20 relative z-10">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
                 <div className="space-y-2">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#cbb392] animate-pulse" />
                     Tectonic Model 04 • Interactive CAD Schematic
                   </div>
-                  <h2 className="text-2xl sm:text-3xl text-[#ffffff] font-bold">
+                  <h2 className="text-2xl sm:text-3xl text-[#ffffff] font-semibold">
                     Architectural Wireframe & Structural CAD Explorer
                   </h2>
                   <p className="text-sm text-[#a39f99] max-w-xl">
@@ -445,7 +445,7 @@ export default function AboutPage() {
                     <button
                       key={layerKey}
                       onClick={() => setActiveWireframeLayer(layerKey)}
-                      className={`px-3.5 py-2 rounded-lg text-sm font-bold  transition-all duration-300 flex items-center gap-1.5 ${activeWireframeLayer === layerKey
+                      className={`px-3.5 py-2 rounded-lg text-sm font-semibold  transition-all duration-300 flex items-center gap-1.5 ${activeWireframeLayer === layerKey
                         ? "bg-[#715a3e] text-[#ffffff] shadow-md border border-[#cbb392]/50"
                         : "text-[#a39f99] hover:text-[#ffffff] hover:bg-[#252d28]"
                         }`}
@@ -464,13 +464,13 @@ export default function AboutPage() {
                   {/* Top Bar Blueprint HUD */}
                   <div className="flex items-center justify-between pb-3 mb-3 border-b border-[#252d28] text-[10px]  font-mono text-[#715a3e]">
                     <div className="flex items-center gap-3">
-                      <span className="text-[#cbb392] font-bold">GRID: 0.5M CAD</span>
+                      <span className="text-[#cbb392] font-semibold">GRID: 0.5M CAD</span>
                       <span>•</span>
                       <span>LAT: 28.61° N</span>
                       <span>•</span>
                       <span>LON: 77.20° E</span>
                     </div>
-                    <div className="text-[#34d399] font-bold flex items-center gap-1">
+                    <div className="text-[#34d399] font-semibold flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#34d399] animate-ping" />
                       SYSTEM ACTIVE
                     </div>
@@ -575,10 +575,10 @@ export default function AboutPage() {
                 {/* Right Specification & Engineering Details Column */}
                 <div className="lg:col-span-5 bg-[#171e19] rounded-2xl border border-[#715a3e]/40 p-6 flex flex-col justify-between shadow-2xl space-y-6">
                   <div className="space-y-4">
-                    <span className="inline-block text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md border border-[#715a3e]/30">
+                    <span className="inline-block text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md border border-[#715a3e]/30">
                       {activeWireframe.badge}
                     </span>
-                    <h3 className="text-xl text-[#ffffff] font-bold">
+                    <h3 className="text-xl text-[#ffffff] font-semibold">
                       {activeWireframe.title}
                     </h3>
                     <p className="text-sm text-[#a39f99]">
@@ -588,7 +588,7 @@ export default function AboutPage() {
 
                   {/* Technical Specs List */}
                   <div className="space-y-3 pt-4 border-t border-[#252d28]">
-                    <h4 className="text-[11px] font-bold text-[#cbb392] ">
+                    <h4 className="text-[11px] font-semibold text-[#cbb392] ">
                       Calculated Tectonic Metrics
                     </h4>
                     <div className="grid grid-cols-1 gap-2.5">
@@ -600,7 +600,7 @@ export default function AboutPage() {
                           <span className="text-sm text-[#a39f99] font-medium">
                             {s.key}
                           </span>
-                          <span className="text-sm font-bold text-[#ffffff] font-mono">
+                          <span className="text-sm font-semibold text-[#ffffff] font-mono">
                             {s.val}
                           </span>
                         </div>
@@ -626,11 +626,11 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
                 <div className="space-y-2">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#ffffff] px-3 py-1 rounded-full border border-[#e5e2db] shadow-sm">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#715a3e]  bg-[#ffffff] px-3 py-1 rounded-full border border-[#e5e2db] shadow-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                     Chronological Monograph • 2011 — 2025
                   </div>
-                  <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
+                  <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
                     Company History & Architectural Legacy
                   </h2>
                 </div>
@@ -656,7 +656,7 @@ export default function AboutPage() {
                           : "bg-[#ffffff] text-[#1a1c1a] border-[#e5e2db] hover:border-[#715a3e]/50 hover:bg-[#faf9f6]"
                           }`}
                       >
-                        <span className="text-sm font-bold font-mono">
+                        <span className="text-sm font-semibold font-mono">
                           {item.year}
                         </span>
                         <span
@@ -677,19 +677,19 @@ export default function AboutPage() {
                 <div className="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between space-y-6">
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
-                      <span className="text-2xl font-bold text-[#715a3e] font-mono">
+                      <span className="text-2xl font-semibold text-[#715a3e] font-mono">
                         {activeMilestone.year}
                       </span>
                       <span className="w-px h-4 bg-[#e5e2db]" />
-                      <span className="text-sm font-bold text-[#1a1c1a] ">
+                      <span className="text-sm font-semibold text-[#1a1c1a] ">
                         {activeMilestone.city}
                       </span>
                     </div>
 
-                    <h3 className="text-xl sm:text-2xl text-[#1a1c1a] font-bold">
+                    <h3 className="text-xl sm:text-2xl text-[#1a1c1a] font-semibold">
                       {activeMilestone.title}
                     </h3>
-                    <p className="text-sm font-bold text-[#715a3e] ">
+                    <p className="text-sm font-semibold text-[#715a3e] ">
                       {activeMilestone.tagline}
                     </p>
                     <p className="text-sm text-[#494740] font-normal">
@@ -704,10 +704,10 @@ export default function AboutPage() {
                         key={idx}
                         className="bg-[#faf9f6] p-3 rounded-xl border border-[#e5e2db]"
                       >
-                        <span className="text-[9px] font-bold text-[#715a3e]  block">
+                        <span className="text-[9px] font-semibold text-[#715a3e]  block">
                           {m.label}
                         </span>
-                        <span className="text-sm font-bold text-[#1a1c1a] block mt-0.5">
+                        <span className="text-sm font-semibold text-[#1a1c1a] block mt-0.5">
                           {m.value}
                         </span>
                       </div>
@@ -724,10 +724,10 @@ export default function AboutPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b19]/80 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 bg-[#ffffff]/90 backdrop-blur-md p-3.5 rounded-xl border border-[#715a3e]/30 shadow-md">
-                    <span className="text-[9px] font-bold text-[#715a3e]  block">
+                    <span className="text-[9px] font-semibold text-[#715a3e]  block">
                       Archival Monograph Reference
                     </span>
-                    <h4 className="text-sm text-[#1a1c1a] font-bold mt-0.5">
+                    <h4 className="text-sm text-[#1a1c1a] font-semibold mt-0.5">
                       {activeMilestone.title}
                     </h4>
                   </div>
@@ -741,11 +741,11 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-3">
                 <div>
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full mb-2">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full mb-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                     The Spatial Doctrine
                   </div>
-                  <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
+                  <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
                     Our Guiding Principles
                   </h2>
                 </div>
@@ -759,18 +759,18 @@ export default function AboutPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
                 {/* Principle 01 */}
                 <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between h-full shadow-lg hover:shadow-xl border border-[#e5e2db] hover:border-[#715a3e]/50 transition-all duration-300 group overflow-hidden">
-                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
+                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
                     <span className="w-1 h-1 rounded-full bg-[#ffffff]" />
                     Principle 01
                   </div>
                   <div className="pt-1">
                     <div className="flex justify-between items-center mb-4">
-                      <span className="text-2xl text-[#715a3e] font-bold">01</span>
+                      <span className="text-2xl text-[#715a3e] font-semibold">01</span>
                       <span className="w-8 h-8 rounded-lg bg-[#715a3e]/10 flex items-center justify-center text-[#715a3e]">
                         <span className="material-symbols-outlined text-lg">wb_twilight</span>
                       </span>
                     </div>
-                    <h3 className="text-lg text-[#1a1c1a] mb-2 font-bold">
+                    <h3 className="text-lg text-[#1a1c1a] mb-2 font-semibold">
                       Silence in Form
                     </h3>
                     <p className="text-sm text-[#494740] font-normal">
@@ -778,7 +778,7 @@ export default function AboutPage() {
                     </p>
                   </div>
                   <div className="mt-5 pt-3 border-t border-[#e5e2db]">
-                    <span className="text-[10px] font-bold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
+                    <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
                       Spatial Geometry • Light
                     </span>
                   </div>
@@ -786,18 +786,18 @@ export default function AboutPage() {
 
                 {/* Principle 02 */}
                 <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between h-full shadow-lg hover:shadow-xl border border-[#e5e2db] hover:border-[#715a3e]/50 transition-all duration-300 group overflow-hidden">
-                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
+                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
                     <span className="w-1 h-1 rounded-full bg-[#ffffff]" />
                     Principle 02
                   </div>
                   <div className="pt-1">
                     <div className="flex justify-between items-center mb-4">
-                      <span className="text-2xl text-[#715a3e] font-bold">02</span>
+                      <span className="text-2xl text-[#715a3e] font-semibold">02</span>
                       <span className="w-8 h-8 rounded-lg bg-[#715a3e]/10 flex items-center justify-center text-[#715a3e]">
                         <span className="material-symbols-outlined text-lg">terrain</span>
                       </span>
                     </div>
-                    <h3 className="text-lg text-[#1a1c1a] mb-2 font-bold">
+                    <h3 className="text-lg text-[#1a1c1a] mb-2 font-semibold">
                       Uncompromising Materiality
                     </h3>
                     <p className="text-sm text-[#494740] font-normal">
@@ -805,7 +805,7 @@ export default function AboutPage() {
                     </p>
                   </div>
                   <div className="mt-5 pt-3 border-t border-[#e5e2db]">
-                    <span className="text-[10px] font-bold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
+                    <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
                       Raw Provenance • Truth
                     </span>
                   </div>
@@ -813,18 +813,18 @@ export default function AboutPage() {
 
                 {/* Principle 03 */}
                 <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between h-full shadow-lg hover:shadow-xl border border-[#e5e2db] hover:border-[#715a3e]/50 transition-all duration-300 group overflow-hidden">
-                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
+                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
                     <span className="w-1 h-1 rounded-full bg-[#ffffff]" />
                     Principle 03
                   </div>
                   <div className="pt-1">
                     <div className="flex justify-between items-center mb-4">
-                      <span className="text-2xl text-[#715a3e] font-bold">03</span>
+                      <span className="text-2xl text-[#715a3e] font-semibold">03</span>
                       <span className="w-8 h-8 rounded-lg bg-[#715a3e]/10 flex items-center justify-center text-[#715a3e]">
                         <span className="material-symbols-outlined text-lg">handyman</span>
                       </span>
                     </div>
-                    <h3 className="text-lg text-[#1a1c1a] mb-2 font-bold">
+                    <h3 className="text-lg text-[#1a1c1a] mb-2 font-semibold">
                       Artisanal Collaboration
                     </h3>
                     <p className="text-sm text-[#494740] font-normal">
@@ -832,7 +832,7 @@ export default function AboutPage() {
                     </p>
                   </div>
                   <div className="mt-5 pt-3 border-t border-[#e5e2db]">
-                    <span className="text-[10px] font-bold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
+                    <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
                       Couture Guilds • Hands
                     </span>
                   </div>
@@ -840,18 +840,18 @@ export default function AboutPage() {
 
                 {/* Principle 04 */}
                 <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between h-full shadow-lg hover:shadow-xl border border-[#e5e2db] hover:border-[#715a3e]/50 transition-all duration-300 group overflow-hidden">
-                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-bold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
+                  <div className="-top-3 left-4 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-[9px] px-3 py-0.5 rounded-full  shadow-md flex items-center gap-1 z-10">
                     <span className="w-1 h-1 rounded-full bg-[#ffffff]" />
                     Principle 04
                   </div>
                   <div className="pt-1">
                     <div className="flex justify-between items-center mb-4">
-                      <span className="text-2xl text-[#715a3e] font-bold">04</span>
+                      <span className="text-2xl text-[#715a3e] font-semibold">04</span>
                       <span className="w-8 h-8 rounded-lg bg-[#715a3e]/10 flex items-center justify-center text-[#715a3e]">
                         <span className="material-symbols-outlined text-lg">hourglass_empty</span>
                       </span>
                     </div>
-                    <h3 className="text-lg text-[#1a1c1a] mb-2 font-bold">
+                    <h3 className="text-lg text-[#1a1c1a] mb-2 font-semibold">
                       Living Durability
                     </h3>
                     <p className="text-sm text-[#494740] font-normal">
@@ -859,7 +859,7 @@ export default function AboutPage() {
                     </p>
                   </div>
                   <div className="mt-5 pt-3 border-t border-[#e5e2db]">
-                    <span className="text-[10px] font-bold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
+                    <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md inline-block">
                       Noble Patina • Trust
                     </span>
                   </div>
@@ -873,11 +873,11 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                 <div className="md:col-span-5 space-y-3">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#ffffff] px-3 py-1 rounded-full shadow-sm border border-[#e5e2db]">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#715a3e]  bg-[#ffffff] px-3 py-1 rounded-full shadow-sm border border-[#e5e2db]">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                     Tactile Laboratory
                   </div>
-                  <h3 className="text-xl sm:text-2xl text-[#1a1c1a] font-bold">
+                  <h3 className="text-xl sm:text-2xl text-[#1a1c1a] font-semibold">
                     Tested under 24 hours of simulated diurnal light.
                   </h3>
                   <p className="text-sm text-[#494740] font-normal">
@@ -890,10 +890,10 @@ export default function AboutPage() {
                   {/* Material Specimen 01 */}
                   <div className="bg-[#ffffff] p-6 shadow-sm border border-[#cbc6bd]/40 space-y-4 hover:border-[#715a3e] transition-colors cursor-pointer group">
                     <div className="space-y-1">
-                      <span className="text-[10px] font-bold text-[#715a3e]  block">
+                      <span className="text-[10px] font-semibold text-[#715a3e]  block">
                         Specimen 01 • Natural Stone
                       </span>
-                      <h4 className="text-lg text-[#1a1c1a] font-bold">
+                      <h4 className="text-lg text-[#1a1c1a] font-semibold">
                         Makrana White Marble
                       </h4>
                       <span className="text-[11px] text-[#494740] font-mono block">
@@ -925,15 +925,15 @@ export default function AboutPage() {
                         alt="Slaked Mineral Marmorino detail"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoLJuIH5qoUyXdT2JV4rPZfMeSEdAydAgaJ6IXa4QeeoxzIb7P8N7MeDNAvc-If-QwEV1woGCnwc1NYcXkmioPryYKbRKyaNEF-43YdoX4S09oGLZN3SkkqZx4VNpuCo7vuKr0fFCJMIKok9bja_jOvE2DwsNHAHmfLzr2k8HGjdyd9ELbzKJA2kdmKDnrT2RGAsGXmSOmSkbKM2sdFH_WLvqcV9VOGzoQt3JCbIAIB_7E6c9El00B"
                       />
-                      <div className="absolute top-2 left-2 bg-[#1c1b19]/90 backdrop-blur-md text-[#cbb392] px-2.5 py-0.5 rounded-full text-[9px] font-bold  border border-[#715a3e]/30 shadow-md">
+                      <div className="absolute top-2 left-2 bg-[#1c1b19]/90 backdrop-blur-md text-[#cbb392] px-2.5 py-0.5 rounded-full text-[9px] font-semibold  border border-[#715a3e]/30 shadow-md">
                         Inspect Specimen
                       </div>
                     </div>
                     <div className="p-3 bg-[#ffffff]">
-                      <span className="text-sm font-bold text-[#1a1c1a] block">
+                      <span className="text-sm font-semibold text-[#1a1c1a] block">
                         Slaked Mineral Marmorino
                       </span>
-                      <span className="text-[9px] font-bold text-[#715a3e] ">
+                      <span className="text-[9px] font-semibold text-[#715a3e] ">
                         Veneto Guild • Hand Troweled
                       </span>
                     </div>
@@ -947,11 +947,11 @@ export default function AboutPage() {
           <section className="w-full bg-[#faf9f6] py-12 border-b border-[#e5e2db]">
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="max-w-2xl mb-10 space-y-1.5">
-                <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full">
+                <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                   The Multidisciplinary Collegium
                 </div>
-                <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
+                <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
                   Architectural Leadership
                 </h2>
                 <p className="text-sm text-[#494740] font-normal">
@@ -969,10 +969,10 @@ export default function AboutPage() {
                 {/* Member 1 */}
                 <div className="bg-[#ffffff] p-5 border border-[#cbc6bd]/40 space-y-4 shadow-sm">
                   <div className="space-y-1">
-                    <span className="text-[10px] font-bold text-[#715a3e]  block">
+                    <span className="text-[10px] font-semibold text-[#715a3e]  block">
                       Principal Architect
                     </span>
-                    <h4 className="text-lg font-bold text-[#1a1c1a]">
+                    <h4 className="text-lg font-semibold text-[#1a1c1a]">
                       Aditya Vardhan
                     </h4>
                     <span className="text-xs text-[#494740]">
@@ -990,10 +990,10 @@ export default function AboutPage() {
                 {/* Member 2 */}
                 <div className="bg-[#ffffff] p-5 border border-[#cbc6bd]/40 space-y-4 shadow-sm">
                   <div className="space-y-1">
-                    <span className="text-[10px] font-bold text-[#715a3e]  block">
+                    <span className="text-[10px] font-semibold text-[#715a3e]  block">
                       Chief Structural Engineer
                     </span>
-                    <h4 className="text-lg font-bold text-[#1a1c1a]">
+                    <h4 className="text-lg font-semibold text-[#1a1c1a]">
                       Siddharth Malhotra
                     </h4>
                     <span className="text-xs text-[#494740]">
@@ -1008,10 +1008,10 @@ export default function AboutPage() {
                 {/* Member 3 */}
                 <div className="bg-[#ffffff] p-5 border border-[#cbc6bd]/40 space-y-4 shadow-sm">
                   <div className="space-y-1">
-                    <span className="text-[10px] font-bold text-[#715a3e]  block">
+                    <span className="text-[10px] font-semibold text-[#715a3e]  block">
                       Director of Interiors
                     </span>
-                    <h4 className="text-lg font-bold text-[#1a1c1a]">
+                    <h4 className="text-lg font-semibold text-[#1a1c1a]">
                       Kavita Sharma
                     </h4>
                     <span className="text-xs text-[#494740]">
@@ -1029,10 +1029,10 @@ export default function AboutPage() {
                 {/* Member 4 */}
                 <div className="bg-[#ffffff] p-5 border border-[#cbc6bd]/40 space-y-4 shadow-sm">
                   <div className="space-y-1">
-                    <span className="text-[10px] font-bold text-[#715a3e]  block">
+                    <span className="text-[10px] font-semibold text-[#715a3e]  block">
                       Lead of Lighting & Automation
                     </span>
-                    <h4 className="text-lg font-bold text-[#1a1c1a]">
+                    <h4 className="text-lg font-semibold text-[#1a1c1a]">
                       Rohan Malhotra
                     </h4>
                     <span className="text-xs text-[#494740]">
@@ -1055,11 +1055,11 @@ export default function AboutPage() {
             <div className="px-5 md:px-12 lg:px-16">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-10">
                 <div className="lg:col-span-4 space-y-2">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-full border border-[#715a3e]/40">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-full border border-[#715a3e]/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e] animate-pulse" />
                     Recognition
                   </div>
-                  <h2 className="text-2xl sm:text-3xl text-white font-bold">
+                  <h2 className="text-2xl sm:text-3xl text-white font-semibold">
                     Accolades & Distinctions
                   </h2>
                 </div>
@@ -1075,9 +1075,9 @@ export default function AboutPage() {
                 {/* Award 1 */}
                 <div className="bg-[#24221f] p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3 border border-[#715a3e]/30 hover:border-[#cbb392] transition-all duration-300 group">
                   <div className="flex items-center gap-4">
-                    <span className="text-2xl sm:text-3xl text-[#cbb392] font-bold">2024</span>
+                    <span className="text-2xl sm:text-3xl text-[#cbb392] font-semibold">2024</span>
                     <div>
-                      <h3 className="text-sm sm:text-base text-white font-bold">
+                      <h3 className="text-sm sm:text-base text-white font-semibold">
                         National Architectural Excellence Laureate
                       </h3>
                       <p className="text-[11px] text-[#e3e2e0]/70">
@@ -1085,7 +1085,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
+                  <span className="text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
                     Grand Prix
                   </span>
                 </div>
@@ -1093,9 +1093,9 @@ export default function AboutPage() {
                 {/* Award 2 */}
                 <div className="bg-[#24221f] p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3 border border-[#715a3e]/30 hover:border-[#cbb392] transition-all duration-300 group">
                   <div className="flex items-center gap-4">
-                    <span className="text-2xl sm:text-3xl text-[#cbb392] font-bold">2022–24</span>
+                    <span className="text-2xl sm:text-3xl text-[#cbb392] font-semibold">2022–24</span>
                     <div>
-                      <h3 className="text-sm sm:text-base text-white font-bold">
+                      <h3 className="text-sm sm:text-base text-white font-semibold">
                         AD100 Hall of Fame
                       </h3>
                       <p className="text-[11px] text-[#e3e2e0]/70">
@@ -1103,7 +1103,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
+                  <span className="text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
                     Global List
                   </span>
                 </div>
@@ -1111,9 +1111,9 @@ export default function AboutPage() {
                 {/* Award 3 */}
                 <div className="bg-[#24221f] p-4 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-3 border border-[#715a3e]/30 hover:border-[#cbb392] transition-all duration-300 group">
                   <div className="flex items-center gap-4">
-                    <span className="text-2xl sm:text-3xl text-[#cbb392] font-bold">2023</span>
+                    <span className="text-2xl sm:text-3xl text-[#cbb392] font-semibold">2023</span>
                     <div>
-                      <h3 className="text-sm sm:text-base text-white font-bold">
+                      <h3 className="text-sm sm:text-base text-white font-semibold">
                         Dezeen Interior Awards Winner
                       </h3>
                       <p className="text-[11px] text-[#e3e2e0]/70">
@@ -1121,7 +1121,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                   </div>
-                  <span className="text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
+                  <span className="text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3 py-1 rounded-md shrink-0">
                     Global Winner
                   </span>
                 </div>
@@ -1136,11 +1136,11 @@ export default function AboutPage() {
                 {/* Left Column */}
                 <div className="lg:col-span-5 flex flex-col justify-between">
                   <div className="space-y-2">
-                    <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full">
+                    <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                       Environmental Consciousness
                     </div>
-                    <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
+                    <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
                       Commissioning Havenely Infrastructure
                     </h2>
                     <p className="text-sm text-[#494740] font-normal">
@@ -1174,16 +1174,16 @@ export default function AboutPage() {
                           />
                         </svg>
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                          <span className="text-base font-bold text-[#1a1c1a]">
+                          <span className="text-base font-semibold text-[#1a1c1a]">
                             85%
                           </span>
-                          <span className="text-[8px] font-bold text-[#715a3e] ">
+                          <span className="text-[8px] font-semibold text-[#715a3e] ">
                             Local
                           </span>
                         </div>
                       </div>
                       <div>
-                        <h4 className="text-sm text-[#1a1c1a] font-bold mb-0.5">
+                        <h4 className="text-sm text-[#1a1c1a] font-semibold mb-0.5">
                           Geological Proximity Mandate
                         </h4>
                         <p className="text-[11px] text-[#494740] font-normal">
@@ -1201,7 +1201,7 @@ export default function AboutPage() {
                       <span className="material-symbols-outlined text-lg">nest_eco_leaf</span>
                     </div>
                     <div>
-                      <h3 className="text-base text-[#1a1c1a] font-bold mb-0.5">
+                      <h3 className="text-base text-[#1a1c1a] font-semibold mb-0.5">
                         Carbon-Neutral Build Protocols
                       </h3>
                       <p className="text-sm text-[#494740] font-normal">
@@ -1215,7 +1215,7 @@ export default function AboutPage() {
                       <span className="material-symbols-outlined text-lg">apartment</span>
                     </div>
                     <div>
-                      <h3 className="text-base text-[#1a1c1a] font-bold mb-0.5">
+                      <h3 className="text-base text-[#1a1c1a] font-semibold mb-0.5">
                         Adaptive Reuse Over Demolition
                       </h3>
                       <p className="text-sm text-[#494740] font-normal">
@@ -1229,7 +1229,7 @@ export default function AboutPage() {
                       <span className="material-symbols-outlined text-lg">clean_hands</span>
                     </div>
                     <div>
-                      <h3 className="text-base text-[#1a1c1a] font-bold mb-0.5">
+                      <h3 className="text-base text-[#1a1c1a] font-semibold mb-0.5">
                         Zero Chemical Toxicity Interiors
                       </h3>
                       <p className="text-sm text-[#494740] font-normal">
@@ -1247,11 +1247,11 @@ export default function AboutPage() {
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
               <div className="bg-[#ffffff] p-6 md:p-8 rounded-2xl border border-[#715a3e]/40 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-6">
                 <div className="space-y-1.5 max-w-2xl text-center lg:text-left">
-                  <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-0.5 rounded-full">
+                  <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-0.5 rounded-full">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e]" />
                     Initiate a Dialogue
                   </div>
-                  <h2 className="text-xl sm:text-2xl text-[#1a1c1a] font-bold">
+                  <h2 className="text-xl sm:text-2xl text-[#1a1c1a] font-semibold">
                     Commissioning Atelier Vane for Your Residence or Estate
                   </h2>
                   <p className="text-sm text-[#494740] font-normal">
@@ -1261,14 +1261,14 @@ export default function AboutPage() {
                 <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0">
                   <Link
                     href="/contact"
-                    className="bg-[#1c1b19] text-white text-sm font-bold  px-6 py-3 rounded-xl hover:bg-[#715a3e] transition-all duration-300 shadow-md text-center flex items-center gap-2"
+                    className="bg-[#1c1b19] text-white text-sm font-semibold  px-6 py-3 rounded-xl hover:bg-[#715a3e] transition-all duration-300 shadow-md text-center flex items-center gap-2"
                   >
                     <span>Request Consultation</span>
                     <span className="material-symbols-outlined text-base">arrow_forward</span>
                   </Link>
                   <Link
                     href="/portfolio"
-                    className="bg-[#f4f3f0] text-[#1a1c1a] border border-[#e5e2db] text-sm font-bold  px-6 py-3 rounded-xl hover:bg-[#1c1b19] hover:text-white transition-all duration-300 text-center flex items-center gap-2"
+                    className="bg-[#f4f3f0] text-[#1a1c1a] border border-[#e5e2db] text-sm font-semibold  px-6 py-3 rounded-xl hover:bg-[#1c1b19] hover:text-white transition-all duration-300 text-center flex items-center gap-2"
                   >
                     <span>Monographs</span>
                     <span className="material-symbols-outlined text-base">folder_open</span>

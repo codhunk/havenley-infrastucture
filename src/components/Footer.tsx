@@ -116,6 +116,11 @@ export default function Footer() {
                   Inquiries & Consult
                 </Link>
               </li>
+              <li>
+                <Link href="/admin" className="hover:text-[#cbb392] text-[#cbb392]/90 font-medium transition-colors">
+                  Admin Portal
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -213,6 +218,10 @@ export default function Footer() {
         <div className="pt-6 border-t border-[#282522] flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#86827a]">
           <p>© 2025 Havenley Infrastructure, New Delhi. All rights reserved.</p>
           <div className="flex items-center gap-6">
+            <Link href="/admin" className="hover:text-[#cbb392] text-[#d4d0c8] font-semibold transition-colors flex items-center gap-1">
+              <span className="material-symbols-outlined text-xs">admin_panel_settings</span>
+              <span>Admin Login</span>
+            </Link>
             <a href="#" className="hover:text-[#ffffff] transition-colors">
               Privacy Policy
             </a>

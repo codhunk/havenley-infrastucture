@@ -140,7 +140,7 @@ export default function PortfolioPage() {
                     </span>
                     <span className="text-sm text-[#494740]">/ Vol. IV</span>
                   </div>
-                  <h1 className="font-sans font-bold text-3xl sm:text-4xl lg:text-5xl text-[#1a1c1a]">
+                  <h1 className="font-sans font-semibold text-3xl sm:text-4xl lg:text-5xl text-[#1a1c1a]">
                     Selected Works & Spatial Studies
                   </h1>
                   <p className="text-sm font-semibold text-[#715a3e]  pt-2">
@@ -301,7 +301,7 @@ export default function PortfolioPage() {
                               {project.location}
                             </span>
                           </div>
-                          <h2 className="font-sans font-bold text-xl text-[#1a1c1a] group-hover:text-[#715a3e] transition-colors">
+                          <h2 className="font-sans font-semibold text-xl text-[#1a1c1a] group-hover:text-[#715a3e] transition-colors">
                             {project.title}
                           </h2>
                           <p className="text-sm text-[#494740] mt-2 line-clamp-2">
@@ -344,7 +344,7 @@ export default function PortfolioPage() {
                         {project.code}
                       </span>
                       <div className="col-span-4">
-                        <h3 className="font-sans font-bold text-xl text-[#1a1c1a] group-hover:text-[#715a3e] transition-colors">
+                        <h3 className="font-sans font-semibold text-xl text-[#1a1c1a] group-hover:text-[#715a3e] transition-colors">
                           {project.title}
                         </h3>
                         <p className="text-[11px] text-[#494740]">
@@ -377,7 +377,7 @@ export default function PortfolioPage() {
                   <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
                     Monographic Deep Dive • 01/28
                   </span>
-                  <h2 className="font-sans font-bold text-2xl sm:text-3xl text-[#1a1c1a]">
+                  <h2 className="font-sans font-semibold text-2xl sm:text-3xl text-[#1a1c1a]">
                     Spatial Anatomy: Vasant Vihar Villa
                   </h2>
                 </div>
@@ -556,7 +556,7 @@ export default function PortfolioPage() {
                       <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
                         01 / The Challenge
                       </span>
-                      <h3 className="font-sans font-bold text-xl text-[#1a1c1a] mb-2">
+                      <h3 className="font-sans font-semibold text-xl text-[#1a1c1a] mb-2">
                         Preserving Heritage Under Seismic Code
                       </h3>
                       <p className="text-sm text-[#494740]">
@@ -568,7 +568,7 @@ export default function PortfolioPage() {
                       <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
                         02 / Spatial Strategy
                       </span>
-                      <h3 className="font-sans font-bold text-xl text-[#1a1c1a] mb-2">
+                      <h3 className="font-sans font-semibold text-xl text-[#1a1c1a] mb-2">
                         Radial Volume & Unbroken Horizons
                       </h3>
                       <p className="text-sm text-[#494740]">
@@ -649,7 +649,7 @@ export default function PortfolioPage() {
                 <span className="text-sm font-semibold text-[#fdddb9]  block">
                   Commissions • 2025 / 2026
                 </span>
-                <h2 className="font-sans font-bold text-2xl sm:text-3xl text-[#ffffff]">
+                <h2 className="font-sans font-semibold text-2xl sm:text-3xl text-[#ffffff]">
                   Have an architectural space in development? Let's discuss your spatial ambitions.
                 </h2>
                 <p className="text-sm text-[#868380] max-w-xl">
@@ -694,7 +694,7 @@ export default function PortfolioPage() {
               <span className="text-sm font-semibold text-[#715a3e] ">
                 {selectedProject.code} • {selectedProject.location}
               </span>
-              <h2 className="font-sans font-bold text-3xl text-[#1a1c1a]">
+              <h2 className="font-sans font-semibold text-3xl text-[#1a1c1a]">
                 {selectedProject.title}
               </h2>
               <p className="font-sans text-base text-[#494740] italic font-semibold">
@@ -721,7 +721,7 @@ export default function PortfolioPage() {
               <ul className="space-y-1.5 text-sm text-[#1a1c1a]">
                 {selectedProject.details.map((detail: string, i: number) => (
                   <li key={i} className="flex items-start gap-2">
-                    <span className="text-[#715a3e] font-bold">•</span>
+                    <span className="text-[#715a3e] font-semibold">•</span>
                     <span>{detail}</span>
                   </li>
                 ))}

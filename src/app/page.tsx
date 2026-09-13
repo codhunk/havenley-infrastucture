@@ -135,7 +135,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div className="inline-flex items-center gap-3 bg-[#faf9f6]/10 backdrop-blur-md px-4 py-1.5 shadow-sm border border-[#faf9f6]/20">
                 <span className="w-2 h-2 rounded-full bg-[#cbb392]" />
-                <span className="text-[10px] font-bold text-[#faf9f6] ">
+                <span className="text-[10px] font-semibold text-[#faf9f6] ">
                   [ SECTION 01 // OVERVIEW ] • Est. 2009 • New Delhi • Mumbai
                 </span>
               </div>
@@ -146,10 +146,10 @@ export default function Home() {
 
             {/* Core Display Statement */}
             <div className="max-w-3xl space-y-4 my-auto py-2 md:py-4">
-              <p className="text-xs sm:text-sm font-bold text-[#cbb392]  tracking-wide">
+              <p className="text-xs sm:text-sm font-semibold text-[#cbb392]  tracking-wide">
                 Architectural Precision • Atmospheric Calm
               </p>
-              <h1 className="text-xl sm:text-3xl md:text-5xl font-bold text-[#faf9f6] leading-tight">
+              <h1 className="text-xl sm:text-3xl md:text-5xl font-semibold text-[#faf9f6] leading-tight">
                 Spaces Conceived in Harmony, Sculpted in Light.
               </h1>
               <p className="text-xs sm:text-base text-[#e9e8e5]/90 max-w-2xl font-medium leading-relaxed">
@@ -160,7 +160,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
                 <button
                   onClick={() => scrollToSection("portfolio")}
-                  className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-xs sm:text-sm font-bold  px-6 py-3 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-md"
+                  className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-xs sm:text-sm font-semibold  px-6 py-3 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-md"
                 >
                   <span>Explore Projects</span>
                   <span className="material-symbols-outlined ml-2 text-base">
@@ -169,7 +169,7 @@ export default function Home() {
                 </button>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-xs sm:text-sm font-bold  px-6 py-3 transition-colors duration-300 border border-[#faf9f6]/20"
+                  className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-xs sm:text-sm font-semibold  px-6 py-3 transition-colors duration-300 border border-[#faf9f6]/20"
                 >
                   Schedule Consultation
                 </Link>
@@ -179,11 +179,11 @@ export default function Home() {
             {/* Key Architectural Metrics Ribbon */}
             <div className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 bg-[#1c1b19]/95 backdrop-blur-md px-6 md:px-8 py-4 md:py-5 border border-[#715a3e]/40 shadow-2xl rounded-xl transform-gpu isolate">
               <div className="flex items-center gap-4">
-                <span className="text-2xl md:text-3xl text-[#cbb392] font-bold shrink-0 w-16 text-left inline-block">
+                <span className="text-2xl md:text-3xl text-[#cbb392] font-semibold shrink-0 w-16 text-left inline-block">
                   <AnimatedCounter target={15} suffix="+" minWidth="3.5ch" />
                 </span>
                 <div className="space-y-0.5 min-w-0">
-                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block  tracking-wide">
+                  <span className="text-xs sm:text-sm font-semibold text-[#faf9f6] block  tracking-wide">
                     Years Crafting
                   </span>
                   <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
@@ -193,11 +193,11 @@ export default function Home() {
               </div>
 
               <div className="flex items-center gap-4">
-                <span className="text-2xl md:text-3xl text-[#cbb392] font-bold shrink-0 w-20 text-left inline-block">
+                <span className="text-2xl md:text-3xl text-[#cbb392] font-semibold shrink-0 w-20 text-left inline-block">
                   <AnimatedCounter target={120} suffix="+" minWidth="4.5ch" />
                 </span>
                 <div className="space-y-0.5 min-w-0">
-                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block  tracking-wide">
+                  <span className="text-xs sm:text-sm font-semibold text-[#faf9f6] block  tracking-wide">
                     International Accolades
                   </span>
                   <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
@@ -207,11 +207,11 @@ export default function Home() {
               </div>
 
               <div className="flex items-center gap-4">
-                <span className="text-2xl md:text-3xl text-[#cbb392] font-bold shrink-0 w-20 text-left inline-block">
+                <span className="text-2xl md:text-3xl text-[#cbb392] font-semibold shrink-0 w-20 text-left inline-block">
                   <AnimatedCounter target={98} suffix="%" minWidth="4ch" />
                 </span>
                 <div className="space-y-0.5 min-w-0">
-                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block  tracking-wide">
+                  <span className="text-xs sm:text-sm font-semibold text-[#faf9f6] block  tracking-wide">
                     Private Commissions
                   </span>
                   <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
@@ -224,15 +224,15 @@ export default function Home() {
         </section>
 
         {/* 2. CURATED PHILOSOPHY & SIGNATURE VISION */}
-        <section id="philosophy" className="w-full bg-[#faf9f6] pt-16 md:pt-24 pb-24 border-b border-[#e5e2db] relative z-10">
+        <section id="philosophy" className="w-full bg-[#faf9f6] pt-12 md:pt-16 pb-20 border-b border-[#e5e2db] relative z-10">
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             {/* Section Header */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
               <div className="lg:col-span-8 space-y-2">
-                <span className="text-xs font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3.5 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
+                <span className="text-xs font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-3.5 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
                   [ SECTION 02 // ATELIER ETHOS ]
                 </span>
-                <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
+                <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
                   Monastic Restraint Meets Material Indulgence
                 </h2>
               </div>
@@ -247,7 +247,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch pt-6">
               {/* Pillar 01 */}
               <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#e5e2db] hover:border-[#715a3e]/50 group">
-                <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-bold  shadow-lg border border-[#715a3e]/40 z-10">
+                <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-semibold  shadow-lg border border-[#715a3e]/40 z-10">
                   Pillar 01
                 </div>
                 <div className="space-y-3 pt-2">
@@ -260,7 +260,7 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b19]/30 to-transparent" />
                   </div>
-                  <h3 className="text-lg text-[#1a1c1a] font-bold">
+                  <h3 className="text-lg text-[#1a1c1a] font-semibold">
                     Material Authenticity
                   </h3>
                   <p className="text-sm text-[#494740] font-normal">
@@ -279,7 +279,7 @@ export default function Home() {
 
               {/* Pillar 02 - Featured Overlapping Center Card */}
               <div className="relative z-10 bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between shadow-2xl transition-all duration-500 border-2 border-[#715a3e] lg:-mt-4 group hover:scale-[1.02]">
-                <div className="-top-3.5 left-6 absolute bg-[#715a3e] text-[#ffffff] text-[10px] px-3.5 py-0.5 rounded-full font-bold  shadow-xl z-10 flex items-center gap-1.5">
+                <div className="-top-3.5 left-6 absolute bg-[#715a3e] text-[#ffffff] text-[10px] px-3.5 py-0.5 rounded-full font-semibold  shadow-xl z-10 flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#ffffff] animate-ping" />
                   Pillar 02 • Core Axis
                 </div>
@@ -293,7 +293,7 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b19]/30 to-transparent" />
                   </div>
-                  <h3 className="text-lg text-[#1a1c1a] font-bold">
+                  <h3 className="text-lg text-[#1a1c1a] font-semibold">
                     Spatial Rhythm
                   </h3>
                   <p className="text-sm text-[#494740] font-normal">
@@ -312,7 +312,7 @@ export default function Home() {
 
               {/* Pillar 03 */}
               <div className="relative bg-[#ffffff] p-5 rounded-xl flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#e5e2db] hover:border-[#715a3e]/50 group">
-                <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-bold  shadow-lg border border-[#715a3e]/40 z-10">
+                <div className="-top-3.5 left-6 absolute bg-[#1c1b19] text-[#faf9f6] text-[10px] px-3.5 py-0.5 rounded-full font-semibold  shadow-lg border border-[#715a3e]/40 z-10">
                   Pillar 03
                 </div>
                 <div className="space-y-3 pt-2">
@@ -325,7 +325,7 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b19]/30 to-transparent" />
                   </div>
-                  <h3 className="text-lg text-[#1a1c1a] font-bold">
+                  <h3 className="text-lg text-[#1a1c1a] font-semibold">
                     Bespoke Millwork
                   </h3>
                   <p className="text-sm text-[#494740] font-normal">
@@ -347,19 +347,19 @@ export default function Home() {
 
         {/* 3. FEATURED WORKS PREVIEW */}
         {/* COMPLETED PROJECTS PORTFOLIO */}
-        <section id="portfolio" className="w-full bg-[#f4f3f0] py-20 border-b border-[#e5e2db] relative z-10">
+        <section id="portfolio" className="w-full bg-[#f4f3f0] py-12 border-b border-[#e5e2db] relative z-10">
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             {/* Section Header */}
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
               <div>
-                <span className="text-xs font-bold text-[#715a3e]  bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#e5e2db] shadow-sm inline-block mb-2">
+                <span className="text-xs font-semibold text-[#715a3e]  bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#e5e2db] shadow-sm inline-block mb-2">
                   [ SECTION 03 // PORTFOLIO ]
                 </span>
-                <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
+                <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
                   Construction & Interior Architecture Portfolio
                 </h2>
               </div>
-              <span className="text-xs font-bold text-[#715a3e]  bg-[#ffffff] px-4 py-2 rounded-full border border-[#715a3e]/30 shadow-sm">
+              <span className="text-xs font-semibold text-[#715a3e]  bg-[#ffffff] px-4 py-2 rounded-full border border-[#715a3e]/30 shadow-sm">
                 Featured Commissions [Delhi NCR]
               </span>
             </div>
@@ -381,7 +381,7 @@ export default function Home() {
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-3 left-3 bg-[#1c1b19]/90 backdrop-blur-md text-[#cbb392] px-2.5 py-1 rounded-md text-[10px] font-bold  border border-[#715a3e]/30 shadow-md">
+                    <div className="absolute top-3 left-3 bg-[#1c1b19]/90 backdrop-blur-md text-[#cbb392] px-2.5 py-1 rounded-md text-[10px] font-semibold  border border-[#715a3e]/30 shadow-md">
                       {project.tag}
                     </div>
                   </div>
@@ -389,12 +389,12 @@ export default function Home() {
                   {/* Body Content */}
                   <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
                     <div className="space-y-1.5">
-                      <div className="flex items-center gap-2 text-[10px] font-bold text-[#715a3e] ">
+                      <div className="flex items-center gap-2 text-[10px] font-semibold text-[#715a3e] ">
                         <span>{project.location}</span>
                         <span>•</span>
                         <span>{project.year}</span>
                       </div>
-                      <h3 className="text-lg font-bold text-[#1a1c1a] group-hover:text-[#715a3e] transition-colors">
+                      <h3 className="text-lg font-semibold text-[#1a1c1a] group-hover:text-[#715a3e] transition-colors">
                         {project.title}
                       </h3>
                       <p className="text-[11px] font-semibold text-[#715a3e] ">
@@ -412,7 +412,7 @@ export default function Home() {
                       </span>
                       <button
                         onClick={() => setSelectedProject(project)}
-                        className="bg-[#1c1b19] text-[#ffffff] text-xs font-bold  px-3.5 py-1.5 rounded-lg hover:bg-[#715a3e] transition-colors flex items-center gap-1 shadow-sm"
+                        className="bg-[#1c1b19] text-[#ffffff] text-xs font-semibold  px-3.5 py-1.5 rounded-lg hover:bg-[#715a3e] transition-colors flex items-center gap-1 shadow-sm"
                       >
                         <span>View Project</span>
                         <span className="material-symbols-outlined text-xs">arrow_forward</span>
@@ -430,7 +430,7 @@ export default function Home() {
                   <span className="material-symbols-outlined text-xl">domain</span>
                 </div>
                 <div>
-                  <span className="text-sm font-bold text-[#1a1c1a] block">
+                  <span className="text-sm font-semibold text-[#1a1c1a] block">
                     Interested in viewing our complete portfolio of civil builds & interior fitouts?
                   </span>
                   <span className="text-xs text-[#494740] font-normal">
@@ -440,7 +440,7 @@ export default function Home() {
               </div>
               <Link
                 href="/portfolio"
-                className="bg-[#1c1b19] text-[#ffffff] text-xs font-bold  px-6 py-3 rounded-xl hover:bg-[#715a3e] transition-all duration-300 shadow-md shrink-0 flex items-center gap-1.5"
+                className="bg-[#1c1b19] text-[#ffffff] text-xs font-semibold  px-6 py-3 rounded-xl hover:bg-[#715a3e] transition-all duration-300 shadow-md shrink-0 flex items-center gap-1.5"
               >
                 <span>View All Projects</span>
                 <span className="material-symbols-outlined text-xs">arrow_forward</span>
@@ -450,13 +450,13 @@ export default function Home() {
         </section>
 
         {/* 4. FOUR-STAGE DESIGN METHODOLOGY */}
-        <section id="methodology" className="w-full bg-[#faf9f6] py-24 border-b border-[#e5e2db] relative z-10">
+        <section id="methodology" className="w-full bg-[#faf9f6] py-12 border-b border-[#e5e2db] relative z-10">
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
-            <div className="max-w-2xl mb-16 space-y-2">
-              <span className="text-xs font-bold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
+            <div className="max-w-2xl mb-8 space-y-2">
+              <span className="text-xs font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
                 [ SECTION 05 // METHODOLOGY ]
               </span>
-              <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-bold">
+              <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
                 The Architectural Methodology
               </h2>
               <p className="text-sm text-[#494740] font-medium">
@@ -468,11 +468,11 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
               {/* Step 01 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
-                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1  shadow-md rounded-md">
+                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-xs px-3.5 py-1  shadow-md rounded-md">
                   Phase 01
                 </div>
                 <div className="pt-2">
-                  <h3 className="text-lg text-[#1a1c1a] font-bold mb-2">
+                  <h3 className="text-lg text-[#1a1c1a] font-semibold mb-2">
                     Spatial Discovery & Solar Cartography
                   </h3>
                   <p className="text-sm text-[#494740]">
@@ -497,11 +497,11 @@ export default function Home() {
 
               {/* Step 02 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
-                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1  shadow-md rounded-md">
+                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-xs px-3.5 py-1  shadow-md rounded-md">
                   Phase 02
                 </div>
                 <div className="pt-2">
-                  <h3 className="text-lg text-[#1a1c1a] font-bold mb-2">
+                  <h3 className="text-lg text-[#1a1c1a] font-semibold mb-2">
                     Concept Materiality & 3D Volumetrics
                   </h3>
                   <p className="text-sm text-[#494740]">
@@ -526,11 +526,11 @@ export default function Home() {
 
               {/* Step 03 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
-                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1  shadow-md rounded-md">
+                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-xs px-3.5 py-1  shadow-md rounded-md">
                   Phase 03
                 </div>
                 <div className="pt-2">
-                  <h3 className="text-lg text-[#1a1c1a] font-bold mb-2">
+                  <h3 className="text-lg text-[#1a1c1a] font-semibold mb-2">
                     Bespoke Fabrication & Sourcing
                   </h3>
                   <p className="text-sm text-[#494740]">
@@ -555,11 +555,11 @@ export default function Home() {
 
               {/* Step 04 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
-                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-bold text-xs px-3.5 py-1  shadow-md rounded-md">
+                <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-xs px-3.5 py-1  shadow-md rounded-md">
                   Phase 04
                 </div>
                 <div className="pt-2">
-                  <h3 className="text-lg text-[#1a1c1a] font-bold mb-2">
+                  <h3 className="text-lg text-[#1a1c1a] font-semibold mb-2">
                     Turnkey White-Glove Handover
                   </h3>
                   <p className="text-sm text-[#494740]">
@@ -586,11 +586,11 @@ export default function Home() {
         </section>
 
         {/* 6. CLIENT TESTIMONIALS & PRESS MENTIONS */}
-        <section id="testimonials" className="w-full bg-[#e9e8e5] py-24 border-b border-[#cbc6bd] relative z-10">
+        <section id="testimonials" className="w-full bg-[#e9e8e5] py-16 border-b border-[#cbc6bd] relative z-10">
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             {/* Section Badge */}
-            <div className="mb-8">
-              <span className="text-xs font-bold text-[#715a3e]  bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#cbc6bd] shadow-sm inline-block">
+            <div className="mb-4">
+              <span className="text-xs font-semibold text-[#715a3e]  bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#cbc6bd] shadow-sm inline-block">
                 [ SECTION 06 // TESTIMONIALS & RECOGNITION ]
               </span>
             </div>
@@ -598,7 +598,7 @@ export default function Home() {
             {/* Press Quotes Banner */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pb-12 border-b border-[#cbc6bd]/60 text-center items-center">
               <div className="space-y-1">
-                <span className="text-base font-bold  text-[#1a1c1a] block">
+                <span className="text-base font-semibold  text-[#1a1c1a] block">
                   Architectural Digest
                 </span>
                 <span className="text-xs text-[#494740]">
@@ -606,7 +606,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="space-y-1">
-                <span className="text-base font-bold  text-[#1a1c1a] block">
+                <span className="text-base font-semibold  text-[#1a1c1a] block">
                   Elle Decor
                 </span>
                 <span className="text-xs text-[#494740]">
@@ -614,7 +614,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="space-y-1">
-                <span className="text-base font-bold  text-[#1a1c1a] block">
+                <span className="text-base font-semibold  text-[#1a1c1a] block">
                   Wallpaper*
                 </span>
                 <span className="text-xs text-[#494740]">
@@ -622,7 +622,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="space-y-1">
-                <span className="text-base font-bold  text-[#1a1c1a] block">
+                <span className="text-base font-semibold  text-[#1a1c1a] block">
                   The World of Interiors
                 </span>
                 <span className="text-xs text-[#494740]">
@@ -645,7 +645,7 @@ export default function Home() {
                 </div>
                 <div className="pt-4 border-t border-[#cbc6bd]/40 mt-4 flex items-center justify-between">
                   <div>
-                    <span className="text-sm font-bold text-[#1a1c1a] block">
+                    <span className="text-sm font-semibold text-[#1a1c1a] block">
                       Rajesh & Sunita Kapoor
                     </span>
                     <span className="text-[10px] text-[#494740]  font-semibold">
@@ -670,7 +670,7 @@ export default function Home() {
                 </div>
                 <div className="pt-4 border-t border-[#cbc6bd]/40 mt-4 flex items-center justify-between">
                   <div>
-                    <span className="text-sm font-bold text-[#1a1c1a] block">
+                    <span className="text-sm font-semibold text-[#1a1c1a] block">
                       Vikramaditya Singhania
                     </span>
                     <span className="text-[10px] text-[#494740]  font-semibold">
@@ -695,7 +695,7 @@ export default function Home() {
                 </div>
                 <div className="pt-4 border-t border-[#cbc6bd]/40 mt-4 flex items-center justify-between">
                   <div>
-                    <span className="text-sm font-bold text-[#1a1c1a] block">
+                    <span className="text-sm font-semibold text-[#1a1c1a] block">
                       Ananya & Devendra Roy
                     </span>
                     <span className="text-[10px] text-[#494740]  font-semibold">
@@ -717,11 +717,11 @@ export default function Home() {
           className="relative w-full bg-[#1c1b19] text-[#ffffff] py-20 overflow-hidden z-10 border-t border-[#715a3e]/30"
         >
           <div className="relative z-10 max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20 text-center space-y-6">
-            <div className="inline-flex items-center gap-2 text-[10px] font-bold text-[#cbb392]  bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
+            <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
               <span className="w-1.5 h-1.5 rounded-full bg-[#cbb392] animate-pulse" />
               Private Commissions • Accepting 2025 / 2026
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl text-[#faf9f6] font-bold max-w-3xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl text-[#faf9f6] font-semibold max-w-3xl mx-auto">
               Begin Your Spatial Commission
             </h2>
             <p className="text-sm sm:text-base text-[#e9e8e5]/80 max-w-2xl mx-auto font-medium">
@@ -730,14 +730,14 @@ export default function Home() {
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-sm font-bold  px-8 py-4 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-xl rounded-xl"
+                className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-sm font-semibold  px-8 py-4 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-xl rounded-xl"
               >
                 <span>Schedule Consultation</span>
                 <span className="material-symbols-outlined ml-2 text-base">arrow_forward</span>
               </Link>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-sm font-bold  px-8 py-4 transition-colors duration-300 border border-[#faf9f6]/20 rounded-xl"
+                className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-sm font-semibold  px-8 py-4 transition-colors duration-300 border border-[#faf9f6]/20 rounded-xl"
               >
                 Explore Works
               </Link>
@@ -761,10 +761,10 @@ export default function Home() {
             </button>
 
             <div className="space-y-2">
-              <span className="text-sm font-bold text-[#715a3e] ">
+              <span className="text-sm font-semibold text-[#715a3e] ">
                 {selectedProject.tag} • {selectedProject.location}
               </span>
-              <h2 className="text-2xl md:text-3xl text-[#1a1c1a] font-bold">
+              <h2 className="text-2xl md:text-3xl text-[#1a1c1a] font-semibold">
                 {selectedProject.title}
               </h2>
               <p className="text-base text-[#494740] italic font-semibold">
@@ -784,13 +784,13 @@ export default function Home() {
             </p>
 
             <div className="space-y-2 pt-2">
-              <h4 className="text-sm font-bold text-[#715a3e] ">
+              <h4 className="text-sm font-semibold text-[#715a3e] ">
                 Engineering & Material Architectural Highlights:
               </h4>
               <ul className="space-y-1.5 text-sm text-[#1a1c1a]">
                 {selectedProject.details.map((detail: string, i: number) => (
                   <li key={i} className="flex items-start gap-2">
-                    <span className="text-[#715a3e] font-bold">•</span>
+                    <span className="text-[#715a3e] font-semibold">•</span>
                     <span>{detail}</span>
                   </li>
                 ))}
@@ -803,7 +803,7 @@ export default function Home() {
               </span>
               <button
                 onClick={() => setSelectedProject(null)}
-                className="bg-[#000000] text-[#ffffff] text-sm font-bold  px-6 py-2.5 hover:bg-[#715a3e]"
+                className="bg-[#000000] text-[#ffffff] text-sm font-semibold  px-6 py-2.5 hover:bg-[#715a3e]"
               >
                 Close Monograph
               </button>
