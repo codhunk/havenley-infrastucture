@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -441,8 +442,14 @@ export default function AdminPage() {
       <div className="min-h-screen bg-[#1c1b19] text-[#faf9f6] flex items-center justify-center p-4 font-sans">
         <div className="max-w-md w-full bg-[#faf9f6] text-[#1a1c1a] p-8 rounded-2xl shadow-2xl border border-[#715a3e]/40 space-y-6">
           <div className="text-center space-y-2">
-            <div className="w-12 h-12 bg-[#1c1b19] text-[#cbb392] rounded-xl flex items-center justify-center mx-auto mb-3">
-              <span className="material-symbols-outlined text-2xl">admin_panel_settings</span>
+            <div className="w-12 h-12 bg-[#1c1b19] rounded-xl overflow-hidden flex items-center justify-center mx-auto mb-3 border border-[#715a3e]/40 shadow-sm relative">
+              <Image
+                src="/images/logo.png"
+                alt="Havenley Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-cover"
+              />
             </div>
             <h1 className="text-2xl font-bold  tracking-wide">Studio Management Portal</h1>
             <p className="text-xs text-[#494740] font-medium">Havenley Infrastructure Executive Control Center</p>
@@ -491,8 +498,14 @@ export default function AdminPage() {
       <header className="bg-[#1c1b19] text-[#faf9f6] border-b border-[#715a3e]/40 sticky top-0 z-40">
         <div className="max-w-[1600px] mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-9 h-9 bg-[#715a3e] rounded-lg flex items-center justify-center text-[#ffffff]">
-              <span className="material-symbols-outlined text-xl">admin_panel_settings</span>
+            <div className="w-9 h-9 rounded-lg overflow-hidden flex items-center justify-center bg-[#1c1b19] border border-[#715a3e]/40 shadow-sm relative">
+              <Image
+                src="/images/logo.png"
+                alt="Havenley Logo"
+                width={36}
+                height={36}
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h1 className="text-lg font-bold  tracking-wider">Havenley Control Center</h1>

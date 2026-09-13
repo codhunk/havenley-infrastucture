@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const [newsletterEmail, setNewsletterEmail] = useState("");
@@ -59,10 +60,14 @@ export default function Footer() {
           {/* Brand & Indian Address */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 bg-[#282522] rounded-lg flex items-center justify-center text-[#cbb392] shadow-sm border border-[#715a3e]/50 shrink-0">
-                <svg className="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V3M5 21V3M5 12h14M3 21h18M3 3h18" />
-                </svg>
+              <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-sm border border-[#715a3e]/50 shrink-0 relative bg-[#1c1b19]">
+                <Image
+                  src="/images/logo.png"
+                  alt="Havenley Infrastructure Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <span className="font-bold text-base sm:text-lg  text-[#ffffff]">
                 Havenley <span className="text-[#cbb392]">Infrastructure</span>

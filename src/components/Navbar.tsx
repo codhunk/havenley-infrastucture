@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import ScheduleMeetingModal from "@/components/ScheduleMeetingModal";
 
@@ -25,10 +26,14 @@ export default function Navbar() {
           {/* Brand Logo */}
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-3 group text-left">
-              <div className="w-9 h-9 bg-[#1c1b19] rounded-lg flex items-center justify-center text-[#cbb392] shadow-sm border border-[#715a3e]/40 group-hover:bg-[#715a3e] group-hover:text-[#ffffff] transition-all duration-300 shrink-0">
-                <svg className="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V3M5 21V3M5 12h14M3 21h18M3 3h18" />
-                </svg>
+              <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-sm border border-[#715a3e]/40 shrink-0 relative bg-[#1c1b19]">
+                <Image
+                  src="/images/logo.png"
+                  alt="Havenley Infrastructure Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
               <span className="font-bold text-sm sm:text-lg md:text-xl text-[#1a1c1a] font-sans">
                 Havenley <span className="text-[#715a3e]">Infrastructure</span>
