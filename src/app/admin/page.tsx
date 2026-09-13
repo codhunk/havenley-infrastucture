@@ -463,7 +463,7 @@ export default function AdminPage() {
                 required
                 value={passkeyInput}
                 onChange={(e) => setPasskeyInput(e.target.value)}
-                placeholder="Enter Passkey (e.g. havenley2025)"
+                placeholder="Enter Passkey (e.g. Interior123@)"
                 className="w-full bg-[#f4f3f0] border border-[#cbc6bd]/60 px-4 py-3 text-sm focus:outline-none focus:border-[#715a3e] font-sans"
               />
             </div>

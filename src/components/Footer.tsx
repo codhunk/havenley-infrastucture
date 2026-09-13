@@ -220,7 +220,7 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <Link href="/admin" className="hover:text-[#cbb392] text-[#d4d0c8] font-semibold transition-colors flex items-center gap-1">
               <span className="material-symbols-outlined text-xs">admin_panel_settings</span>
-              <span>Admin Login</span>
+              <span>Admin</span>
             </Link>
             <a href="#" className="hover:text-[#ffffff] transition-colors">
               Privacy Policy

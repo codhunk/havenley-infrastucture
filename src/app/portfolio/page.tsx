@@ -126,7 +126,7 @@ export default function PortfolioPage() {
       {/* HEADER NAVIGATION */}
       <Navbar />
 
-      <main className="w-full pt-20">
+      <main className="w-full pt-12">
         <div className="flex flex-col w-full">
           {/* Architectural Manifesto & Hero Intro */}
           <section className="relative w-full px-5 md:px-12 lg:px-20 pt-16 pb-20 bg-[#faf9f6]">
@@ -370,7 +370,7 @@ export default function PortfolioPage() {
           </section>
 
           {/* Deep Dive Case Study Feature: Vasant Vihar Villa */}
-          <section className="w-full bg-[#f4f3f0] py-24 px-5 md:px-12 lg:px-20 border-t border-[#cbc6bd]/40">
+          <section className="w-full bg-[#f4f3f0] py-16 px-5 md:px-12 lg:px-20 border-t border-[#cbc6bd]/40">
             <div className="max-w-[1600px] mx-auto space-y-12">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-4 border-b border-[#e3e2e0]">
                 <div>
@@ -643,7 +643,7 @@ export default function PortfolioPage() {
           </section>
 
           {/* Curated Inquiries Call to Action */}
-          <section className="w-full bg-[#000000] text-[#ffffff] py-24 px-5 md:px-12 lg:px-20 relative overflow-hidden">
+          <section className="w-full bg-[#000000] text-[#ffffff] py-16 px-5 md:px-12 lg:px-20 relative overflow-hidden">
             <div className="max-w-[1200px] mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
               <div className="space-y-4 text-center lg:text-left max-w-2xl">
                 <span className="text-sm font-semibold text-[#fdddb9]  block">
