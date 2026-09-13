@@ -266,7 +266,7 @@ export default function PortfolioPage() {
           </section>
 
           {/* Project Showcase Container */}
-          <section className="w-full px-5 md:px-12 lg:px-20 pb-28 bg-[#faf9f6]">
+          <section className="w-full px-5 md:px-12 lg:px-20 pb-16 bg-[#faf9f6]">
             <div className="max-w-[1600px] mx-auto">
               {/* Grid Mode Display */}
               {viewMode === "grid" ? (
@@ -370,8 +370,8 @@ export default function PortfolioPage() {
           </section>
 
           {/* Deep Dive Case Study Feature: Vasant Vihar Villa */}
-          <section className="w-full bg-[#f4f3f0] py-16 px-5 md:px-12 lg:px-20 border-t border-[#cbc6bd]/40">
-            <div className="max-w-[1600px] mx-auto space-y-12">
+          <section className="w-full bg-[#f4f3f0] py-8 px-5 md:px-12 lg:px-20 border-t border-[#cbc6bd]/40">
+            <div className="max-w-[1600px] mx-auto space-y-6">
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-4 border-b border-[#e3e2e0]">
                 <div>
                   <span className="text-sm font-semibold text-[#715a3e]  block mb-2">

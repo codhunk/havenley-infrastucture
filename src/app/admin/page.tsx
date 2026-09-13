@@ -444,11 +444,11 @@ export default function AdminPage() {
           <div className="text-center space-y-2">
             <div className="w-12 h-12 bg-[#1c1b19] rounded-xl overflow-hidden flex items-center justify-center mx-auto mb-3 border border-[#715a3e]/40 shadow-sm relative">
               <Image
-                src="/images/logo.png"
+                src="/logo.svg"
                 alt="Havenley Logo"
                 width={48}
                 height={48}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <h1 className="text-2xl font-bold  tracking-wide">Studio Management Portal</h1>
@@ -500,11 +500,11 @@ export default function AdminPage() {
           <div className="flex items-center gap-4">
             <div className="w-9 h-9 rounded-lg overflow-hidden flex items-center justify-center bg-[#1c1b19] border border-[#715a3e]/40 shadow-sm relative">
               <Image
-                src="/images/logo.png"
+                src="/logo.svg"
                 alt="Havenley Logo"
                 width={36}
                 height={36}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div>

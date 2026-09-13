@@ -28,11 +28,12 @@ export default function Navbar() {
             <Link href="/" className="flex items-center gap-3 group text-left">
               <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-sm border border-[#715a3e]/40 shrink-0 relative bg-[#1c1b19]">
                 <Image
-                  src="/images/logo.png"
+                  src="/logo.svg"
                   alt="Havenley Infrastructure Logo"
                   width={40}
                   height={40}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  priority
                 />
               </div>
               <span className="font-bold text-sm sm:text-lg md:text-xl text-[#1a1c1a] font-sans">

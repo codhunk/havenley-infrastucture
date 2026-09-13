@@ -369,7 +369,7 @@ export default function Home() {
               {projects.map((project, index) => (
                 <div
                   key={project._id || project.id || project.slug || index}
-                  className="bg-[#ffffff] rounded-2xl overflow-hidden border border-[#e5e2db] shadow-md hover:shadow-xl hover:border-[#715a3e]/50 transition-all duration-300 flex flex-col group"
+                  className="bg-[#ffffff] rounded-lg overflow-hidden border border-[#e5e2db] shadow-md hover:shadow-xl hover:border-[#715a3e]/50 transition-all duration-300 flex flex-col group"
                 >
                   {/* Image Header */}
                   <div

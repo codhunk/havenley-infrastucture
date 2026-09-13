@@ -62,11 +62,11 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-sm border border-[#715a3e]/50 shrink-0 relative bg-[#1c1b19]">
                 <Image
-                  src="/images/logo.png"
+                  src="/logo.svg"
                   alt="Havenley Infrastructure Logo"
                   width={40}
                   height={40}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <span className="font-bold text-base sm:text-lg  text-[#ffffff]">
@@ -220,19 +220,19 @@ export default function Footer() {
         </div>
 
         {/* Bottom Legal & Single Copyright */}
-        <div className="pt-6 border-t border-[#282522] flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-[#86827a]">
-          <p>© 2025 Havenley Infrastructure, New Delhi. All rights reserved.</p>
+        <div className="pt-6 border-t border-[#282522] flex flex-col md:flex-row items-center justify-between gap-4 text-[12px] text-[#86827a]">
+          <p>© 2025 Havenley Infrastructure, New Delhi. All rights reserved. • Maintained by <a href="https://www.webduality.in" target="_blank" rel="noreferrer" className="text-[#cbb392] font-semibold hover:underline transition-colors">WebDuality</a></p>
           <div className="flex items-center gap-6">
             <Link href="/admin" className="hover:text-[#cbb392] text-[#d4d0c8] font-semibold transition-colors flex items-center gap-1">
               <span className="material-symbols-outlined text-xs">admin_panel_settings</span>
               <span>Admin</span>
             </Link>
-            <a href="#" className="hover:text-[#ffffff] transition-colors">
+            <Link href="/privacy-policy" className="hover:text-[#ffffff] transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-[#ffffff] transition-colors">
+            </Link>
+            <Link href="/terms-of-service" className="hover:text-[#ffffff] transition-colors">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

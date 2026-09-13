@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="spaceGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF5"/>
+      <stop offset="30%" stop-color="#EED693"/>
+      <stop offset="65%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#72541C"/>
+    </linearGradient>
+    <linearGradient id="haloShine" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#FFFDF7"/>
+      <stop offset="100%" stop-color="#E2C172"/>
+    </linearGradient>
+    <radialGradient id="interiorCardBg" cx="50%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#24211D"/>
+      <stop offset="60%" stop-color="#141312"/>
+      <stop offset="100%" stop-color="#090808"/>
+    </radialGradient>
+    <radialGradient id="interiorAura" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow3" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <rect x="32" y="32" width="448" height="448" rx="80" fill="url(#interiorCardBg)" filter="url(#softShadow3)"/>
+  <rect x="32" y="32" width="448" height="448" rx="80" fill="url(#interiorAura)"/>
+  <rect x="32" y="32" width="448" height="448" rx="80" stroke="url(#spaceGold)" stroke-width="2.5"/>
+
+  <!-- 3D One-Point Perspective: The Heavenly Interior Sanctuary -->
+  <!-- Outer Room Volume -->
+  <polygon points="160,116 352,116 312,160 200,160" fill="#D4AF37" fill-opacity="0.22" stroke="url(#haloShine)" stroke-width="1.8"/>
+  <polygon points="160,116 160,280 200,244 200,160" fill="#D4AF37" fill-opacity="0.12" stroke="url(#haloShine)" stroke-width="1.8"/>
+  <polygon points="352,116 352,280 312,244 312,160" fill="#D4AF37" fill-opacity="0.28" stroke="url(#haloShine)" stroke-width="1.8"/>
+  <polygon points="160,280 352,280 312,244 200,244" fill="#D4AF37" fill-opacity="0.38" stroke="url(#haloShine)" stroke-width="1.8"/>
+
+  <!-- Central Focal Monolith Plane -->
+  <rect x="200" y="160" width="112" height="84" fill="#181715" stroke="url(#spaceGold)" stroke-width="2"/>
+
+  <!-- Floating Celestial Halo Chandelier (Luminary of Divine Light) -->
+  <line x1="256" y1="116" x2="256" y2="174" stroke="#FFFDF7" stroke-width="2"/>
+  <ellipse cx="256" cy="176" rx="28" ry="7.5" stroke="url(#haloShine)" stroke-width="3" fill="none"/>
+  <circle cx="256" cy="176" r="3.5" fill="#FFFFFF"/>
+  <line x1="240" y1="176" x2="272" y2="176" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.6"/>
+
+  <!-- Sculptural Altar/Lounge Monolith -->
+  <path d="M228 230 L284 230 L278 214 L234 214 Z" fill="url(#haloShine)"/>
+  <line x1="232" y1="230" x2="230" y2="238" stroke="url(#spaceGold)" stroke-width="2.5"/>
+  <line x1="280" y1="230" x2="282" y2="238" stroke="url(#spaceGold)" stroke-width="2.5"/>
+
+  <text x="256" y="386" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" font-weight="700" letter-spacing="3" fill="#FAF5E8">HAUTE INTERIORS</text>
+  <text x="256" y="414" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="500" letter-spacing="2" fill="#D4AF37">Heavenly Proportion, Halo Light &amp; Space</text>
+</svg>
