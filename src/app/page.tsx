@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
@@ -10,8 +10,30 @@ import AnimatedCounter from "@/components/AnimatedCounter";
 export default function Home() {
   const [activeNav, setActiveNav] = useState("home");
   const [selectedProject, setSelectedProject] = useState<any | null>(null);
+  const [projectsList, setProjectsList] = useState<any[]>([]);
 
-  const projects = [
+  useEffect(() => {
+    fetchProjects();
+  }, []);
+
+  const fetchProjects = async () => {
+    try {
+      let res = await fetch("/api/projects");
+      let data = await res.json();
+      if (data.success && data.data.length === 0) {
+        await fetch("/api/seed");
+        res = await fetch("/api/projects");
+        data = await res.json();
+      }
+      if (data.success && data.data.length > 0) {
+        setProjectsList(data.data);
+      }
+    } catch (err) {
+      console.error("Failed to load home projects:", err);
+    }
+  };
+
+  const defaultProjects = [
     {
       id: "vasant-vihar-villa",
       title: "Vasant Vihar Luxury Villa",
@@ -74,6 +96,8 @@ export default function Home() {
     },
   ];
 
+  const projects = projectsList.length > 0 ? projectsList : defaultProjects;
+
   const scrollToSection = (id: string) => {
     setActiveNav(id);
     const element = document.getElementById(id);
@@ -91,7 +115,7 @@ export default function Home() {
         {/* 1. HERO SECTION WITH OVERLAPPING METRICS BAR */}
         <section
           id="home"
-          className="relative w-full overflow-hidden bg-[#1c1b19] text-[#ffffff] border-b border-[#715a3e]/30"
+          className="relative w-full overflow-hidden bg-[#1c1b19] text-[#ffffff] border-b border-[#715a3e]/30 min-h-[calc(100dvh-5rem)] flex flex-col justify-between"
         >
           {/* Background Image Scrim */}
           <div className="absolute inset-0 z-0">
@@ -106,7 +130,7 @@ export default function Home() {
           </div>
 
           {/* Hero Content Matrix */}
-          <div className="relative z-10 max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20 pt-24 pb-20 min-h-[82vh] flex flex-col justify-between">
+          <div className="relative z-10 max-w-[1600px] w-full mx-auto px-5 md:px-12 lg:px-20 pt-6 md:pt-8 pb-6 md:pb-8 flex-1 flex flex-col justify-between gap-6">
             {/* Upper Metatags */}
             <div className="flex items-center justify-between">
               <div className="inline-flex items-center gap-3 bg-[#faf9f6]/10 backdrop-blur-md px-4 py-1.5 shadow-sm border border-[#faf9f6]/20">
@@ -121,22 +145,22 @@ export default function Home() {
             </div>
 
             {/* Core Display Statement */}
-            <div className="max-w-3xl space-y-5 my-auto pt-8 pb-10">
-              <p className="text-sm font-bold text-[#cbb392] uppercase">
+            <div className="max-w-3xl space-y-4 my-auto py-2 md:py-4">
+              <p className="text-xs sm:text-sm font-bold text-[#cbb392] uppercase tracking-wide">
                 Architectural Precision • Atmospheric Calm
               </p>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#faf9f6]">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#faf9f6] leading-tight">
                 Spaces Conceived in Harmony, Sculpted in Light.
               </h1>
-              <p className="text-sm sm:text-base text-[#e9e8e5]/90 max-w-2xl font-medium">
+              <p className="text-xs sm:text-base text-[#e9e8e5]/90 max-w-2xl font-medium leading-relaxed">
                 Havenley Infrastructure delivers premier construction engineering and luxury interior design across ultra-prime residential, bespoke commercial, and turnkey infrastructural transformations.
               </p>
 
               {/* CTA Cluster */}
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-3">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
                 <button
                   onClick={() => scrollToSection("portfolio")}
-                  className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-sm font-bold uppercase px-7 py-3.5 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-md"
+                  className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-xs sm:text-sm font-bold uppercase px-6 py-3 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-md"
                 >
                   <span>Explore Projects</span>
                   <span className="material-symbols-outlined ml-2 text-base">
@@ -145,52 +169,52 @@ export default function Home() {
                 </button>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-sm font-bold uppercase px-7 py-3.5 transition-colors duration-300 border border-[#faf9f6]/20"
+                  className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-xs sm:text-sm font-bold uppercase px-6 py-3 transition-colors duration-300 border border-[#faf9f6]/20"
                 >
                   Schedule Consultation
                 </Link>
               </div>
             </div>
 
-            {/* Overlapping Key Architectural Metrics Ribbon */}
-            <div className="-mb-14 relative z-20 grid grid-cols-1 md:grid-cols-3 gap-6 bg-[#1c1b19]/95 backdrop-blur-md px-8 py-6 border border-[#715a3e]/40 shadow-2xl rounded-xl">
-              <div className="flex items-baseline gap-4">
-                <span className="text-2xl md:text-3xl text-[#cbb392] font-bold">
-                  <AnimatedCounter target={15} suffix="+" />
+            {/* Key Architectural Metrics Ribbon */}
+            <div className="relative z-20 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 bg-[#1c1b19]/95 backdrop-blur-md px-6 md:px-8 py-4 md:py-5 border border-[#715a3e]/40 shadow-2xl rounded-xl transform-gpu isolate">
+              <div className="flex items-center gap-4">
+                <span className="text-2xl md:text-3xl text-[#cbb392] font-bold shrink-0 w-16 text-left inline-block">
+                  <AnimatedCounter target={15} suffix="+" minWidth="3.5ch" />
                 </span>
-                <div className="space-y-0.5">
-                  <span className="text-sm font-bold text-[#faf9f6] block uppercase">
+                <div className="space-y-0.5 min-w-0">
+                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block uppercase tracking-wide">
                     Years Crafting
                   </span>
-                  <span className="text-[12px] text-[#e3e2e0]/80 font-medium">
+                  <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
                     Monolithic permanence & curated living
                   </span>
                 </div>
               </div>
 
-              <div className="flex items-baseline gap-4">
-                <span className="text-2xl md:text-3xl text-[#cbb392] font-bold">
-                  <AnimatedCounter target={120} suffix="+" />
+              <div className="flex items-center gap-4">
+                <span className="text-2xl md:text-3xl text-[#cbb392] font-bold shrink-0 w-20 text-left inline-block">
+                  <AnimatedCounter target={120} suffix="+" minWidth="4.5ch" />
                 </span>
-                <div className="space-y-0.5">
-                  <span className="text-sm font-bold text-[#faf9f6] block uppercase">
+                <div className="space-y-0.5 min-w-0">
+                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block uppercase tracking-wide">
                     International Accolades
                   </span>
-                  <span className="text-[12px] text-[#e3e2e0]/80 font-medium">
+                  <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
                     Pinnacle awards across EU, US & Asia
                   </span>
                 </div>
               </div>
 
-              <div className="flex items-baseline gap-4">
-                <span className="text-2xl md:text-3xl text-[#cbb392] font-bold">
-                  <AnimatedCounter target={98} suffix="%" />
+              <div className="flex items-center gap-4">
+                <span className="text-2xl md:text-3xl text-[#cbb392] font-bold shrink-0 w-20 text-left inline-block">
+                  <AnimatedCounter target={98} suffix="%" minWidth="4ch" />
                 </span>
-                <div className="space-y-0.5">
-                  <span className="text-sm font-bold text-[#faf9f6] block uppercase">
+                <div className="space-y-0.5 min-w-0">
+                  <span className="text-xs sm:text-sm font-bold text-[#faf9f6] block uppercase tracking-wide">
                     Private Commissions
                   </span>
-                  <span className="text-[12px] text-[#e3e2e0]/80 font-medium">
+                  <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
                     Tailored residential sanctuaries & estates
                   </span>
                 </div>
@@ -200,7 +224,7 @@ export default function Home() {
         </section>
 
         {/* 2. CURATED PHILOSOPHY & SIGNATURE VISION */}
-        <section id="philosophy" className="w-full bg-[#faf9f6] pt-32 pb-24 border-b border-[#e5e2db] relative z-10">
+        <section id="philosophy" className="w-full bg-[#faf9f6] pt-16 md:pt-24 pb-24 border-b border-[#e5e2db] relative z-10">
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             {/* Section Header */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
@@ -342,9 +366,9 @@ export default function Home() {
 
             {/* Concise & Attractive 3-Column Project Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {projects.map((project) => (
+              {projects.map((project, index) => (
                 <div
-                  key={project.id}
+                  key={project._id || project.id || project.slug || index}
                   className="bg-[#ffffff] rounded-2xl overflow-hidden border border-[#e5e2db] shadow-md hover:shadow-xl hover:border-[#715a3e]/50 transition-all duration-300 flex flex-col group"
                 >
                   {/* Image Header */}

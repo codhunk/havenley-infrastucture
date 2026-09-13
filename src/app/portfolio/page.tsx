@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -12,7 +12,39 @@ export default function PortfolioPage() {
   const [selectedProject, setSelectedProject] = useState<any | null>(null);
   const [dossierRequested, setDossierRequested] = useState(false);
 
-  const projects = [
+  const [projectsList, setProjectsList] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchProjects();
+  }, []);
+
+  const fetchProjects = async () => {
+    setLoading(true);
+    try {
+      let res = await fetch("/api/projects");
+      let data = await res.json();
+
+      if (data.success && data.data.length === 0) {
+        await fetch("/api/seed");
+        res = await fetch("/api/projects");
+        data = await res.json();
+      }
+
+      if (data.success && data.data.length > 0) {
+        setProjectsList(data.data);
+      } else {
+        setProjectsList(defaultProjects);
+      }
+    } catch (err) {
+      console.error("Failed to fetch API projects:", err);
+      setProjectsList(defaultProjects);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const defaultProjects = [
     {
       id: "vasant-vihar",
       code: "DEL — 01",
@@ -67,68 +99,14 @@ export default function PortfolioPage() {
         "Complete mobile app automation for lighting and curtains",
       ],
     },
-    {
-      id: "aerocity",
-      code: "DEL — 04",
-      title: "Aerocity Commercial Plaza",
-      category: "infrastructure",
-      type: "Commercial Build • 2024",
-      location: "New Delhi, India",
-      surface: "920 m²",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuB8xd0L9h7FkPneOvDNJGN6dUrKZ1ShGpXCyXN5O8blY4yPaXK9dCbFFZ0gPIZXNeA8vqFBi3KeD5YrkNCMqZKBgZ3SKUDD826WocRinSbS7MePiAg2TWx6YXNdlVmSLV4vQHExnBEiq9V02LuNkGOWZltbjYiL4jh8lL01hJUgLsEBE1F38hiFyUNY1V2lo_A10ZvS8_GH8eIXW3T70uYyp7pChDuFF7MYATVBEP3-GE5wzutJ_w20",
-      description:
-        "Structural steel framing and glass facade engineering for a multi-story retail and corporate commercial plaza.",
-      tags: ["Structural Steel", "Glass Facade", "Granite Lobby"],
-      details: [
-        "High-load structural steel framework with earthquake damping",
-        "Energy-efficient low-E glass curtain wall installation",
-        "Polished Indian black granite flooring in entrance atrium",
-      ],
-    },
-    {
-      id: "noida-tech",
-      code: "NOI — 05",
-      title: "Noida Tech Park Headquarters",
-      category: "infrastructure millwork",
-      type: "Tech Workspace • 2023",
-      location: "Noida, India",
-      surface: "750 m²",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAp4dCo_4cESxlT24LckIZkRFb9venWeo79Dgd3sB5yaRyy1v-EqE0sVIBVkoMYSLSiBqC-UZlMOFoqVuRYuixC8SnXixU8JkVF97M7YP8v2IkXoXL45RXF6G0rITyiFnZQr9sQPIkNZU5KujN7cqTx3mCnLMdp5cV91m6zOjXsyCqzag7Va01WVKhogrhfy_PnqtxBrybJcgLA7cGDydn7FnYz4rPqHGcMTPMsUIvMovoZBElfZsVX",
-      description:
-        "Open-plan corporate workspace fitout combining modular workstation layouts, breakout lounge areas, and acoustic wall baffles.",
-      tags: ["Modular Fitouts", "Breakout Lounges", "Acoustics"],
-      details: [
-        "Custom acoustic baffle ceilings reducing noise reverberation",
-        "Ergonomic modular workstations with cable management",
-        "Cafeteria and lounge millwork using durable laminate veneers",
-      ],
-    },
-    {
-      id: "canyon",
-      code: "US — 08",
-      title: "Canyon Residence",
-      category: "residences hospitality",
-      type: "Desert Sanctuary • 2025",
-      location: "Ojai, California",
-      surface: "490 m²",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuCI9jYbuY-ZO7qOJmQ0Xdx67l18Iau3CeNtI26bPDmSGqE_IawL-QD9Ev1tNHBz2ZsMkkRjlLhF-1adrWfDdop4YIbOx-IFNAxHJnjpm6vOdoOmnEZbwjrluKZXjqweY2SxJHuMc175bZrh3m8CfrCmMToFhI9gZiPo_pj0ySy4vJpK2kUXlD7OxWfeVXq5JO50yimdX7HYKNY4JiiqGvbd5ajGy2Xeb3wXVw_CF-1EjiZQHQx3R_Cw",
-      description:
-        "Earthy horizontal stratification blending seamlessly into the arid topography via local earth casting and passive thermal micro-climates.",
-      tags: ["Rammed Earth", "Raw Clay", "Weathered Teak"],
-      details: [
-        "Terracotta-hued rammed earth walls cast with local clay",
-        "Passive solar chimney & natural cross-ventilation system",
-        "Custom weathered teak sun loungers and cantilevered deck",
-      ],
-    },
   ];
 
-  const filteredProjects = projects.filter((project) => {
+  const displayProjects = projectsList.length > 0 ? projectsList : defaultProjects;
+
+  const filteredProjects = displayProjects.filter((project) => {
     if (activeFilter === "all") return true;
-    return project.category.includes(activeFilter);
+    const cat = project.category || project.tag || "";
+    return cat.toLowerCase().includes(activeFilter.toLowerCase());
   });
 
   const handleRequestDossier = () => {
@@ -170,30 +148,30 @@ export default function PortfolioPage() {
                   </p>
                 </div>
 
-                <div className="max-w-md space-y-3 bg-[#f4f3f0] p-6 shadow-sm border border-[#cbc6bd]/30">
+                <div className="max-w-md space-y-3 bg-[#f4f3f0] p-6 shadow-sm border border-[#cbc6bd]/30 transform-gpu isolate">
                   <p className="text-sm text-[#494740]">
                     We engineer and build end-to-end architectural environments spanning civil infrastructure, turnkey commercial developments, and bespoke luxury interiors with rigorous structural excellence and unhurried artisanal craftsmanship.
                   </p>
-                  <div className="flex items-center gap-6 pt-2 text-sm text-[#1a1c1a]">
-                    <div>
-                      <span className="block font-semibold text-[#000000]">
+                  <div className="flex items-center gap-6 pt-2 text-sm text-[#1a1c1a] flex-wrap sm:flex-nowrap">
+                    <div className="shrink-0">
+                      <span className="block font-semibold text-[#000000] tabular-nums">
                         <AnimatedCounter target={28} />
                       </span>
-                      <span className="text-[#494740]">Global Sites</span>
+                      <span className="text-[#494740] whitespace-nowrap">Global Sites</span>
                     </div>
-                    <div className="w-px h-6 bg-[#e3e2e0]" />
-                    <div>
-                      <span className="block font-semibold text-[#000000]">
+                    <div className="w-px h-6 bg-[#e3e2e0] shrink-0" />
+                    <div className="shrink-0">
+                      <span className="block font-semibold text-[#000000] tabular-nums">
                         <AnimatedCounter target={6} />
                       </span>
-                      <span className="text-[#494740]">Capitals</span>
+                      <span className="text-[#494740] whitespace-nowrap">Capitals</span>
                     </div>
-                    <div className="w-px h-6 bg-[#e3e2e0]" />
-                    <div>
-                      <span className="block font-semibold text-[#000000]">
+                    <div className="w-px h-6 bg-[#e3e2e0] shrink-0" />
+                    <div className="shrink-0">
+                      <span className="block font-semibold text-[#000000] tabular-nums">
                         <AnimatedCounter target={100} suffix="%" />
                       </span>
-                      <span className="text-[#494740]">Bespoke Millwork</span>
+                      <span className="text-[#494740] whitespace-nowrap">Bespoke Millwork</span>
                     </div>
                   </div>
                 </div>
@@ -293,9 +271,9 @@ export default function PortfolioPage() {
               {/* Grid Mode Display */}
               {viewMode === "grid" ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {filteredProjects.map((project) => (
+                  {filteredProjects.map((project, index) => (
                     <article
-                      key={project.id}
+                      key={project._id || project.id || project.slug || index}
                       onClick={() => setSelectedProject(project)}
                       className="group flex flex-col bg-[#ffffff] shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden border border-[#cbc6bd]/40 cursor-pointer"
                     >
@@ -306,10 +284,10 @@ export default function PortfolioPage() {
                           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                         />
                         <div className="absolute top-4 left-4 bg-[#faf9f6]/90 backdrop-blur-sm px-3 py-1 text-[10px] uppercase text-[#1a1c1a]">
-                          {project.code}
+                          {project.code || "ARCH"}
                         </div>
                         <div className="absolute bottom-4 right-4 bg-[#000000]/90 backdrop-blur-sm text-[#ffffff] px-3 py-1 text-[10px] uppercase font-semibold">
-                          {project.surface}
+                          {project.surface || project.footprint}
                         </div>
                       </div>
 
@@ -317,7 +295,7 @@ export default function PortfolioPage() {
                         <div>
                           <div className="flex items-baseline justify-between mb-2">
                             <span className="text-[10px] font-semibold text-[#715a3e] uppercase">
-                              {project.type}
+                              {project.type || project.scope || project.tag}
                             </span>
                             <span className="text-[10px] text-[#494740]">
                               {project.location}
@@ -332,16 +310,6 @@ export default function PortfolioPage() {
                         </div>
 
                         <div className="pt-2 space-y-3">
-                          {/* <div className="flex flex-wrap gap-1.5">
-                            {project.tags.map((tag) => (
-                              <span
-                                key={tag}
-                                className="bg-[#faf9f6] px-2.5 py-1 text-[10px] text-[#1a1c1a] uppercase border border-[#cbc6bd]/30"
-                              >
-                                {tag}
-                              </span>
-                            ))}
-                          </div> */}
                           <div className="flex items-center justify-between pt-2 border-t border-[#cbc6bd]/30">
                             <span className="text-[11px] font-semibold uppercase text-[#000000] group-hover:underline underline-offset-4">
                               Explore Monograph &rarr;
@@ -366,9 +334,9 @@ export default function PortfolioPage() {
                     <span className="col-span-2 text-right">Action</span>
                   </div>
 
-                  {filteredProjects.map((project) => (
+                  {filteredProjects.map((project, index) => (
                     <div
-                      key={project.id}
+                      key={project._id || project.id || project.slug || index}
                       onClick={() => setSelectedProject(project)}
                       className="grid grid-cols-12 items-center px-6 py-5 hover:bg-[#f4f3f0] transition-colors group cursor-pointer"
                     >
@@ -396,7 +364,7 @@ export default function PortfolioPage() {
                       </div>
                     </div>
                   ))}
-                </div>
+                </div> 
               )}
             </div>
           </section>

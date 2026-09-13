@@ -6,15 +6,43 @@ import Link from "next/link";
 export default function Footer() {
   const [newsletterEmail, setNewsletterEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  const [subscribeMessage, setSubscribeMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newsletterEmail) return;
-    setSubscribed(true);
-    setTimeout(() => {
-      setSubscribed(false);
+    if (!newsletterEmail.trim()) return;
+
+    setIsSubmitting(true);
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/subscribers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: newsletterEmail }),
+      });
+
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        setErrorMsg(data.error || "Subscription failed. Please check your email.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      setSubscribeMessage(data.message || "Subscribed to Havenley Journal.");
+      setSubscribed(true);
       setNewsletterEmail("");
-    }, 4000);
+      setIsSubmitting(false);
+
+      setTimeout(() => {
+        setSubscribed(false);
+      }, 5000);
+    } catch (err: any) {
+      setErrorMsg(err.message || "Failed to subscribe.");
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -22,7 +50,7 @@ export default function Footer() {
       {/* Toast Feedback */}
       {subscribed && (
         <div className="fixed bottom-6 right-6 z-50 bg-[#cbb392] text-[#121110] px-6 py-4 text-sm font-bold uppercase shadow-2xl border-l-4 border-[#715a3e]">
-          ✓ Subscribed to Havenley Journal.
+          ✓ {subscribeMessage || "Subscribed to Havenley Journal."}
         </div>
       )}
 
@@ -99,19 +127,26 @@ export default function Footer() {
             <form onSubmit={handleSubscribe} className="flex items-center gap-2">
               <input
                 value={newsletterEmail}
-                onChange={(e) => setNewsletterEmail(e.target.value)}
+                onChange={(e) => {
+                  setNewsletterEmail(e.target.value);
+                  if (errorMsg) setErrorMsg("");
+                }}
                 className="flex-1 bg-[#1c1b19] border border-[#383430] px-4 py-2.5 text-sm text-[#ffffff] placeholder:text-[#86827a] focus:outline-none focus:border-[#cbb392] transition-colors rounded-lg"
                 placeholder="Enter email address"
                 type="email"
                 required
               />
               <button
-                className="bg-[#715a3e] text-[#ffffff] text-sm font-semibold uppercase px-5 py-2.5 rounded-lg hover:bg-[#cbb392] hover:text-[#121110] transition-all duration-300"
+                disabled={isSubmitting}
+                className="bg-[#715a3e] text-[#ffffff] text-sm font-semibold uppercase px-5 py-2.5 rounded-lg hover:bg-[#cbb392] hover:text-[#121110] transition-all duration-300 shrink-0"
                 type="submit"
               >
-                Join
+                {isSubmitting ? "..." : "Join"}
               </button>
             </form>
+            {errorMsg && (
+              <p className="text-xs text-red-400 font-bold mt-1">⚠ {errorMsg}</p>
+            )}
 
             <div className="pt-2">
               <span className="text-[11px] font-bold text-[#cbb392] uppercase block mb-3">

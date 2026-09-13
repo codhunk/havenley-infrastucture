@@ -242,13 +242,13 @@ export default function AboutPage() {
               </div>
 
               {/* Architectural Dimension Metric Ribbon */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-8 bg-[#ffffff] p-5 rounded-xl border border-[#715a3e]/30 shadow-lg divide-y sm:divide-y-0 sm:divide-x divide-[#e5e2db]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-8 bg-[#ffffff] p-5 rounded-xl border border-[#715a3e]/30 shadow-lg divide-y sm:divide-y-0 sm:divide-x divide-[#e5e2db] transform-gpu isolate">
                 <div className="flex items-center gap-3 pt-2 sm:pt-0 sm:pr-3">
                   <div className="w-9 h-9 rounded-lg bg-[#715a3e]/10 flex items-center justify-center text-[#715a3e] shrink-0">
                     <span className="material-symbols-outlined text-xl">domain</span>
                   </div>
-                  <div>
-                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block">
+                  <div className="min-w-0">
+                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block tracking-wide">
                       Dual Sanctums
                     </span>
                     <span className="text-xl text-[#1a1c1a] font-bold block">
@@ -264,12 +264,15 @@ export default function AboutPage() {
                   <div className="w-9 h-9 rounded-lg bg-[#715a3e]/10 flex items-center justify-center text-[#715a3e] shrink-0">
                     <span className="material-symbols-outlined text-xl">castle</span>
                   </div>
-                  <div>
-                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block">
+                  <div className="min-w-0">
+                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block tracking-wide">
                       Permanent Works
                     </span>
-                    <span className="text-xl text-[#1a1c1a] font-bold block">
-                      <AnimatedCounter target={54} suffix=" Estates" />
+                    <span className="text-xl text-[#1a1c1a] font-bold block tabular-nums flex items-baseline">
+                      <span className="inline-block shrink-0 min-w-[2.5ch] text-left">
+                        <AnimatedCounter target={54} minWidth="2.5ch" />
+                      </span>
+                      <span> Estates</span>
                     </span>
                     <p className="text-[10px] text-[#494740] mt-0.5 font-medium">
                       Across India
@@ -281,12 +284,15 @@ export default function AboutPage() {
                   <div className="w-9 h-9 rounded-lg bg-[#715a3e]/10 flex items-center justify-center text-[#715a3e] shrink-0">
                     <span className="material-symbols-outlined text-xl">eco</span>
                   </div>
-                  <div>
-                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block">
+                  <div className="min-w-0">
+                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block tracking-wide">
                       Circularity Index
                     </span>
-                    <span className="text-xl text-[#1a1c1a] font-bold block">
-                      <AnimatedCounter target={85} suffix="% Local" />
+                    <span className="text-xl text-[#1a1c1a] font-bold block tabular-nums flex items-baseline">
+                      <span className="inline-block shrink-0 min-w-[2.5ch] text-left">
+                        <AnimatedCounter target={85} minWidth="2.5ch" />
+                      </span>
+                      <span>% Local</span>
                     </span>
                     <p className="text-[10px] text-[#494740] mt-0.5 font-medium">
                       Regional Geological Sourcing
@@ -298,12 +304,15 @@ export default function AboutPage() {
                   <div className="w-9 h-9 rounded-lg bg-[#715a3e]/10 flex items-center justify-center text-[#715a3e] shrink-0">
                     <span className="material-symbols-outlined text-xl">groups</span>
                   </div>
-                  <div>
-                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block">
+                  <div className="min-w-0">
+                    <span className="text-[9px] font-bold text-[#715a3e] uppercase block tracking-wide">
                       Artisan Guild
                     </span>
-                    <span className="text-xl text-[#1a1c1a] font-bold block">
-                      <AnimatedCounter target={40} suffix="+ Ateliers" />
+                    <span className="text-xl text-[#1a1c1a] font-bold block tabular-nums flex items-baseline">
+                      <span className="inline-block shrink-0 min-w-[2.5ch] text-left">
+                        <AnimatedCounter target={40} minWidth="2.5ch" />
+                      </span>
+                      <span>+ Ateliers</span>
                     </span>
                     <p className="text-[10px] text-[#494740] mt-0.5 font-medium">
                       Master Fabricators
