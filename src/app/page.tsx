@@ -136,24 +136,24 @@ export default function Home() {
               <div className="inline-flex items-center gap-3 bg-[#faf9f6]/10 backdrop-blur-md px-4 py-1.5 shadow-sm border border-[#faf9f6]/20">
                 <span className="w-2 h-2 rounded-full bg-[#cbb392]" />
                 <span className="text-[10px] font-semibold text-[#faf9f6] ">
-                  [ SECTION 01 // OVERVIEW ] • Est. 2009 • New Delhi • Mumbai
+                  Havenley Infrastructure • Est. 2009 • New Delhi • Gurugram • Mumbai
                 </span>
               </div>
               <span className="hidden md:inline-block text-[11px] font-semibold text-[#e3e2e0]/80 ">
-                [ Architectural Monograph N° 18 ]
+                Turnkey Civil Construction & Interior Work
               </span>
             </div>
 
             {/* Core Display Statement */}
             <div className="max-w-3xl space-y-4 my-auto py-2 md:py-4">
-              <p className="text-xs sm:text-sm font-semibold text-[#cbb392]  tracking-wide">
-                Architectural Precision • Atmospheric Calm
+              <p className="text-xs sm:text-sm font-semibold text-[#cbb392] tracking-wide">
+                Complete Construction & Interior Solutions
               </p>
               <h1 className="text-xl sm:text-3xl md:text-5xl font-semibold text-[#faf9f6] leading-tight">
-                Spaces Conceived in Harmony, Sculpted in Light.
+                Building Your Dream Space, From Foundation to Final Interior.
               </h1>
               <p className="text-xs sm:text-base text-[#e9e8e5]/90 max-w-2xl font-medium leading-relaxed">
-                Havenley Infrastructure delivers premier construction engineering and luxury interior design across ultra-prime residential, bespoke commercial, and turnkey infrastructural transformations.
+                We handle complete civil construction work—from foundation and RCC framing to plastering and waterproofing—and full interior work including POP false ceilings, modular kitchens, custom wardrobes, and wall décor for homes, offices, and commercial spaces.
               </p>
 
               {/* CTA Cluster */}
@@ -162,7 +162,7 @@ export default function Home() {
                   onClick={() => scrollToSection("portfolio")}
                   className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-xs sm:text-sm font-semibold  px-6 py-3 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-md"
                 >
-                  <span>Explore Projects</span>
+                  <span>Explore Our Projects</span>
                   <span className="material-symbols-outlined ml-2 text-base">
                     arrow_forward
                   </span>
@@ -171,7 +171,7 @@ export default function Home() {
                   href="/contact"
                   className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-xs sm:text-sm font-semibold  px-6 py-3 transition-colors duration-300 border border-[#faf9f6]/20"
                 >
-                  Schedule Consultation
+                  Contact Us Today
                 </Link>
               </div>
             </div>
@@ -184,10 +184,10 @@ export default function Home() {
                 </span>
                 <div className="space-y-0.5 min-w-0">
                   <span className="text-xs sm:text-sm font-semibold text-[#faf9f6] block tracking-wide">
-                    Years Crafting
+                    Years of Experience
                   </span>
                   <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
-                    Monolithic permanence & curated living
+                    Strong civil builds & quality interior work
                   </span>
                 </div>
               </div>
@@ -198,10 +198,10 @@ export default function Home() {
                 </span>
                 <div className="space-y-0.5 min-w-0">
                   <span className="text-xs sm:text-sm font-semibold text-[#faf9f6] block tracking-wide">
-                    International Accolades
+                    Completed Projects
                   </span>
                   <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
-                    Pinnacle awards across EU, US & Asia
+                    Villas, apartments, and corporate offices
                   </span>
                 </div>
               </div>
@@ -212,10 +212,10 @@ export default function Home() {
                 </span>
                 <div className="space-y-0.5 min-w-0">
                   <span className="text-xs sm:text-sm font-semibold text-[#faf9f6] block tracking-wide">
-                    Private Commissions
+                    Satisfied Clients
                   </span>
                   <span className="text-[11px] sm:text-[12px] text-[#e3e2e0]/80 font-medium block">
-                    Tailored residential sanctuaries & estates
+                    On-time delivery within your budget
                   </span>
                 </div>
               </div>
@@ -230,20 +230,20 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
               <div className="lg:col-span-8 space-y-2">
                 <span className="text-xs font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-3.5 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
-                  [ SECTION 02 // ATELIER ETHOS ]
+                  [ SECTION 02 // OUR APPROACH ]
                 </span>
                 <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
-                  Monastic Restraint Meets Material Indulgence
+                  Building Strong Foundations & Beautiful Interiors
                 </h2>
               </div>
               <div className="lg:col-span-4">
                 <p className="text-sm text-[#494740] font-medium">
-                  We perceive space not as an empty volume to fill with decor, but as an architectural canvas calibrated through celestial light, honest tectonic weight, and silent proportions.
+                  We build strong, durable foundations and create comfortable, functional, and beautiful living and working spaces tailored to your needs.
                 </p>
               </div>
             </div>
 
-            {/* Three Pillars Mosaic with Overlap Designing & High Quality Images */}
+            {/* Three Pillars Mosaic */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch pt-6">
               {/* Pillar 01 */}
               <div className="relative bg-[#ffffff] p-2 rounded-xl flex flex-col justify-between shadow-xl hover:shadow-2xl transition-all duration-500 border border-[#e5e2db] hover:border-[#715a3e]/50 group">
@@ -261,27 +261,27 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b19]/30 to-transparent" />
                   </div>
                   <h3 className="text-lg text-[#1a1c1a] font-semibold">
-                    Material Authenticity
+                    Durable & Quality Materials
                   </h3>
                   <p className="text-sm text-[#494740] font-normal">
-                    Honoring the innate character of geological strata and forest grain. We reject synthetic veneers in favor of vein-cut Navona travertine.
+                    We use premium Italian marble, seasoned teak wood, Grade-A steel, and long-lasting paints for lasting quality.
                   </p>
                 </div>
                 <div className="pt-3 border-t border-[#e5e2db] mt-4 flex items-center justify-between">
                   <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
-                    Unsealed Porosities
+                    Genuine Marble & Wood
                   </span>
                   <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
-                    Living Patinas
+                    Long-Lasting Quality
                   </span>
                 </div>
               </div>
 
-              {/* Pillar 02 - Featured Overlapping Center Card */}
+              {/* Pillar 02 */}
               <div className="relative z-10 bg-[#ffffff] p-2 rounded-xl flex flex-col justify-between shadow-2xl transition-all duration-500 border-2 border-[#715a3e] lg:-mt-4 group hover:scale-[1.02]">
                 <div className="-top-3.5 left-6 absolute bg-[#715a3e] text-[#ffffff] text-[10px] px-3.5 py-0.5 rounded-full font-semibold  shadow-xl z-10 flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#ffffff] animate-ping" />
-                  Pillar 02 • Core Axis
+                  Pillar 02 • Core Focus
                 </div>
                 <div className="space-y-3 pt-2">
                   <div className="w-full h-56 overflow-hidden relative rounded-xl border border-[#e5e2db]">
@@ -294,18 +294,18 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b19]/30 to-transparent" />
                   </div>
                   <h3 className="text-lg text-[#1a1c1a] font-semibold">
-                    Spatial Rhythm
+                    Smart & Well-Lit Layouts
                   </h3>
                   <p className="text-sm text-[#494740] font-normal">
-                    Calibrating circadian rhythms through rigorous daylight orientation and concealed ceiling light coves.
+                    We design layouts that maximize natural sunlight, fresh air flow, and efficient room movement.
                   </p>
                 </div>
                 <div className="pt-3 border-t border-[#e5e2db] mt-4 flex items-center justify-between">
                   <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
-                    Diurnal Shading
+                    Natural Lighting
                   </span>
                   <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-2.5 py-0.5 rounded-md">
-                    Spatial Intervals
+                    Airy Layouts
                   </span>
                 </div>
               </div>
@@ -326,19 +326,172 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b19]/30 to-transparent" />
                   </div>
                   <h3 className="text-lg text-[#1a1c1a] font-semibold">
-                    Bespoke Millwork
+                    Custom Furniture & Interiors
                   </h3>
                   <p className="text-sm text-[#494740] font-normal">
-                    Every fixture and cabinetry element is commissioned with master cabinetmakers and bronze founders.
+                    From modular kitchen setups and wardrobes to POP false ceilings, every detail is custom-fitted to your home or office.
                   </p>
                 </div>
                 <div className="pt-3 border-t border-[#e5e2db] mt-4 flex items-center justify-between">
                   <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
-                    Museum Joinery
+                    Custom Wardrobes
                   </span>
                   <span className="text-[10px] font-semibold text-[#715a3e]  bg-[#f4f3f0] px-2.5 py-0.5 rounded-md">
-                    Monoprints
+                    Modular Kitchens
                   </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 2.5 CORE CONSTRUCTION & INTERIOR SERVICES SECTION */}
+        <section id="services" className="w-full bg-[#f4f3f0] py-16 border-b border-[#e5e2db] relative z-10 font-sans">
+          <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
+            {/* Section Header */}
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+              <div className="space-y-2 max-w-3xl">
+                <span className="text-xs font-semibold text-[#715a3e] bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#e5e2db] shadow-sm inline-block">
+                  [ SECTION 03 // OUR SERVICES & CAPABILITIES ]
+                </span>
+                <h2 className="text-2xl sm:text-4xl text-[#1a1c1a] font-semibold">
+                  End-to-End Construction & Interior Execution
+                </h2>
+                <p className="text-sm text-[#494740] font-normal leading-relaxed">
+                  We cover the complete process from the foundation and RCC base structure to the final POP finishing, false ceiling, modular furniture, and complete interior setup.
+                </p>
+              </div>
+              <Link
+                href="/contact"
+                className="bg-[#1c1b19] text-[#ffffff] text-xs font-semibold px-5 py-3 rounded-lg hover:bg-[#715a3e] transition-colors shrink-0 flex items-center gap-1.5 shadow-md"
+              >
+                <span>Request Service Proposal</span>
+                <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              </Link>
+            </div>
+
+            {/* 2-Column Core Services Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Construction Work Box */}
+              <div className="bg-[#ffffff] p-6 sm:p-8 rounded-2xl border border-[#e5e2db] shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between space-y-6 relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#715a3e]/5 rounded-bl-full pointer-events-none" />
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="w-12 h-12 rounded-xl bg-[#1c1b19] text-[#cbb392] flex items-center justify-center shadow-md">
+                      <span className="material-symbols-outlined text-2xl">construction</span>
+                    </div>
+                    <span className="text-xs font-semibold text-[#715a3e] bg-[#715a3e]/10 px-3 py-1 rounded-full">
+                      Structural & Civil
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-[#1a1c1a]">
+                      Construction Work
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#494740] mt-1 leading-relaxed">
+                      Complete ground-up civil engineering, structural framing, and external building envelope execution.
+                    </p>
+                  </div>
+
+                  {/* List of 10 Construction Services */}
+                  <div className="pt-2">
+                    <h4 className="text-xs font-semibold text-[#715a3e] mb-3">
+                      Core Construction Services:
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      {[
+                        "Foundation & Base Construction",
+                        "RCC & Structural Work",
+                        "Brickwork & Masonry",
+                        "Plastering & Wall Preparation",
+                        "Flooring & Tiling Work",
+                        "Electrical & Plumbing Networks",
+                        "Doors & Windows Installation",
+                        "Waterproofing Systems",
+                        "Exterior Finishing & Cladding",
+                        "Complete Civil Construction Work",
+                      ].map((service, idx) => (
+                        <div
+                          key={idx}
+                          className="flex items-center gap-2 bg-[#faf9f6] p-2.5 rounded-lg border border-[#e5e2db] hover:border-[#715a3e]/40 transition-colors"
+                        >
+                          <span className="w-2 h-2 rounded-full bg-[#715a3e] shrink-0" />
+                          <span className="text-xs font-semibold text-[#1a1c1a]">
+                            {service}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-[#e5e2db] flex items-center justify-between text-xs text-[#494740]">
+                  <span>From Excavation to Building Envelope</span>
+                  <span className="font-semibold text-[#715a3e]">Civil Engineering & EPC</span>
+                </div>
+              </div>
+
+              {/* Interior Work Box */}
+              <div className="bg-[#ffffff] p-6 sm:p-8 rounded-2xl border border-[#e5e2db] shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between space-y-6 relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#715a3e]/5 rounded-bl-full pointer-events-none" />
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <div className="w-12 h-12 rounded-xl bg-[#715a3e] text-[#ffffff] flex items-center justify-center shadow-md">
+                      <span className="material-symbols-outlined text-2xl">weekend</span>
+                    </div>
+                    <span className="text-xs font-semibold text-[#715a3e] bg-[#715a3e]/10 px-3 py-1 rounded-full">
+                      Finishing & Furnishing
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-[#1a1c1a]">
+                      Interior Work
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#494740] mt-1 leading-relaxed">
+                      Comprehensive interior finishing, custom furniture fabrication, modular fitouts, and decorative enhancements.
+                    </p>
+                  </div>
+
+                  {/* List of 13 Interior Services */}
+                  <div className="pt-2">
+                    <h4 className="text-xs font-semibold text-[#715a3e] mb-3">
+                      Core Interior Services:
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      {[
+                        "POP Work & Mouldings",
+                        "False Ceiling Design",
+                        "Gypsum Ceiling & Partitions",
+                        "Wall Painting & Texture Paint",
+                        "Wall Panels & Decorative Work",
+                        "Modular Furniture Execution",
+                        "Custom Furniture Joinery",
+                        "Wardrobes & Cabinets",
+                        "Modular Kitchen Interiors",
+                        "Lighting & Electrical Fittings",
+                        "Flooring & Wall Tiles",
+                        "Wallpaper & Wall Décor",
+                        "Office, Residential & Commercial",
+                      ].map((service, idx) => (
+                        <div
+                          key={idx}
+                          className="flex items-center gap-2 bg-[#faf9f6] p-2.5 rounded-lg border border-[#e5e2db] hover:border-[#715a3e]/40 transition-colors"
+                        >
+                          <span className="w-2 h-2 rounded-full bg-[#1c1b19] shrink-0" />
+                          <span className="text-xs font-semibold text-[#1a1c1a]">
+                            {service}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-[#e5e2db] flex items-center justify-between text-xs text-[#494740]">
+                  <span>From Bare Shell to Turnkey Handover</span>
+                  <span className="font-semibold text-[#715a3e]">Bespoke Interior Execution</span>
                 </div>
               </div>
             </div>
@@ -347,7 +500,7 @@ export default function Home() {
 
         {/* 3. FEATURED WORKS PREVIEW */}
         {/* COMPLETED PROJECTS PORTFOLIO */}
-        <section id="portfolio" className="w-full bg-[#f4f3f0] py-12 border-b border-[#e5e2db] relative z-10">
+        <section id="portfolio" className="w-full bg-[#faf9f6] py-12 border-b border-[#e5e2db] relative z-10">
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             {/* Section Header */}
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
@@ -454,42 +607,42 @@ export default function Home() {
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             <div className="max-w-2xl mb-8 space-y-2">
               <span className="text-xs font-semibold text-[#715a3e]  bg-[#715a3e]/10 px-3 py-1 rounded-full border border-[#715a3e]/20 inline-block mb-1">
-                [ SECTION 05 // METHODOLOGY ]
+                [ SECTION 05 // OUR WORK PROCESS ]
               </span>
               <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold">
-                The Architectural Methodology
+                Our 4-Step Working Process
               </h2>
               <p className="text-sm text-[#494740] font-medium">
-                Every commission progresses through a systematic four-phase lifecycle ensuring complete structural fidelity, acoustic perfection, and uncompromising bespoke artisan delivery.
+                We guide you smoothly through every stage of construction and interior setup, ensuring quality execution and complete peace of mind.
               </p>
             </div>
 
-            {/* Medium Step Cards with Overlapping Badges */}
+            {/* Step Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-4">
               {/* Step 01 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
                 <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-xs px-3.5 py-1  shadow-md rounded-md">
-                  Phase 01
+                  Step 01
                 </div>
                 <div className="pt-2">
                   <h3 className="text-lg text-[#1a1c1a] font-semibold mb-2">
-                    Spatial Discovery & Solar Cartography
+                    1. Site Survey & Budget Planning
                   </h3>
                   <p className="text-sm text-[#494740]">
-                    In-depth 365-day solar angle analysis, structural diagnostic surveying, and acoustic mapping of the geographical context.
+                    Detailed physical site inspection, soil and structural safety assessment, and clear budget estimation.
                   </p>
                 </div>
                 <div className="pt-4 space-y-2 border-t border-[#cbc6bd]/30">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-[#715a3e] rounded-full" />
                     <span className="text-[11px] text-[#494740] font-medium">
-                      Heliocentric Shadow Studies
+                      Site Measurement & Feasibility
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-[#715a3e] rounded-full" />
                     <span className="text-[11px] text-[#494740] font-medium">
-                      Decibel Frequency Attenuation
+                      Clear Cost Estimation
                     </span>
                   </div>
                 </div>
@@ -498,27 +651,27 @@ export default function Home() {
               {/* Step 02 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
                 <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-xs px-3.5 py-1  shadow-md rounded-md">
-                  Phase 02
+                  Step 02
                 </div>
                 <div className="pt-2">
                   <h3 className="text-lg text-[#1a1c1a] font-semibold mb-2">
-                    Concept Materiality & 3D Volumetrics
+                    2. 3D Design & Material Selection
                   </h3>
                   <p className="text-sm text-[#494740]">
-                    Physical mood boards of quarried stones and unlacquered alloys, paired with photorealistic physical ray-traced spatial modeling.
+                    Architectural floor plans, 3D interior renders, false ceiling coves, and sample selection for tiles, marbles & paints.
                   </p>
                 </div>
                 <div className="pt-4 space-y-2 border-t border-[#cbc6bd]/30">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-[#715a3e] rounded-full" />
                     <span className="text-[11px] text-[#494740] font-medium">
-                      Tactile Stone & Wood Trays
+                      3D Interior Layouts
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-[#715a3e] rounded-full" />
                     <span className="text-[11px] text-[#494740] font-medium">
-                      1:20 Maquette Prototyping
+                      Tile & Wood Samples
                     </span>
                   </div>
                 </div>
@@ -527,27 +680,27 @@ export default function Home() {
               {/* Step 03 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
                 <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-xs px-3.5 py-1  shadow-md rounded-md">
-                  Phase 03
+                  Step 03
                 </div>
                 <div className="pt-2">
                   <h3 className="text-lg text-[#1a1c1a] font-semibold mb-2">
-                    Bespoke Fabrication & Sourcing
+                    3. Civil Execution & Furniture Fabrication
                   </h3>
                   <p className="text-sm text-[#494740]">
-                    Direct quarry block selection in Makrana and Rajasthan, custom cabinetry joinery in our private millwork studio, and curated interior design.
+                    Excavation, RCC column casting, red brick masonry, plastering, waterproofing, and custom furniture manufacturing.
                   </p>
                 </div>
                 <div className="pt-4 space-y-2 border-t border-[#cbc6bd]/30">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-[#715a3e] rounded-full" />
                     <span className="text-[11px] text-[#494740] font-medium">
-                      Quarry Vein Matching
+                      On-site Civil Construction
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-[#715a3e] rounded-full" />
                     <span className="text-[11px] text-[#494740] font-medium">
-                      Guild Artisan Sourcing
+                      Factory Furniture Fitting
                     </span>
                   </div>
                 </div>
@@ -556,27 +709,27 @@ export default function Home() {
               {/* Step 04 */}
               <div className="relative bg-[#f4f3f0] p-6 rounded-xl flex flex-col justify-between space-y-6 border border-[#cbc6bd]/50 shadow-md hover:shadow-xl hover:bg-[#faf9f6] transition-all duration-300">
                 <div className="-top-4 -left-3 absolute bg-[#715a3e] text-[#ffffff] font-semibold text-xs px-3.5 py-1  shadow-md rounded-md">
-                  Phase 04
+                  Step 04
                 </div>
                 <div className="pt-2">
                   <h3 className="text-lg text-[#1a1c1a] font-semibold mb-2">
-                    Turnkey White-Glove Handover
+                    4. Final Inspection & Handover
                   </h3>
                   <p className="text-sm text-[#494740]">
-                    On-site master construction supervision, scent and acoustic calibration, and presentation of the bespoke leather-bound estate archive.
+                    Complete quality inspection, testing electrical wiring & plumbing lines, final deep cleaning, and project handover.
                   </p>
                 </div>
                 <div className="pt-4 space-y-2 border-t border-[#cbc6bd]/30">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-[#715a3e] rounded-full" />
                     <span className="text-[11px] text-[#494740] font-medium">
-                      Bespoke Monograph & Plans
+                      Strict Quality Audits
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-[#715a3e] rounded-full" />
                     <span className="text-[11px] text-[#494740] font-medium">
-                      Lifetime Material Care Plan
+                      Warranty & Care Guide
                     </span>
                   </div>
                 </div>
@@ -591,7 +744,7 @@ export default function Home() {
             {/* Section Badge */}
             <div className="mb-4">
               <span className="text-xs font-semibold text-[#715a3e]  bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#cbc6bd] shadow-sm inline-block">
-                [ SECTION 06 // TESTIMONIALS & RECOGNITION ]
+                [ SECTION 06 // CLIENT REVIEWS & TRUST ]
               </span>
             </div>
 
@@ -599,34 +752,34 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pb-12 border-b border-[#cbc6bd]/60 text-center items-center">
               <div className="space-y-1">
                 <span className="text-base font-semibold  text-[#1a1c1a] block">
-                  Architectural Digest
+                  Trusted Quality
                 </span>
                 <span className="text-xs text-[#494740]">
-                  “Pinnacle of Restraint & Structural Craft”
+                  “High structural integrity & finish”
                 </span>
               </div>
               <div className="space-y-1">
                 <span className="text-base font-semibold  text-[#1a1c1a] block">
-                  Elle Decor
+                  On-Time Delivery
                 </span>
                 <span className="text-xs text-[#494740]">
-                  “Breathtaking material integrity”
+                  “Completed within promised schedule”
                 </span>
               </div>
               <div className="space-y-1">
                 <span className="text-base font-semibold  text-[#1a1c1a] block">
-                  Wallpaper*
+                  Transparent Pricing
                 </span>
                 <span className="text-xs text-[#494740]">
-                  “Design Studio of the Year Nomination”
+                  “Clear cost estimates without hidden fees”
                 </span>
               </div>
               <div className="space-y-1">
                 <span className="text-base font-semibold  text-[#1a1c1a] block">
-                  The World of Interiors
+                  Expert Craftsmanship
                 </span>
                 <span className="text-xs text-[#494740]">
-                  “Timeless spatial acoustic serenity”
+                  “Skilled masons & carpenters”
                 </span>
               </div>
             </div>
@@ -640,7 +793,7 @@ export default function Home() {
                     format_quote
                   </span>
                   <p className="text-sm text-[#1a1c1a] italic">
-                    “Living in our Vasant Vihar villa feels like dwelling within a calm sanctuary where every morning light pattern is a private, unhurried meditation.”
+                    “Havenley Infrastructure built our Vasant Vihar villa from foundation to final interior. The quality of RCC work, POP ceilings, and Italian marble flooring exceeded our expectations.”
                   </p>
                 </div>
                 <div className="pt-4 border-t border-[#cbc6bd]/40 mt-4 flex items-center justify-between">
@@ -665,16 +818,16 @@ export default function Home() {
                     format_quote
                   </span>
                   <p className="text-sm text-[#1a1c1a] italic">
-                    “Havenley Infrastructure delivered flawless structural engineering and an acoustic tranquility for our Cyber City corporate headquarters.”
+                    “They executed our Cyber City corporate office fitout seamlessly. The gypsum partitions, acoustic ceilings, and modular furniture setup were completed on time.”
                   </p>
                 </div>
                 <div className="pt-4 border-t border-[#cbc6bd]/40 mt-4 flex items-center justify-between">
                   <div>
                     <span className="text-sm font-semibold text-[#1a1c1a] block">
-                      Vikramaditya Singhania
+                      Vikram Malhotra
                     </span>
                     <span className="text-[10px] text-[#494740]  font-semibold">
-                      Managing Director • Cyber City Suite
+                      Office Director • Cyber City Gurugram
                     </span>
                   </div>
                   <span className="material-symbols-outlined text-[#715a3e] text-lg">
@@ -690,7 +843,7 @@ export default function Home() {
                     format_quote
                   </span>
                   <p className="text-sm text-[#1a1c1a] italic">
-                    “Their reverence for architectural precision while introducing rich natural stone and warm wood paneling was executed with surgical craftsmanship.”
+                    “Our penthouse interior transformation was handled with complete care. From custom wardrobes to modular kitchen cabinets, the finish is outstanding.”
                   </p>
                 </div>
                 <div className="pt-4 border-t border-[#cbc6bd]/40 mt-4 flex items-center justify-between">
@@ -719,27 +872,27 @@ export default function Home() {
           <div className="relative z-10 max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20 text-center space-y-6">
             <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
               <span className="w-1.5 h-1.5 rounded-full bg-[#cbb392] animate-pulse" />
-              Private Commissions • Accepting 2025 / 2026
+              Now Booking Construction & Interior Projects
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl text-[#faf9f6] font-semibold max-w-3xl mx-auto">
-              Begin Your Spatial Commission
+              Ready to Build or Renovate Your Space?
             </h2>
             <p className="text-sm sm:text-base text-[#e9e8e5]/80 max-w-2xl mx-auto font-medium">
-              Due to our uncompromising dedication to structural precision, construction excellence, and turnkey interior design, Havenley Infrastructure limits studio intake to select bespoke commissions annually.
+              Get in touch with Havenley Infrastructure today for expert advice, site surveys, and a transparent cost estimate for your construction or interior project.
             </p>
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-sm font-semibold  px-8 py-4 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-xl rounded-xl"
               >
-                <span>Schedule Consultation</span>
+                <span>Contact Us Today</span>
                 <span className="material-symbols-outlined ml-2 text-base">arrow_forward</span>
               </Link>
               <Link
                 href="/portfolio"
                 className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-sm font-semibold  px-8 py-4 transition-colors duration-300 border border-[#faf9f6]/20 rounded-xl"
               >
-                Explore Works
+                View Our Portfolio
               </Link>
             </div>
           </div>

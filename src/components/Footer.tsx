@@ -74,7 +74,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs sm:text-sm text-[#a39f99] leading-relaxed max-w-md">
-              Premier civil construction, structural engineering, and luxury architectural transformations in India.
+              Complete civil construction (foundation to exterior finishing) and turnkey interior execution (POP, false ceiling, modular furniture, kitchen interiors, office & residential fitouts) across India.
             </p>
             <div className="text-xs sm:text-sm text-[#d4d0c8] space-y-1 pt-1">
               <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392]  block tracking-wider">

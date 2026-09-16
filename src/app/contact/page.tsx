@@ -143,79 +143,79 @@ export default function ContactPage() {
 
   const studios = {
     delhi: {
-      city: "Delhi Headquarters & Atelier",
+      city: "Delhi Main Office",
       address: "Barakhamba Road, Connaught Place, New Delhi – 110001, India",
       phone: "+91 11 4152 8800",
       email: "delhi@havenley-infra.com",
       hours: "Monday – Saturday: 09:30 – 18:30 IST",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuBm72o-CDzr69ox7faqdQzjgmH3sRGcYIq0LKvAvpdRvNww3NV1AnVO0G4htjOlPC9PFfrCdWXrTjDHADmnlh_1-HkK3f3xsAWzJMDE_JLfrjAW68vTuMlny0PnYPhlDOsQCEHuRME_UBXY-Is5X4wycXY9jDRMYxAgJnK50MepVfMiispTUPtegWjtJpz9QFUu1lB_SbzRBGPVKUyPS1HOp64vEgQO_JzLfVOcGJUJmQvBWhQvuusn",
-      desc: "Our Delhi headquarters features our physical stone and marble sample archive, custom teak joinery mock-ups, and private client consultation suites.",
+      desc: "Our main Delhi office features physical marble and tile sample displays, custom woodwork models, and consultation rooms.",
     },
     gurugram: {
-      city: "Gurugram Engineering Hub",
+      city: "Gurugram Office",
       address: "DLF Cyber City, Phase 2, Gurugram, Haryana – 122002, India",
       phone: "+91 124 480 9200",
       email: "gurugram@havenley-infra.com",
       hours: "Monday – Saturday: 09:30 – 18:30 IST",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuBfxfXWnRuHscYPmVdbE38LprVTn4oS_DNuhSXxMG5Ztm4vGGVfrohwQ1Xbk2L5OSwSFVqgWs28Lk5msH7C-fRg8H2rrEx7nKxw_N-khjReu3bXeuVspv5-Bnk2M7Kl2OiGxlH3_EsqeNcjTmS11LegNz4VtVIH2HeUOO_ca0jjn4_o_QOyryT-o8oCLEIx90t1txjypXaPyT_rweuCX_WQkgzBMWvDFaW-rz3EGakyh0Q8YjQ3pGB6",
-      desc: "Houses our core structural CAD engineering lab, civil project managers, and acoustic glass partition testing suites.",
+      desc: "Houses our 2D/3D CAD design team, civil project managers, and office partition planning team.",
     },
     mumbai: {
-      city: "Mumbai Design Studio",
+      city: "Mumbai Office",
       address: "Bandra Kurla Complex (BKC), Mumbai, Maharashtra – 400051, India",
       phone: "+91 22 6120 7700",
       email: "mumbai@havenley-infra.com",
       hours: "Monday – Saturday: 09:30 – 18:30 IST",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuAp4dCo_4cESxlT24LckIZkRFb9venWeo79Dgd3sB5yaRyy1v-EqE0sVIBVkoMYSLSiBqC-UZlMOFoqVuRYuixC8SnXixU8JkVF97M7YP8v2IkXoXL45RXF6G0rITyiFnZQr9sQPIkNZU5KujN7cqTx3mCnLMdp5cV91m6zOjXsyCqzag7Va01WVKhogrhfy_PnqtxBrybJcgLA7cGDydn7FnYz4rPqHGcMTPMsUIvMovoZBElfZsVX",
-      desc: "Specializes in luxury residential interior transformations, penthouse renovations, and coastal estate structural engineering.",
+      desc: "Specializes in residential home interiors, apartment renovations, and villa construction management.",
     },
     bengaluru: {
-      city: "Bengaluru Innovation Center",
+      city: "Bengaluru Office",
       address: "100 Feet Road, Indiranagar, Bengaluru, Karnataka – 560038, India",
       phone: "+91 80 4312 6600",
       email: "bengaluru@havenley-infra.com",
       hours: "Monday – Saturday: 09:30 – 18:30 IST",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuB8xd0L9h7FkPneOvDNJGN6dUrKZ1ShGpXCyXN5O8blY4yPaXK9dCbFFZ0gPIZXNeA8vqFBi3KeD5YrkNCMqZKBgZ3SKUDD826WocRinSbS7MePiAg2TWx6YXNdlVmSLV4vQHExnBEiq9V02LuNkGOWZltbjYiL4jh8lL01hJUgLsEBE1F38hiFyUNY1V2lo_A10ZvS8_GH8eIXW3T70uYyp7pChDuFF7MYATVBEP3-GE5wzutJ_w20",
-      desc: "Focuses on smart home automation integration, sustainable civil materials, and corporate office fitout planning.",
+      desc: "Focuses on smart home lighting setup, modular furniture design, and commercial office space planning.",
     },
   };
 
   const faqs = [
     {
-      q: "What constitutes the studio's minimum design & construction scope?",
-      a: "We specialize in complete spatial transformations, private coastal estates, full-floor urban lofts, and flagship civil infrastructure projects. Design and engineering commissions typically begin at $250,000 to maintain our rigorous fabrication and principal oversight standards.",
+      q: "What types of construction and interior projects do you handle?",
+      a: "We handle complete civil construction projects (foundation excavation, RCC columns, brick masonry, plastering, waterproofing) and full interior work (POP false ceilings, modular kitchens, custom wardrobes, wall decor, electrical & plumbing fittings) for homes, villas, offices, and commercial spaces.",
     },
     {
-      q: "What is the typical timeline for municipal permitting & structural engineering?",
-      a: "Schematic design and structural engineering calculations typically require 2 to 4 months. Municipal permitting and historical landmarks approvals range from 2 to 6 months depending on jurisdiction. Construction execution spans 8 to 20 months.",
+      q: "How long does a typical construction or interior project take?",
+      a: "Turnkey interior setup for apartments or offices usually takes 4 to 8 weeks. Ground-up civil construction for villas and commercial buildings typically ranges from 6 to 14 months depending on project size and municipal approvals.",
     },
     {
-      q: "How are international site supervision & quarry selection coordinated?",
-      a: "Havenley Infrastructure deploys dedicated senior architects and structural engineers directly to premier stone quarries in Rajasthan and South India. We conduct bi-weekly on-site construction reviews and provide real-time digital monograph updates to client family offices.",
+      q: "Do you provide transparent cost estimates before starting?",
+      a: "Yes. After a site survey and initial planning, we provide a clear, detailed cost estimation covering materials, labor, and timeline with no hidden charges.",
     },
     {
-      q: "Do you provide full turnkey interior procurement and bespoke millwork?",
-      a: "Yes. Our integrated EPC (Engineering, Procurement, Construction) division manufactures custom furniture, cast bronze pulls, and unbleached hemp textile tapestries through our private guild of 40+ master artisan ateliers.",
+      q: "Do you supply modular kitchens and custom furniture?",
+      a: "Yes. We manufacture and install modular kitchens, floor-to-ceiling wardrobes, TV units, executive office desks, and custom wood furniture directly from our workshop.",
     },
     {
-      q: "What NDA & family office privacy protocols do you enforce?",
-      a: "Bilateral non-disclosure agreements are executed prior to any drawing exchanges. Client names, site coordinates, and structural CAD blueprints are stored within encrypted offline vaults. We routinely interface with family office legal counsel.",
+      q: "Are client project details and privacy protected?",
+      a: "Yes. We strictly respect client privacy and sign Non-Disclosure Agreements (NDAs) whenever requested.",
     },
     {
-      q: "Can Havenley Infrastructure manage ground-up civil engineering?",
-      a: "Yes. Our structural engineering team holds complete CE and AIA credentials for ground-up concrete foundation engineering, seismic cradling, deep excavation, and structural steel erection.",
+      q: "Can you manage ground-up civil construction work?",
+      a: "Yes. Our experienced civil engineers manage foundation excavation, pile capping, RCC framing, brickwork, plastering, waterproofing, and complete building envelope construction.",
     },
     {
-      q: "What environmental and LEED Platinum certifications do you support?",
-      a: "All project specifications comply with EN 15978 lifecycle standards. We enforce an 85% regional geological procurement mandate and specify zero-VOC slaked lime plasters for indoor air quality perfection.",
+      q: "Do you use high-quality and durable materials?",
+      a: "We use Grade-A reinforced steel, high-grade cement, imported Italian marble, seasoned teak wood, waterproof plywood, and zero-VOC interior paints for long-lasting quality.",
     },
     {
-      q: "What post-completion estate maintenance support is provided?",
-      a: "Every project handover includes a leather-bound estate archive and a Lifetime Material Care Plan. Our team conducts annual stone wax re-treatments, timber inspections, and acoustic calibrations.",
+      q: "What warranty or post-handover support do you provide?",
+      a: "Every project includes a complete inspection, testing of electrical & plumbing networks, and a post-handover warranty and maintenance support plan.",
     },
   ];
 
@@ -235,16 +235,16 @@ export default function ContactPage() {
                 <div className="flex items-center gap-3 mb-2">
                   <span className="w-8 h-[1px] bg-[#715a3e]" />
                   <span className="text-sm font-semibold text-[#715a3e] ">
-                    Client Commission & Advisory
+                    Get In Touch
                   </span>
                 </div>
                 <h1 className="text-3xl sm:text-4xl lg:text-[3rem] text-[#1a1c1a]">
-                  Begin Your Spatial Journey
+                  Contact Us For Your Project
                 </h1>
               </div>
               <div className="max-w-md pb-2">
                 <p className="text-sm text-[#494740] font-normal">
-                  We welcome discourse with private patrons, visionary developers, and family offices seeking monolithic poise, structural daylight, and turnkey execution.
+                  Contact Havenley Infrastructure to discuss your civil construction build or interior design requirements. Our team is ready to assist you.
                 </p>
               </div>
             </div>
@@ -600,20 +600,20 @@ export default function ContactPage() {
                             }
                             className="w-full appearance-none bg-[#faf9f6] px-4 py-3.5 text-sm text-[#1a1c1a] focus:outline-none focus:bg-[#ffffff] transition-colors border border-[#cbc6bd]/40 shadow-sm cursor-pointer pr-10"
                           >
-                            <option value="turnkey-construction">
-                              Turnkey Construction & Civil Engineering
+                            <option value="turnkey-civil-construction">
+                              Ground-Up Civil Build (Foundation, RCC, Masonry & Plastering)
                             </option>
-                            <option value="interior-architecture">
-                              Luxury Interior Architecture & Millwork
+                            <option value="interior-finishing-furnishing">
+                              Complete Interior Work (POP, False Ceilings, Furniture & Kitchens)
                             </option>
-                            <option value="private-residence">
-                              Private Residence & Coastal Estate
+                            <option value="residential-construction-interiors">
+                              Residential Villa & Apartment Build & Interiors
                             </option>
-                            <option value="commercial-infrastructure">
-                              Commercial & Institutional Infrastructure
+                            <option value="commercial-office-interiors">
+                              Commercial & Office Interior Execution
                             </option>
-                            <option value="renovation-restoration">
-                              Historical Heritage Restoration & Overhaul
+                            <option value="renovation-waterproofing-civil">
+                              Civil Renovation, Waterproofing & Exterior Finishing
                             </option>
                           </select>
                           <span className="material-symbols-outlined absolute right-3 top-3.5 pointer-events-none text-[#494740] text-lg">

@@ -36,7 +36,7 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <span className="font-bold text-sm sm:text-lg md:text-xl text-[#1a1c1a] font-sans">
+              <span className="font-bold text-md sm:text-xl md:text-2xl text-[#1a1c1a] font-sans">
                 Havenley <span className="text-[#715a3e]">Infrastructure</span>
               </span>
             </Link>

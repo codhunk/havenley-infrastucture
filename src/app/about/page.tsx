@@ -25,78 +25,78 @@ export default function AboutPage() {
     {
       year: 2011,
       city: "New Delhi, India",
-      title: "Studio Genesis in Connaught Place",
-      tagline: "Bridging classical stone masonry with high-tensile civil structural engineering.",
-      desc: "Founded in New Delhi, Havenley Infrastructure began as a boutique civil studio dedicated to structural engineering and interior transformations.",
+      title: "Company Founded in New Delhi",
+      tagline: "Started with civil construction and interior design projects.",
+      desc: "Havenley Infrastructure was founded in New Delhi, focusing on strong civil foundation builds and high-quality home interiors.",
       metrics: [
-        { label: "Founding Hub", value: "Connaught Place" },
-        { label: "Core Discipline", value: "Civil Engineering" },
-        { label: "First Monograph", value: "Villa Monograph 01" },
+        { label: "First Location", value: "Connaught Place" },
+        { label: "Core Service", value: "Civil Construction" },
+        { label: "First Project", value: "Vasant Vihar Villa" },
       ],
       image: "/images/maison_saint_germain.jpg",
     },
     {
       year: 2014,
       city: "Gurugram, India",
-      title: "Gurugram Hub & Civil Expansion",
-      tagline: "Bringing precision stone craftsmanship to luxury high-rise penthouses & office fitouts.",
-      desc: "Expanded civil and structural engineering operations with our Cyber City Gurugram laboratory, pioneering hybrid steel-and-marble structures.",
+      title: "Expanded Operations to Gurugram",
+      tagline: "Building office interiors and penthouse renovations in Cyber City.",
+      desc: "Opened our Gurugram office to deliver corporate office fitouts, gypsum ceiling partitions, and luxury home interiors.",
       metrics: [
-        { label: "Gurugram Hub", value: "Cyber City" },
-        { label: "Patented Tech", value: "Steel Framework" },
-        { label: "Key Milestone", value: "Cyber City Suite" },
+        { label: "New Hub", value: "DLF Cyber City" },
+        { label: "Specialty", value: "Office Fitouts" },
+        { label: "Key Milestone", value: "Corporate Suites" },
       ],
       image: "/images/tribeca_penthouse.jpg",
     },
     {
       year: 2017,
-      city: "New Delhi & Mumbai",
-      title: "The Monolithic Architecture Era",
-      tagline: "Civil structural engineering meets ultra-luxury residential sanctuaries.",
-      desc: "Commissioned to build Vasant Vihar Villa, integrating deep foundation piling with 650m² of custom teak wood millwork.",
+      city: "Delhi & Mumbai",
+      title: "Major Villa & Apartment Projects",
+      tagline: "Combining RCC foundation building with Italian marble and custom woodwork.",
+      desc: "Completed several turnkey residential projects, providing deep foundation work alongside POP false ceilings, modular kitchens, and wardrobes.",
       metrics: [
-        { label: "Civil Engineering", value: "Deep Piling" },
-        { label: "Surface Area", value: "650 m²" },
-        { label: "Global Milestone", value: "Monograph 03" },
+        { label: "Civil Build", value: "RCC Framing" },
+        { label: "Interior Work", value: "Italian Marble" },
+        { label: "Project Scale", value: "Large Residential" },
       ],
       image: "/images/villa_miramar.jpg",
     },
     {
       year: 2020,
       city: "Rajasthan & South India",
-      title: "Tactile Material Specimen Laboratory",
-      tagline: "Scientific testing of diurnal lighting, acoustic reverberation, and zero-VOC mineral plasters.",
-      desc: "Inaugurated our proprietary material lab, testing quarried Italian Bottochino marble, teak wood, and natural lime plasters under full 24-hour sun simulations.",
+      title: "Quality Material Sourcing & Testing",
+      tagline: "Direct sourcing of Italian marble, teak wood, and eco-friendly paints.",
+      desc: "Established direct partnerships with marble quarries and timber workshops to ensure long-lasting quality materials for our clients.",
       metrics: [
-        { label: "Lab Facilities", value: "Delhi & Gurugram" },
-        { label: "Specimens Cataloged", value: "140+ Minerals" },
-        { label: "Eco Standard", value: "0% VOC Off-gassing" },
+        { label: "Material Testing", value: "In-House Inspection" },
+        { label: "Tested Samples", value: "Marble, Tiles, Wood" },
+        { label: "Paint Quality", value: "Zero Odor Paints" },
       ],
       image: "/images/travertine_detail.jpg",
     },
     {
       year: 2023,
       city: "Noida & Bengaluru",
-      title: "50+ Completed Projects",
-      tagline: "Surpassing 50 completed estates & commercial builds across India with 100% bespoke joinery.",
-      desc: "Achieved milestone status with the completion of Noida Tech Park Headquarters and Golf Course Road Penthouse, setting the benchmark for quiet, contemplative luxury.",
+      title: "Completed 50+ Major Builds",
+      tagline: "Successfully delivered over 50 homes, villas, and corporate offices across India.",
+      desc: "Completed major commercial office headquarters and penthouse interiors, delivering high client satisfaction on time.",
       metrics: [
-        { label: "Completed Estates", value: "54 Sites" },
-        { label: "Metros", value: "6 Cities" },
-        { label: "Joinery Precision", value: "Sub-millimeter" },
+        { label: "Completed Sites", value: "50+ Projects" },
+        { label: "Cities Covered", value: "6 Major Metros" },
+        { label: "Finish Quality", value: "100% Inspected" },
       ],
       image: "/images/artisan_millwork.jpg",
     },
     {
       year: 2025,
-      city: "Ojai & Geneva",
-      title: "Autonomous Microclimate Architecture",
-      tagline: "Pioneering rammed earth thermal chimneys and passive zero-energy structural envelopes.",
-      desc: "Unveiled the Canyon Sanctuary in Ojai, California, featuring earth-cast load-bearing walls and natural thermal buoyancy solar chimneys with zero active HVAC load.",
+      city: "Pan-India Expansion",
+      title: "Eco-Friendly Construction & Smart Interiors",
+      tagline: "Pioneering energy-efficient building envelopes and smart lighting interiors.",
+      desc: "Introducing eco-friendly brickwork, natural ventilation designs, and app-controlled smart lighting for modern homes and commercial buildings.",
       metrics: [
-        { label: "HVAC Load", value: "0 Net Energy" },
-        { label: "Rammed Earth", value: "100% Local Clay" },
-        { label: "Lifespan Rating", value: "300+ Years" },
+        { label: "Energy Rating", value: "Eco-Friendly" },
+        { label: "Materials", value: "100% Sourced" },
+        { label: "Building Life", value: "50+ Years Guarantee" },
       ],
       image: "/images/architectural_light.jpg",
     },
@@ -105,46 +105,46 @@ export default function AboutPage() {
   const wireframeLayersData = {
     cad: {
       label: "CAD Blueprint Grid",
-      title: "Tectonic Vector Grid & Column Axis",
-      desc: "Precision structural coordinate matrix (1:50 scale) mapping load-bearing steel piers, optical axes, and primary masonry datum lines.",
-      badge: "Coordinate Matrix • LAT 48.86° N / LON 2.32° E",
+      title: "2D Floor Plans & Structural Grid",
+      desc: "Detailed architectural drawings and CAD blueprints mapping columns, room boundaries, electrical outlets, and plumbing points.",
+      badge: "Architectural Drawing • Scale 1:50",
       specs: [
-        { key: "Tectonic Scale", val: "1:50 Architectural Metric" },
-        { key: "Axis Alignment", val: "True North Diurnal Meridian" },
-        { key: "Grid Resolution", val: "0.5mm Sub-pixel CAD Vector" },
+        { key: "Drawing Type", val: "CAD Vector Floor Plan" },
+        { key: "Alignment", val: "Precise Site Measurements" },
+        { key: "Details Included", val: "Walls, Doors & Windows" },
       ],
     },
     structural: {
       label: "3D Structural Framing",
-      title: "Monolithic Load-Bearing Truss & Cantilever",
-      desc: "Sub-floor high-tensile steel cradle engineered to sustain up to 12 metric tons of solid carved French limestone and Italian Calacatta Viola marble.",
-      badge: "Structural Yield • 450 MPa High-Tensile Steel",
+      title: "RCC Frame & Steel Column Structure",
+      desc: "Heavy-duty foundation design and RCC column framework engineered to support heavy marble floors, multi-story loads, and seismic safety.",
+      badge: "Structural Design • High-Grade Steel & Concrete",
       specs: [
-        { key: "Load Capacity", val: "12.5 Metric Tons Limit" },
-        { key: "Deflection Index", val: "< 1/1000 Cantilever Deflection" },
-        { key: "Foundation Base", val: "Sub-sea Reinforced Concrete" },
+        { key: "Load Capacity", val: "Heavy Load Certified" },
+        { key: "Safety Rating", val: "Seismic Zone Compliant" },
+        { key: "Foundation Base", val: "Reinforced Concrete Raft" },
       ],
     },
     thermal: {
-      label: "Thermal Solar Envelope",
-      title: "Passive Solar Trajectory & Air Buoyancy",
-      desc: "Simulated microclimate envelope directing natural cross-ventilation through vertical solar chimneys and triple-glazed thermal break argon panels.",
-      badge: "Microclimate • Diurnal Solar Buoyancy",
+      label: "Thermal & Solar Setup",
+      title: "Natural Lighting & Air Circulation",
+      desc: "Building orientation and window placement designed to maximize natural sunlight during daytime and maintain natural cool airflow.",
+      badge: "Energy Saver • Natural Sunlight & Ventilation",
       specs: [
-        { key: "Thermal Mass", val: "R-38 Monolithic Insulation" },
-        { key: "Cross Ventilation", val: "Natural Stack-Effect Buoyancy" },
-        { key: "Solar Orientation", val: "23.5° Equinox Solar Path" },
+        { key: "Insulation", val: "Heat-Resistant Wall Plaster" },
+        { key: "Airflow", val: "Natural Cross Ventilation" },
+        { key: "Glass Windows", val: "Double-Glazed Soundproof Glass" },
       ],
     },
     millwork: {
-      label: "Bespoke Millwork Axis",
-      title: "Sub-millimeter Joinery & Concealed Pivot Hardware",
-      desc: "Architectural millwork layout displaying recessed magnetic tracks, hidden 180-degree brass pivot hinges, and acoustic isolation perimeter seals.",
-      badge: "Artisanal Millwork • Sub-millimeter Tolerance",
+      label: "Custom Interior Layout",
+      title: "False Ceilings, POP & Custom Woodwork",
+      desc: "Detailed interior layout showing POP false ceiling coves, concealed wiring tracks, modular kitchen cabinets, and custom wardrobes.",
+      badge: "Interior Finish • Factory Fitted Furniture",
       specs: [
-        { key: "Wood Specimen", val: "FSC Bleached Japanese Elm" },
-        { key: "Hardware Spec", val: "Custom Patinated Cast Bronze" },
-        { key: "Acoustic Rating", val: "STC 54 Sound Attenuation" },
+        { key: "Wood Type", val: "Waterproof Teak & Plywood" },
+        { key: "Hardware", val: "Soft-Close Hinges & Handles" },
+        { key: "Sound Isolation", val: "Acoustic Wall Partitions" },
       ],
     },
   };
@@ -211,32 +211,30 @@ export default function AboutPage() {
           {/* Top Manifesto Hero */}
           <section className="relative w-full overflow-hidden bg-[#faf9f6] pt-12 pb-14 border-b border-[#e5e2db]">
             <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
-              {/* Monograph Archival Meta Tag */}
+              {/* Meta Tag */}
               <div className="flex items-center gap-4 mb-4">
                 <div className="inline-flex items-center gap-2 bg-[#715a3e]/10 px-3.5 py-1 rounded-full border border-[#715a3e]/20">
                   <span className="w-2 h-2 rounded-full bg-[#715a3e] animate-pulse" />
                   <span className="text-[11px]  text-[#715a3e] font-semibold">
-                    Monograph 01 • Studio Genesis
+                    About Havenley Infrastructure
                   </span>
                 </div>
                 <div className="h-px w-12 bg-[#e5e2db]" />
                 <span className="text-[11px] text-[#494740] font-medium">
-                  Paris – New York • Est. 2011
+                  Delhi • Gurugram • Mumbai • Est. 2011
                 </span>
               </div>
 
-              {/* Hero Headline with Architectural Scale */}
+              {/* Hero Headline */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-end">
                 <div className="lg:col-span-9">
                   <h1 className="text-3xl sm:text-4xl lg:text-[3rem] text-[#1a1c1a] font-semibold">
-                    Civil Poise & Material Integrity
+                    Building Strong Foundations & Quality Interiors
                   </h1>
                 </div>
                 <div className="lg:col-span-3 pb-1">
                   <p className="text-sm sm:text-sm text-[#494740] font-normal">
-                    From our founding ateliers in New Delhi and Gurugram, we
-                    engineer spaces that endure for generations. Our practice
-                    bridges ground-up civil construction, structural engineering, and luxury interior design.
+                    We are a premier civil construction and interior execution company in India, dedicated to delivering long-lasting structural builds and beautiful, functional interiors.
                   </p>
                 </div>
               </div>

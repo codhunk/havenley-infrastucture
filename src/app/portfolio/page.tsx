@@ -49,57 +49,60 @@ export default function PortfolioPage() {
       id: "vasant-vihar",
       code: "DEL — 01",
       title: "Vasant Vihar Luxury Villa",
-      category: "residences millwork",
-      type: "Turnkey Villa & Interiors • 2024",
+      category: "civil interior residential",
+      type: "Ground-up Civil Build & Interior Fitout • 2024",
       location: "New Delhi, India",
       surface: "650 m²",
       image: "/images/villa_miramar.jpg",
       description:
-        "Turnkey civil construction and luxury interior transformation featuring Italian marble flooring, teak wood cabinetry, and open-plan acoustic design.",
-      tags: ["Italian Marble", "Teak Woodwork", "Acoustics"],
+        "Turnkey civil construction and luxury interior setup featuring RCC structural framing, red brickwork masonry, POP false ceiling coves, Italian Bottochino marble flooring, and modular kitchen interiors.",
+      tags: ["RCC Framing", "POP False Ceiling", "Modular Kitchen", "Italian Marble"],
       details: [
-        "Reinforced concrete civil foundation and pillar structure",
-        "Imported Bottochino Italian marble flooring in living areas",
-        "Custom teak wood wall panelling and false ceiling cove lighting",
+        "Deep excavation, pile foundation & seismic Grade-A RCC structural columns",
+        "Red brickwork masonry, waterproof plastering & exterior weather-proof coating",
+        "Gypsum false ceiling coves with POP decorative mouldings & ambient lighting",
+        "Modular kitchen setup, custom teak wardrobes, doors & windows, electrical & plumbing networks",
       ],
     },
     {
       id: "cyber-city",
       code: "GUR — 02",
       title: "Cyber City Corporate Suite",
-      category: "infrastructure millwork",
-      type: "Commercial Office Fitout • 2024",
+      category: "commercial interior fitout",
+      type: "Commercial Office Fitout & Partitioning • 2024",
       location: "Gurugram, India",
       surface: "480 m²",
       image: "/images/tribeca_penthouse.jpg",
       description:
-        "Complete commercial interior workspace design featuring double-glazed acoustic glass partitions, warm timber wall paneling, and LED chandeliers.",
-      tags: ["Acoustic Glass", "Solid Timber", "Smart HVAC"],
+        "Complete commercial interior workspace execution including acoustic glass & gypsum partition walls, false ceiling grid, modular workstation furniture, and custom reception cabinetry.",
+      tags: ["Gypsum Partitions", "Modular Workstations", "False Ceiling", "Electrical Fittings"],
       details: [
-        "Double-glazed acoustic glass cabins for executive privacy",
-        "Custom solid wood reception desk with statement lighting",
-        "Integrated smart climate control and biometric access control",
+        "Fire-rated gypsum partition walls & double-glazed acoustic glass executive cabins",
+        "Acoustic false ceiling tiles with integrated LED lighting and electrical wiring",
+        "Custom solid wood reception counter, modular workstation desks & executive storage cabinets",
+        "Pantry plumbing fixtures, wall decorative panels & access security infrastructure",
       ],
     },
     {
       id: "golf-course",
       code: "GUR — 03",
       title: "Golf Course Road Penthouse",
-      category: "residences millwork",
-      type: "Penthouse Transformation • 2023",
+      category: "interior residential furnishing",
+      type: "Penthouse Interior Finishing & Setup • 2023",
       location: "Gurugram, India",
       surface: "380 m²",
       image: "/images/maison_saint_germain.jpg",
       description:
-        "High-end luxury apartment redesign with false ceiling light coves, quartz kitchen island, concealed storage millwork, and smart automation.",
-      tags: ["Calacatta Quartz", "Fluted Wood", "Automation"],
-      details: [
-        "Monolithic Calacatta quartz kitchen island with brass highlights",
-        "Concealed pivot doors seamlessly integrated in fluted paneling",
-        "Complete mobile app automation for lighting and curtains",
-      ],
-    },
-  ];
+        "High-end residential interior renovation featuring POP wall paneling, texture painting, quartz modular kitchen island, custom walk-in wardrobes, wallpaper decor, and tile flooring.",
+    tags: ["POP Paneling", "Modular Kitchen", "Custom Wardrobes", "Texture Painting"],
+    details: [
+      "Designer POP wall paneling, false ceiling coves & royal texture paint finishes",
+      "Modular kitchen with Calacatta quartz countertops, soft-close hardware & appliance integration",
+      "Custom floor-to-ceiling wardrobes, decorative wall panels, and wallpaper accents",
+      "Bathroom wall & floor tiling, concealed plumbing fittings & smart electrical lighting",
+    ],
+  },
+];
 
   const displayProjects = projectsList.length > 0 ? projectsList : defaultProjects;
 
@@ -136,42 +139,42 @@ export default function PortfolioPage() {
                   <div className="flex items-center gap-3">
                     <span className="w-8 h-px bg-[#715a3e]" />
                     <span className="text-sm font-semibold text-[#715a3e] ">
-                      Portfolio Index
+                      Project Gallery
                     </span>
-                    <span className="text-sm text-[#494740]">/ Vol. IV</span>
+                    <span className="text-sm text-[#494740]">/ Completed Works</span>
                   </div>
                   <h1 className="font-sans font-semibold text-3xl sm:text-4xl lg:text-5xl text-[#1a1c1a]">
-                    Selected Works & Spatial Studies
+                    Our Construction & Interior Projects
                   </h1>
                   <p className="text-sm font-semibold text-[#715a3e]  pt-2">
-                    Archival Monograph • 2018—2025
+                    Showcasing Residential Villas, Offices & Interior Renovations
                   </p>
                 </div>
 
                 <div className="max-w-md space-y-3 bg-[#f4f3f0] p-6 shadow-sm border border-[#cbc6bd]/30 transform-gpu isolate">
                   <p className="text-sm text-[#494740]">
-                    We engineer and build end-to-end architectural environments spanning civil infrastructure, turnkey commercial developments, and bespoke luxury interiors with rigorous structural excellence and unhurried artisanal craftsmanship.
+                    We design and build complete civil structures and modern interior fitouts. Explore our featured luxury villas, apartments, corporate offices, and custom woodworking projects.
                   </p>
                   <div className="flex items-center gap-6 pt-2 text-sm text-[#1a1c1a] flex-wrap sm:flex-nowrap">
                     <div className="shrink-0">
                       <span className="block font-semibold text-[#000000] tabular-nums">
-                        <AnimatedCounter target={28} />
+                        <AnimatedCounter target={120} suffix="+" />
                       </span>
-                      <span className="text-[#494740] whitespace-nowrap">Global Sites</span>
+                      <span className="text-[#494740] whitespace-nowrap">Projects</span>
                     </div>
                     <div className="w-px h-6 bg-[#e3e2e0] shrink-0" />
                     <div className="shrink-0">
                       <span className="block font-semibold text-[#000000] tabular-nums">
                         <AnimatedCounter target={6} />
                       </span>
-                      <span className="text-[#494740] whitespace-nowrap">Capitals</span>
+                      <span className="text-[#494740] whitespace-nowrap">Major Metros</span>
                     </div>
                     <div className="w-px h-6 bg-[#e3e2e0] shrink-0" />
                     <div className="shrink-0">
                       <span className="block font-semibold text-[#000000] tabular-nums">
                         <AnimatedCounter target={100} suffix="%" />
                       </span>
-                      <span className="text-[#494740] whitespace-nowrap">Bespoke Millwork</span>
+                      <span className="text-[#494740] whitespace-nowrap">Custom Fitout</span>
                     </div>
                   </div>
                 </div>
@@ -187,51 +190,47 @@ export default function PortfolioPage() {
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
                   >
-                    All Works <span className="opacity-60 ml-1">(28)</span>
+                    All Works
                   </button>
 
                   <button
-                    onClick={() => setActiveFilter("residences")}
-                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "residences"
+                    onClick={() => setActiveFilter("civil")}
+                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "civil"
                       ? "bg-[#000000] text-[#ffffff]"
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
                   >
-                    Civil & Structural Builds{" "}
-                    <span className="opacity-60 ml-1">(14)</span>
+                    Civil & Foundation Work
                   </button>
 
                   <button
-                    onClick={() => setActiveFilter("hospitality")}
-                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "hospitality"
+                    onClick={() => setActiveFilter("interior")}
+                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "interior"
                       ? "bg-[#000000] text-[#ffffff]"
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
                   >
-                    Commercial & Residential{" "}
-                    <span className="opacity-60 ml-1">(8)</span>
+                    Interior Finishing & Setup
                   </button>
 
                   <button
-                    onClick={() => setActiveFilter("heritage")}
-                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "heritage"
+                    onClick={() => setActiveFilter("residential")}
+                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "residential"
                       ? "bg-[#000000] text-[#ffffff]"
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
                   >
-                    Infrastructure Projects{" "}
-                    <span className="opacity-60 ml-1">(6)</span>
+                    Residential Construction & Interiors
                   </button>
 
                   <button
-                    onClick={() => setActiveFilter("millwork")}
-                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "millwork"
+                    onClick={() => setActiveFilter("commercial")}
+                    className={`px-4 py-2 text-sm font-semibold  transition-all duration-300 ${activeFilter === "commercial"
                       ? "bg-[#000000] text-[#ffffff]"
                       : "bg-[#faf9f6] text-[#1a1c1a] hover:bg-[#e9e8e5]"
                       }`}
                   >
-                    Luxury Turnkey Interiors{" "}
-                    <span className="opacity-60 ml-1">(12)</span>
+                    Commercial & Office Fitout
                   </button>
                 </div>
 
@@ -375,33 +374,33 @@ export default function PortfolioPage() {
               <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-4 border-b border-[#e3e2e0]">
                 <div>
                   <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
-                    Monographic Deep Dive • 01/28
+                    Project Case Study Highlight
                   </span>
                   <h2 className="font-sans font-semibold text-2xl sm:text-3xl text-[#1a1c1a]">
-                    Spatial Anatomy: Vasant Vihar Villa
+                    Featured Build: Vasant Vihar Luxury Villa
                   </h2>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-[#494740]">
-                  <span>Typology: Heritage & Monolithic Millwork</span>
+                  <span>Scope: Civil Construction & Complete Interior Setup</span>
                   <span>•</span>
                   <span className="text-[#715a3e] font-semibold">
-                    Full Dossier
+                    New Delhi, India
                   </span>
                 </div>
               </div>
 
-              {/* Asymmetric Editorial Spread */}
+              {/* Editorial Spread */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
                 {/* Visual Showcase */}
                 <div className="lg:col-span-7 flex flex-col space-y-6">
                   <div className="relative w-full aspect-[16/11] bg-[#faf9f6] overflow-hidden shadow-md border border-[#cbc6bd]/40">
                     <img
-                      alt="Vasant Vihar Villa Salon"
+                      alt="Vasant Vihar Villa Living Room"
                       className="w-full h-full object-cover"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPHdz16ZrKWe2oYrGElDyCweHsWf9bRE_oTD7OKH2lL-s51oIRZiOGTWrvav3MNErLUXsyXAUlPJKSAc1nKacWT4q575zVH0RnRmrYWAT0OtReARAwD7I1K7nnha5wxD7eihbQb1CINVr7o_OGRfJQ87mu7RUSbcBRLUfE22DHNZOz4Zb56k1uUffFTulZ3cyCZBVQ6Qb3-1dQpEbnROU4fDKcXyvpD_OuNFCpEw9mFbO2HEvZ4soV"
                     />
                     <div className="absolute top-6 left-6 bg-[#faf9f6]/90 backdrop-blur-md px-4 py-2 text-sm  text-[#1a1c1a] shadow-xs">
-                      Primary Living Pavilion • Level 01
+                      Main Living Room & Garden View
                     </div>
 
                     <div className="absolute bottom-6 left-6 right-6 bg-[#000000]/95 text-[#ffffff] p-4 backdrop-blur-md flex items-center justify-between shadow-lg">
@@ -411,23 +410,23 @@ export default function PortfolioPage() {
                         </span>
                         <div>
                           <div className="text-sm  font-semibold">
-                            Axonometric Distribution Scheme
+                            Floor Plan & Room Distribution
                           </div>
                           <div className="text-[11px] text-[#868380]">
-                            Radial solar axis aligned with cour d'honneur
+                            Designed for maximum sunlight and natural air flow
                           </div>
                         </div>
                       </div>
                       <span className="text-sm text-[#715a3e]  font-semibold">
-                        Plate 14-B
+                        Plan View
                       </span>
                     </div>
                   </div>
 
-                  {/* SVG Floorplan Spatial Distribution Diagram */}
+                  {/* SVG Floorplan Diagram */}
                   <div className="bg-[#efeeeb] p-6 shadow-xs flex flex-col space-y-3 border border-[#cbc6bd]/40">
                     <div className="flex items-center justify-between text-sm  text-[#1a1c1a] font-semibold">
-                      <span>Spatial Partition & Circulation Diagram</span>
+                      <span>Room Layout & Flow Diagram</span>
                       <span className="text-[#715a3e]">Scale 1:100</span>
                     </div>
                     <div className="w-full h-44 bg-[#faf9f6] p-4 flex items-center justify-center overflow-hidden border border-[#cbc6bd]/30">
@@ -463,7 +462,7 @@ export default function PortfolioPage() {
                           letterSpacing="1"
                           textAnchor="middle"
                         >
-                          GRAND LIVING SALON (CUSTOM TEAK WOODWORK)
+                          LIVING ROOM (CUSTOM TEAK WOODWORK)
                         </text>
                         <circle
                           cx="340"
@@ -482,7 +481,7 @@ export default function PortfolioPage() {
                           letterSpacing="1.5"
                           textAnchor="middle"
                         >
-                          CALACATTA FORUM
+                          MARBLE HALLWAY
                         </text>
                         <rect
                           x="430"
@@ -501,7 +500,7 @@ export default function PortfolioPage() {
                           letterSpacing="1"
                           textAnchor="middle"
                         >
-                          MASTER APARTMENT
+                          MASTER BEDROOM
                         </text>
                         <rect
                           x="430"
@@ -520,7 +519,7 @@ export default function PortfolioPage() {
                           letterSpacing="1"
                           textAnchor="middle"
                         >
-                          ARCHIVAL LIBRARY & ATELIER
+                          HOME OFFICE & STUDY
                         </text>
                         <line
                           x1="20"
@@ -541,9 +540,9 @@ export default function PortfolioPage() {
                       </svg>
                     </div>
                     <div className="flex items-center justify-between text-[11px] text-[#494740]">
-                      <span>• Dual-aspect light ingress (North/South)</span>
+                      <span>• Dual-side natural lighting (North/South)</span>
                       <span>
-                        • Concealed service spine & structural storage
+                        • Concealed wiring & plumbing service spine
                       </span>
                     </div>
                   </div>
@@ -554,55 +553,55 @@ export default function PortfolioPage() {
                   <div className="space-y-4">
                     <div className="bg-[#faf9f6] p-6 shadow-xs border border-[#cbc6bd]/40">
                       <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
-                        01 / The Challenge
+                        01 / Site Challenge
                       </span>
                       <h3 className="font-sans font-semibold text-xl text-[#1a1c1a] mb-2">
-                        Preserving Heritage Under Seismic Code
+                        Heavy Stone Flooring Support
                       </h3>
                       <p className="text-sm text-[#494740]">
-                        The classified 1740s timber framing had sustained two centuries of structural deflection. Installing 6 metric tons of sculpted Italian stone required an independent steel cradle concealed within acoustic subflooring.
+                        Installing imported Italian marble flooring throughout required reinforced RCC slab foundations and subfloor waterproofing to ensure zero structural cracking.
                       </p>
                     </div>
 
                     <div className="bg-[#faf9f6] p-6 shadow-xs border border-[#cbc6bd]/40">
                       <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
-                        02 / Spatial Strategy
+                        02 / Interior Strategy
                       </span>
                       <h3 className="font-sans font-semibold text-xl text-[#1a1c1a] mb-2">
-                        Radial Volume & Unbroken Horizons
+                        Open-Plan Living Layout
                       </h3>
                       <p className="text-sm text-[#494740]">
-                        By purging late-19th-century partitioned corridors, an uninterrupted 32-meter optical axis was generated, framing views from the private garden courtyards straight through to the grand salon facade.
+                        By opening up non-load-bearing brick partitions, an open-plan layout was generated, connecting the living area directly to the private courtyard garden.
                       </p>
                     </div>
 
                     <div className="bg-[#faf9f6] p-6 shadow-xs border border-[#cbc6bd]/40">
                       <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
-                        03 / Material Symphony
+                        03 / Materials Used
                       </span>
                       <div className="grid grid-cols-3 gap-2 pt-2">
                         <div className="bg-[#efeeeb] p-2 text-center">
                           <div className="text-[10px] text-[#715a3e] ">
-                            Stone
+                            Flooring
                           </div>
                           <div className="text-sm font-semibold text-[#1a1c1a] mt-1">
-                            Calacatta Viola
+                            Bottochino Marble
                           </div>
                         </div>
                         <div className="bg-[#efeeeb] p-2 text-center">
                           <div className="text-[10px] text-[#715a3e] ">
-                            Timber
+                            Woodwork
                           </div>
                           <div className="text-sm font-semibold text-[#1a1c1a] mt-1">
-                            Fumed French Oak
+                            Teak Wood
                           </div>
                         </div>
                         <div className="bg-[#efeeeb] p-2 text-center">
                           <div className="text-[10px] text-[#715a3e] ">
-                            Metal
+                            Fittings
                           </div>
                           <div className="text-sm font-semibold text-[#1a1c1a] mt-1">
-                            Hand-Aged Brass
+                            Brass Hardware
                           </div>
                         </div>
                       </div>
@@ -610,10 +609,10 @@ export default function PortfolioPage() {
 
                     <div className="bg-[#faf9f6] p-6 shadow-xs border border-[#cbc6bd]/40">
                       <span className="text-sm font-semibold text-[#715a3e]  block mb-2">
-                        04 / The Outcome
+                        04 / Final Outcome
                       </span>
                       <p className="text-sm text-[#494740]">
-                        An unapologetically monastic interior that respects the dignity of French neoclassicism while providing absolute acoustic serenity and state-of-the-art ambient thermal regulation.
+                        A beautiful home featuring high structural durability, soundproofing, POP ceiling lighting coves, and custom kitchen cabinetry.
                       </p>
                     </div>
                   </div>
@@ -621,10 +620,10 @@ export default function PortfolioPage() {
                   <div className="p-6 bg-[#efeeeb] flex items-center justify-between border border-[#cbc6bd]/40">
                     <div>
                       <span className="text-sm  font-semibold text-[#1a1c1a] block">
-                        Request Architectural Dossier
+                        Download Project Details
                       </span>
                       <span className="text-[11px] text-[#494740]">
-                        Includes high-res material schedules & specifications
+                        Includes material schedules & room dimensions
                       </span>
                     </div>
                     <button
@@ -634,7 +633,7 @@ export default function PortfolioPage() {
                       <span className="material-symbols-outlined text-sm">
                         download
                       </span>
-                      <span>Dossier</span>
+                      <span>Details</span>
                     </button>
                   </div>
                 </div>
@@ -642,33 +641,33 @@ export default function PortfolioPage() {
             </div>
           </section>
 
-          {/* Curated Inquiries Call to Action */}
+          {/* Call to Action */}
           <section className="w-full bg-[#000000] text-[#ffffff] py-16 px-5 md:px-12 lg:px-20 relative overflow-hidden">
             <div className="max-w-[1200px] mx-auto relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
               <div className="space-y-4 text-center lg:text-left max-w-2xl">
                 <span className="text-sm font-semibold text-[#fdddb9]  block">
-                  Commissions • 2025 / 2026
+                  Now Accepting New Projects
                 </span>
                 <h2 className="font-sans font-semibold text-2xl sm:text-3xl text-[#ffffff]">
-                  Have an architectural space in development? Let's discuss your spatial ambitions.
+                  Planning a new construction or interior renovation project?
                 </h2>
                 <p className="text-sm text-[#868380] max-w-xl">
-                  Havenley Infrastructure accepts a selective calendar of civil construction, structural developments, and luxury turnkey interior commissions to safeguard uncompromising material execution.
+                  Contact Havenley Infrastructure today to schedule a site survey and discuss your construction build or interior requirements.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
                 <Link
-                  href="/#contact"
+                  href="/contact"
                   className="w-full sm:w-auto text-center px-8 py-4 bg-[#715a3e] text-[#ffffff] text-sm font-semibold  hover:bg-[#fdddb9] hover:text-[#281803] transition-all duration-300 shadow-md"
                 >
-                  Initiate Consultation
+                  Contact Us Today
                 </Link>
                 <Link
-                  href="/#philosophy"
+                  href="/#services"
                   className="w-full sm:w-auto text-center px-8 py-4 bg-transparent text-[#ffffff] border border-[#ffffff]/20 text-sm font-semibold  hover:bg-[#ffffff] hover:text-[#000000] transition-all duration-300"
                 >
-                  Studio Philosophy
+                  Our Services
                 </Link>
               </div>
             </div>
