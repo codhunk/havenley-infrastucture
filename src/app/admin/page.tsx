@@ -7,6 +7,7 @@ import Image from "next/image";
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [passkeyInput, setPasskeyInput] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [authError, setAuthError] = useState("");
 
   const [activeTab, setActiveTab] = useState<"projects" | "inquiries" | "bookings" | "subscribers">("inquiries");
@@ -465,14 +466,34 @@ export default function AdminPage() {
               <label className="text-[11px] font-bold  text-[#715a3e] block">
                 Administrative Passkey
               </label>
-              <input
-                type="password"
-                required
-                value={passkeyInput}
-                onChange={(e) => setPasskeyInput(e.target.value)}
-                placeholder="Enter Passkey (e.g. Interior123@)"
-                className="w-full bg-[#f4f3f0] border border-[#cbc6bd]/60 px-4 py-3 text-sm focus:outline-none focus:border-[#715a3e] font-sans"
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  required
+                  value={passkeyInput}
+                  onChange={(e) => setPasskeyInput(e.target.value)}
+                  placeholder="Enter Passkey (e.g. Interior123@)"
+                  className="w-full bg-[#f4f3f0] border border-[#cbc6bd]/60 pl-4 pr-11 py-3 text-sm focus:outline-none focus:border-[#715a3e] font-sans"
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#715a3e] hover:text-[#1c1b19] focus:outline-none p-1 flex items-center justify-center transition-colors"
+                  aria-label={showPassword ? "Hide password" : "Show password"}
+                  title={showPassword ? "Hide password" : "Show password"}
+                >
+                  {showPassword ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" className="w-5 h-5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                    </svg>
+                  ) : (
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.75} stroke="currentColor" className="w-5 h-5">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12c.929-3.19 4.341-6 9.964-6s9.035 2.81 9.964 6c-.929 3.19-4.341 6-9.964 6s-9.035-2.81-9.964-6z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  )}
+                </button>
+              </div>
             </div>
             <button
               type="submit"
@@ -483,9 +504,9 @@ export default function AdminPage() {
           </form>
 
           <div className="text-center pt-2">
-            <Link href="/" className="text-xs font-semibold text-[#715a3e] hover:underline">
-              ← Return to Main Website
-            </Link>
+            <a href="https://www.havenleyinfrastucture.com/" target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#715a3e] hover:underline">
+              ← Return to Live Website
+            </a>
           </div>
         </div>
       </div>
@@ -516,13 +537,14 @@ export default function AdminPage() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link
-              href="/"
+            <a
+              href="https://www.havenleyinfrastucture.com/"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-xs font-bold  text-[#cbb392] hover:text-[#ffffff] px-3.5 py-1.5 border border-[#715a3e]/40 transition-colors rounded"
             >
               Live Website ↗
-            </Link>
+            </a>
             <button
               onClick={handleLogout}
               className="text-xs font-bold  bg-red-950/60 hover:bg-red-800 text-red-200 px-4 py-1.5 border border-red-700/50 transition-colors rounded"
