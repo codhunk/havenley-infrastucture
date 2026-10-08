@@ -338,14 +338,14 @@ export default function AboutPage() {
                     <div className="mt-3 pb-1 px-2 flex justify-between items-baseline">
                       <div>
                         <p className="text-base text-[#1a1c1a] font-semibold">
-                          Aditya Vardhan
+                          Eng. Ajeet Chauhan
                         </p>
                         <p className="text-[10px] font-semibold text-[#715a3e] ">
-                          Principal Architect & Founder
+                          Proprietor &amp; Civil Engineer
                         </p>
                       </div>
                       <span className="text-[10px] text-[#715a3e] font-semibold bg-[#715a3e]/10 px-2 py-0.5 rounded-md">
-                        B.Arch / IIT
+                        GSTIN: 07APAPC9770L2ZL
                       </span>
                     </div>
                   </div>
@@ -363,24 +363,14 @@ export default function AboutPage() {
                     </h2>
                     <div className="space-y-3 text-sm sm:text-sm text-[#494740] font-normal">
                       <p>
-                        Educated at the storied{" "}
+                        Eng. Ajeet Chauhan, Proprietor of{" "}
                         <strong className="font-semibold text-[#1a1c1a]">
-                          IIT Delhi
+                          Hovenley Infrastructures
                         </strong>{" "}
-                        before refining his tectonic sensibilities at{" "}
-                        <strong className="font-semibold text-[#1a1c1a]">
-                          SPA New Delhi
-                        </strong>{" "}
-                        in India, Aditya Vardhan emerged from an
-                        illustrious architectural lineage spanning three
-                        generations.
+                        brings years of hands-on expertise in civil construction, architectural planning, and interior design across Delhi NCR.
                       </p>
                       <p>
-                        His immersion in classical Indian masonry and structural rationalism catalyzed the founding of
-                        Havenley Infrastructure in 2009. Bridging full-scale civil
-                        construction and structural engineering with refined bespoke
-                        interior design, the firm operates with an absolute doctrine:
-                        seamless structural integrity infused with material gravitas.
+                        Based in <strong className="font-semibold text-[#1a1c1a]">Uttam Nagar, New Delhi</strong>, the firm delivers end-to-end solutions — from architectural layout and design to complete building construction, waterproofing, and premium interior finishing — for residential and commercial clients.
                       </p>
                     </div>
                   </div>
@@ -389,10 +379,10 @@ export default function AboutPage() {
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-5 bg-[#ffffff] p-3.5 rounded-xl border border-[#e5e2db] shadow-md">
                     <div>
                       <span className="text-[10px] font-semibold text-[#715a3e]  block">
-                        Academic Chair
+                        Services
                       </span>
                       <p className="text-[11px] text-[#1a1c1a] font-semibold">
-                        Guest Critic, SPA Delhi
+                        Architectural Design &amp; Layout
                       </p>
                     </div>
                     <div>
@@ -400,15 +390,15 @@ export default function AboutPage() {
                         Specialization
                       </span>
                       <p className="text-[11px] text-[#1a1c1a] font-semibold">
-                        Adaptive Heritage Conservation
+                        Civil &amp; Interior Works
                       </p>
                     </div>
                     <div>
                       <span className="text-[10px] font-semibold text-[#715a3e]  block">
-                        Monograph
+                        Contact
                       </span>
                       <p className="text-[11px] text-[#1a1c1a] font-semibold">
-                        <em>The Poetics of Mass (2022)</em>
+                        +91-9650285397
                       </p>
                     </div>
                   </div>

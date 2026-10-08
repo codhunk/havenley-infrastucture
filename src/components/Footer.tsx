@@ -70,21 +70,30 @@ export default function Footer() {
                 />
               </div>
               <span className="font-bold text-base sm:text-lg  text-[#ffffff]">
-                Havenley <span className="text-[#cbb392]">Infrastructure</span>
+                Hovenley <span className="text-[#cbb392]">Infrastructures</span>
               </span>
             </div>
             <p className="text-xs sm:text-sm text-[#a39f99] leading-relaxed max-w-md">
-              Complete civil construction (foundation to exterior finishing) and turnkey interior execution (POP, false ceiling, modular furniture, kitchen interiors, office & residential fitouts) across India.
+              Architectural Designing, Layout, Plan, Interior Design, New Building, Water Proofing &amp; Renovation Works.
             </p>
             <div className="text-xs sm:text-sm text-[#d4d0c8] space-y-1 pt-1">
               <span className="text-[10px] sm:text-[11px] font-bold text-[#cbb392]  block tracking-wider">
-                Delhi Atelier & Headquarters
+                Eng. Ajeet Chauhan — Proprietor
               </span>
               <p className="text-xs sm:text-sm text-[#a39f99]">
-                Barakhamba Road, Connaught Place, New Delhi – 110001, India
+                Q-173, Mohan Garden, Uttam Nagar, New Delhi – 110059
               </p>
               <p className="text-xs sm:text-sm text-[#a39f99]">
-                Phone: +91 11 4152 8800 • Email:{" "}
+                GSTIN: 07APAPC9770L2ZL
+              </p>
+              <p className="text-xs sm:text-sm text-[#a39f99]">
+                Phone:{" "}
+                <a href="tel:+919650285397" className="text-[#cbb392] font-semibold hover:underline">+91-9650285397</a>
+                {" "}•{" "}
+                <a href="tel:+917827254865" className="text-[#cbb392] font-semibold hover:underline">+91-7827254865</a>
+              </p>
+              <p className="text-xs sm:text-sm text-[#a39f99]">
+                Email:{" "}
                 <a
                   href="mailto:havenleyinfrastructure@gmail.com"
                   className="text-[#cbb392] font-semibold hover:underline"

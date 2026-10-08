@@ -144,13 +144,13 @@ export default function ContactPage() {
   const studios = {
     delhi: {
       city: "Delhi Main Office",
-      address: "Barakhamba Road, Connaught Place, New Delhi – 110001, India",
-      phone: "+91 11 4152 8800",
-      email: "delhi@havenley-infra.com",
-      hours: "Monday – Saturday: 09:30 – 18:30 IST",
+      address: "Q-173, Mohan Garden, Uttam Nagar, New Delhi – 110059",
+      phone: "+91-9650285397",
+      email: "havenleyinfrastructure@gmail.com",
+      hours: "Monday – Saturday: 09:00 – 18:00 IST",
       image:
         "https://lh3.googleusercontent.com/aida-public/AB6AXuBm72o-CDzr69ox7faqdQzjgmH3sRGcYIq0LKvAvpdRvNww3NV1AnVO0G4htjOlPC9PFfrCdWXrTjDHADmnlh_1-HkK3f3xsAWzJMDE_JLfrjAW68vTuMlny0PnYPhlDOsQCEHuRME_UBXY-Is5X4wycXY9jDRMYxAgJnK50MepVfMiispTUPtegWjtJpz9QFUu1lB_SbzRBGPVKUyPS1HOp64vEgQO_JzLfVOcGJUJmQvBWhQvuusn",
-      desc: "Our main Delhi office features physical marble and tile sample displays, custom woodwork models, and consultation rooms.",
+      desc: "Our Delhi office serves clients across NCR with architectural design, civil construction, interior works, waterproofing and renovation. Led by Eng. Ajeet Chauhan.",
     },
     gurugram: {
       city: "Gurugram Office",
@@ -253,13 +253,13 @@ export default function ContactPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 bg-[#f4f3f0] border border-[#cbc6bd]/40 shadow-sm">
               <div>
                 <span className="text-[10px] font-semibold text-[#715a3e]  block mb-1">
-                  Delhi Headquarters
+                  Delhi Office
                 </span>
                 <p className="text-xl font-semibold text-[#1a1c1a]">
-                  Connaught Place
+                  Uttam Nagar
                 </p>
                 <span className="text-sm text-[#494740]">
-                  Barakhamba Road, New Delhi
+                  Mohan Garden, New Delhi
                 </span>
               </div>
               <div>

@@ -910,7 +910,7 @@ export default function Home() {
         {/* 7. IMMERSIVE INVITATION BANNER & CTA */}
         <section
           id="contact"
-          className="relative w-full bg-[#1c1c11] text-[#ffffff] py-20 overflow-hidden z-10 border-t border-[#715a3e]/30"
+          className="relative w-full bg-[#1c1b19] text-[#ffffff] py-20 overflow-hidden z-10 border-t border-[#715a3e]/30"
         >
           <div className="relative z-10 max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20 text-center space-y-6">
             <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
