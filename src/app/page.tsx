@@ -149,7 +149,7 @@ export default function Home() {
               <p className="text-xs sm:text-sm font-semibold text-[#cbb392] tracking-wide">
                 Complete Construction & Interior Solutions
               </p>
-              <h1 className="text-xl sm:text-3xl md:text-5xl font-semibold text-[#faf9f6] leading-tight">
+              <h1 className="text-xl sm:text-3xl md:text-5xl font-semibold text-[#faf9f6]">
                 Building Your Dream Space, From Foundation to Final Interior.
               </h1>
               <p className="text-xs sm:text-base text-[#e9e8e5]/90 max-w-2xl font-medium leading-relaxed">
@@ -346,79 +346,84 @@ export default function Home() {
         </section>
 
         {/* 2.5 CORE CONSTRUCTION & INTERIOR SERVICES SECTION */}
-        <section id="services" className="w-full bg-[#f4f3f0] py-16 border-b border-[#e5e2db] relative z-10 font-sans">
+        <section id="services" className="w-full bg-[#f4f3f0] py-10 md:py-12 border-b border-[#e5e2db] relative z-10 font-sans">
           <div className="max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20">
             {/* Section Header */}
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-              <div className="space-y-2 max-w-3xl">
-                <span className="text-xs font-semibold text-[#715a3e] bg-[#ffffff] px-3.5 py-1 rounded-full border border-[#e5e2db] shadow-sm inline-block">
-                  [ SECTION 03 // OUR SERVICES & CAPABILITIES ]
-                </span>
-                <h2 className="text-2xl sm:text-4xl text-[#1a1c1a] font-semibold">
-                  End-to-End Construction & Interior Execution
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
+              <div className="space-y-1.5 max-w-3xl">
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] font-semibold text-[#715a3e] bg-[#ffffff] px-3 py-1 rounded-full border border-[#715a3e]/30 shadow-xs inline-flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#715a3e] animate-pulse" />
+                    [ SECTION 03 // OUR SERVICES & CAPABILITIES ]
+                  </span>
+                  <span className="text-[10px] font-semibold text-[#494740] bg-[#e5e2db]/60 px-2.5 py-0.5 rounded-full border border-[#cbc6bd]/50 hidden sm:inline-block">
+                    Turnkey Architectural EPC & Interiors
+                  </span>
+                </div>
+                <h2 className="text-2xl sm:text-3xl text-[#1a1c1a] font-semibold tracking-tight">
+                  End-to-End Construction & <span className="text-[#715a3e] italic font-serif">Interior Execution</span>
                 </h2>
-                <p className="text-sm text-[#494740] font-normal leading-relaxed">
-                  We cover the complete process from the foundation and RCC base structure to the final POP finishing, false ceiling, modular furniture, and complete interior setup.
-                </p>
               </div>
               <Link
                 href="/contact"
-                className="bg-[#1c1b19] text-[#ffffff] text-xs font-semibold px-5 py-3 rounded-lg hover:bg-[#715a3e] transition-colors shrink-0 flex items-center gap-1.5 shadow-md"
+                className="bg-[#1c1b19] text-[#faf9f6] text-xs font-semibold px-4 py-2.5 rounded-lg hover:bg-[#715a3e] transition-all duration-300 shrink-0 flex items-center gap-1.5 shadow-md hover:shadow-lg group self-start md:self-auto"
               >
-                <span>Request Service Proposal</span>
-                <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                <span>Request Proposal</span>
+                <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </Link>
             </div>
 
-            {/* 2-Column Core Services Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Construction Work Box */}
-              <div className="bg-[#ffffff] p-6 sm:p-8 rounded-2xl border border-[#e5e2db] shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between space-y-6 relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#715a3e]/5 rounded-bl-full pointer-events-none" />
-                <div className="space-y-4">
+            {/* 2-Column Core Services Compact Cards */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Card 1: Structural & Civil Construction Work */}
+              <div className="bg-[#ffffff] p-5 md:p-6 rounded-2xl border border-[#e5e2db] shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between space-y-4 relative overflow-hidden group hover:border-[#715a3e]/50">
+                <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-bl from-[#715a3e]/10 to-transparent rounded-bl-full pointer-events-none" />
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#1c1b19] via-[#715a3e] to-[#cbb392]" />
+
+                <div className="space-y-3 relative z-10">
                   <div className="flex items-center justify-between">
-                    <div className="w-12 h-12 rounded-xl bg-[#1c1b19] text-[#cbb392] flex items-center justify-center shadow-md">
-                      <span className="material-symbols-outlined text-2xl">construction</span>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-xl bg-[#1c1b19] text-[#cbb392] flex items-center justify-center shadow-md shrink-0">
+                        <span className="material-symbols-outlined text-xl">construction</span>
+                      </div>
+                      <div>
+                        <h3 className="text-lg sm:text-xl font-semibold text-[#1a1c1a] tracking-tight">
+                          Civil Construction Work
+                        </h3>
+                        <p className="text-[11px] text-[#494740] font-medium">
+                          Ground-up civil engineering, RCC framing & MEP networks.
+                        </p>
+                      </div>
                     </div>
-                    <span className="text-xs font-semibold text-[#715a3e] bg-[#715a3e]/10 px-3 py-1 rounded-full">
-                      Structural & Civil
+                    <span className="text-[10px] font-semibold text-[#715a3e] bg-[#715a3e]/10 px-2.5 py-1 rounded-full border border-[#715a3e]/20 shrink-0 hidden sm:inline-block">
+                      10 Core Services
                     </span>
                   </div>
 
+                  {/* Micro Service Item Compact Grid */}
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-[#1a1c1a]">
-                      Construction Work
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#494740] mt-1 leading-relaxed">
-                      Complete ground-up civil engineering, structural framing, and external building envelope execution.
-                    </p>
-                  </div>
-
-                  {/* List of 10 Construction Services */}
-                  <div className="pt-2">
-                    <h4 className="text-xs font-semibold text-[#715a3e] mb-3">
-                      Core Construction Services:
-                    </h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    <div className="grid grid-cols-2 xl:grid-cols-3 gap-2">
                       {[
-                        "Foundation & Base Construction",
-                        "RCC & Structural Work",
-                        "Brickwork & Masonry",
-                        "Plastering & Wall Preparation",
-                        "Flooring & Tiling Work",
-                        "Electrical & Plumbing Networks",
-                        "Doors & Windows Installation",
-                        "Waterproofing Systems",
-                        "Exterior Finishing & Cladding",
-                        "Complete Civil Construction Work",
+                        { title: "Foundation & Base", icon: "foundation" },
+                        { title: "RCC & Structure", icon: "apartment" },
+                        { title: "Brick & Masonry", icon: "view_compact" },
+                        { title: "Plastering & Walls", icon: "format_paint" },
+                        { title: "Flooring & Tiling", icon: "grid_view" },
+                        { title: "Electrical & Plumbing", icon: "electrical_services" },
+                        { title: "Doors & Windows", icon: "door_front" },
+                        { title: "Waterproofing", icon: "water_drop" },
+                        { title: "Exterior Cladding", icon: "domain" },
+                        { title: "Civil Turnkey EPC", icon: "engineering" },
                       ].map((service, idx) => (
                         <div
                           key={idx}
-                          className="flex items-center gap-2 bg-[#faf9f6] p-2.5 rounded-lg border border-[#e5e2db] hover:border-[#715a3e]/40 transition-colors"
+                          className="flex items-center gap-2 bg-[#faf9f6] px-2.5 py-1.5 rounded-lg border border-[#e5e2db] hover:border-[#715a3e] hover:bg-[#ffffff] transition-all duration-200 group/item cursor-default"
                         >
-                          <span className="w-2 h-2 rounded-full bg-[#715a3e] shrink-0" />
-                          <span className="text-xs font-semibold text-[#1a1c1a]">
-                            {service}
+                          <div className="w-5 h-5 rounded bg-[#ffffff] group-hover/item:bg-[#1c1b19] group-hover/item:text-[#cbb392] text-[#715a3e] flex items-center justify-center shrink-0 border border-[#e5e2db] transition-colors shadow-xs">
+                            <span className="material-symbols-outlined text-xs">{service.icon}</span>
+                          </div>
+                          <span className="text-[11px] font-semisemibold text-[#1a1c1a] group-hover/item:text-[#715a3e] transition-colors truncate">
+                            {service.title}
                           </span>
                         </div>
                       ))}
@@ -426,62 +431,69 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-[#e5e2db] flex items-center justify-between text-xs text-[#494740]">
-                  <span>From Excavation to Building Envelope</span>
-                  <span className="font-semibold text-[#715a3e]">Civil Engineering & EPC</span>
+                <div className="pt-3 border-t border-[#e5e2db] flex items-center justify-between text-[11px] text-[#494740] font-medium relative z-10">
+                  <span className="flex items-center gap-1">
+                    <span className="material-symbols-outlined text-sm text-[#715a3e]">verified</span>
+                    Excavation to Envelope
+                  </span>
+                  <span className="font-semibold text-[#1a1c1a] bg-[#faf9f6] px-2.5 py-0.5 rounded border border-[#e5e2db]">
+                    Civil Engineering & EPC
+                  </span>
                 </div>
               </div>
 
-              {/* Interior Work Box */}
-              <div className="bg-[#ffffff] p-6 sm:p-8 rounded-2xl border border-[#e5e2db] shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between space-y-6 relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#715a3e]/5 rounded-bl-full pointer-events-none" />
-                <div className="space-y-4">
+              {/* Card 2: Architectural & Interior Work */}
+              <div className="bg-[#ffffff] p-5 md:p-6 rounded-2xl border border-[#e5e2db] shadow-md hover:shadow-lg transition-all duration-300 flex flex-col justify-between space-y-4 relative overflow-hidden group hover:border-[#715a3e]/50">
+                <div className="absolute top-0 right-0 w-36 h-36 bg-gradient-to-bl from-[#715a3e]/10 to-transparent rounded-bl-full pointer-events-none" />
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#715a3e] via-[#cbb392] to-[#1c1b19]" />
+
+                <div className="space-y-3 relative z-10">
                   <div className="flex items-center justify-between">
-                    <div className="w-12 h-12 rounded-xl bg-[#715a3e] text-[#ffffff] flex items-center justify-center shadow-md">
-                      <span className="material-symbols-outlined text-2xl">weekend</span>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-xl bg-[#715a3e] text-[#ffffff] flex items-center justify-center shadow-md shrink-0">
+                        <span className="material-symbols-outlined text-xl">weekend</span>
+                      </div>
+                      <div>
+                        <h3 className="text-lg sm:text-xl font-semibold text-[#1a1c1a] tracking-tight">
+                          Interior Work
+                        </h3>
+                        <p className="text-[11px] text-[#494740] font-medium">
+                          Custom factory joinery, false ceilings & luxury fitouts.
+                        </p>
+                      </div>
                     </div>
-                    <span className="text-xs font-semibold text-[#715a3e] bg-[#715a3e]/10 px-3 py-1 rounded-full">
-                      Finishing & Furnishing
+                    <span className="text-[10px] font-semibold text-[#715a3e] bg-[#715a3e]/10 px-2.5 py-1 rounded-full border border-[#715a3e]/20 shrink-0 hidden sm:inline-block">
+                      13 Core Services
                     </span>
                   </div>
 
+                  {/* Micro Service Item Compact Grid */}
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-[#1a1c1a]">
-                      Interior Work
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#494740] mt-1 leading-relaxed">
-                      Comprehensive interior finishing, custom furniture fabrication, modular fitouts, and decorative enhancements.
-                    </p>
-                  </div>
-
-                  {/* List of 13 Interior Services */}
-                  <div className="pt-2">
-                    <h4 className="text-xs font-semibold text-[#715a3e] mb-3">
-                      Core Interior Services:
-                    </h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    <div className="grid grid-cols-2 xl:grid-cols-3 gap-2">
                       {[
-                        "POP Work & Mouldings",
-                        "False Ceiling Design",
-                        "Gypsum Ceiling & Partitions",
-                        "Wall Painting & Texture Paint",
-                        "Wall Panels & Decorative Work",
-                        "Modular Furniture Execution",
-                        "Custom Furniture Joinery",
-                        "Wardrobes & Cabinets",
-                        "Modular Kitchen Interiors",
-                        "Lighting & Electrical Fittings",
-                        "Flooring & Wall Tiles",
-                        "Wallpaper & Wall Décor",
-                        "Office, Residential & Commercial",
+                        { title: "POP Work & Moulding", icon: "architecture" },
+                        { title: "False Ceiling Design", icon: "roofing" },
+                        { title: "Gypsum Partitions", icon: "grid_3x3" },
+                        { title: "Wall Painting & Texture", icon: "format_paint" },
+                        { title: "Wall Panels & Décor", icon: "texture" },
+                        { title: "Modular Furniture", icon: "countertops" },
+                        { title: "Custom Joinery", icon: "carpenter" },
+                        { title: "Wardrobes & Cabinets", icon: "door_sliding" },
+                        { title: "Modular Kitchens", icon: "kitchen" },
+                        { title: "Lighting & Electrical", icon: "light" },
+                        { title: "Flooring & Wall Tiles", icon: "view_quilt" },
+                        { title: "Wallpaper & Décor", icon: "wallpaper" },
+                        { title: "Residential & Commercial", icon: "corporate_fare" },
                       ].map((service, idx) => (
                         <div
                           key={idx}
-                          className="flex items-center gap-2 bg-[#faf9f6] p-2.5 rounded-lg border border-[#e5e2db] hover:border-[#715a3e]/40 transition-colors"
+                          className="flex items-center gap-2 bg-[#faf9f6] px-2.5 py-1.5 rounded-lg border border-[#e5e2db] hover:border-[#715a3e] hover:bg-[#ffffff] transition-all duration-200 group/item cursor-default"
                         >
-                          <span className="w-2 h-2 rounded-full bg-[#1c1b19] shrink-0" />
-                          <span className="text-xs font-semibold text-[#1a1c1a]">
-                            {service}
+                          <div className="w-5 h-5 rounded bg-[#ffffff] group-hover/item:bg-[#715a3e] group-hover/item:text-[#ffffff] text-[#1c1b19] flex items-center justify-center shrink-0 border border-[#e5e2db] transition-colors shadow-xs">
+                            <span className="material-symbols-outlined text-xs">{service.icon}</span>
+                          </div>
+                          <span className="text-[11px] font-semibold text-[#1a1c1a] group-hover/item:text-[#715a3e] transition-colors truncate">
+                            {service.title}
                           </span>
                         </div>
                       ))}
@@ -489,11 +501,42 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="pt-4 border-t border-[#e5e2db] flex items-center justify-between text-xs text-[#494740]">
-                  <span>From Bare Shell to Turnkey Handover</span>
-                  <span className="font-semibold text-[#715a3e]">Bespoke Interior Execution</span>
+                <div className="pt-3 border-t border-[#e5e2db] flex items-center justify-between text-[11px] text-[#494740] font-medium relative z-10">
+                  <span className="flex items-center gap-1">
+                    <span className="material-symbols-outlined text-sm text-[#715a3e]">task_alt</span>
+                    Bare Shell to Handover
+                  </span>
+                  <span className="font-semibold text-[#1a1c1a] bg-[#faf9f6] px-2.5 py-0.5 rounded border border-[#e5e2db]">
+                    Bespoke Interior Atelier
+                  </span>
                 </div>
               </div>
+            </div>
+
+            {/* Bottom Compact Capability Ribbon */}
+            <div className="mt-5 grid grid-cols-2 lg:grid-cols-4 gap-3">
+              {[
+                { step: "01", title: "Turnkey EPC", desc: "Excavation & RCC framing", icon: "layers" },
+                { step: "02", title: "In-House Joinery", desc: "Factory kitchens & fitouts", icon: "precision_manufacturing" },
+                { step: "03", title: "MEP & Acoustics", desc: "HVAC & electrical design", icon: "tune" },
+                { step: "04", title: "On-Time Delivery", desc: "Single-point lead tracking", icon: "published_with_changes" },
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-[#ffffff] p-3 rounded-xl border border-[#e5e2db] shadow-xs hover:shadow-md transition-all duration-200 flex items-center gap-3"
+                >
+                  <div className="w-8 h-8 rounded-lg bg-[#1c1b19] text-[#cbb392] flex items-center justify-center shrink-0 font-semibold text-xs">
+                    {item.step}
+                  </div>
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-1">
+                      <span className="material-symbols-outlined text-xs text-[#715a3e]">{item.icon}</span>
+                      <h4 className="text-xs font-semibold text-[#1a1c1a] truncate">{item.title}</h4>
+                    </div>
+                    <p className="text-[10px] text-[#494740] font-normal truncate">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -867,14 +910,14 @@ export default function Home() {
         {/* 7. IMMERSIVE INVITATION BANNER & CTA */}
         <section
           id="contact"
-          className="relative w-full bg-[#1c1b19] text-[#ffffff] py-20 overflow-hidden z-10 border-t border-[#715a3e]/30"
+          className="relative w-full bg-[#1c1c11] text-[#ffffff] py-20 overflow-hidden z-10 border-t border-[#715a3e]/30"
         >
           <div className="relative z-10 max-w-[1600px] mx-auto px-5 md:px-12 lg:px-20 text-center space-y-6">
             <div className="inline-flex items-center gap-2 text-[10px] font-semibold text-[#cbb392]  bg-[#715a3e]/20 px-3.5 py-1 rounded-full border border-[#715a3e]/40">
               <span className="w-1.5 h-1.5 rounded-full bg-[#cbb392] animate-pulse" />
               Now Booking Construction & Interior Projects
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl text-[#faf9f6] font-semibold max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-[#faf9f6] font-semibold max-w-3xl mx-auto">
               Ready to Build or Renovate Your Space?
             </h2>
             <p className="text-sm sm:text-base text-[#e9e8e5]/80 max-w-2xl mx-auto font-medium">
@@ -883,14 +926,14 @@ export default function Home() {
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-sm font-semibold  px-8 py-4 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-xl rounded-xl"
+                className="inline-flex items-center justify-center bg-[#faf9f6] text-[#000000] text-sm font-semibold  px-8 py-4 hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-xl rounded-sm"
               >
                 <span>Contact Us Today</span>
                 <span className="material-symbols-outlined ml-2 text-base">arrow_forward</span>
               </Link>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-sm font-semibold  px-8 py-4 transition-colors duration-300 border border-[#faf9f6]/20 rounded-xl"
+                className="inline-flex items-center justify-center bg-[#faf9f6]/10 hover:bg-[#faf9f6]/20 backdrop-blur-md text-[#faf9f6] text-sm font-semibold  px-8 py-4 transition-colors duration-300 border border-[#faf9f6]/20 rounded-sm"
               >
                 View Our Portfolio
               </Link>
