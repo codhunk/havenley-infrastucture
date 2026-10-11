@@ -59,19 +59,25 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10">
           {/* Brand & Indian Address */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-sm border border-[#715a3e]/50 shrink-0 relative bg-[#1c1b19]">
+            <div className="flex items-center gap-4">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white p-2 sm:p-2.5 flex items-center justify-center shadow-md border border-[#cbb392]/30 shrink-0">
                 <Image
-                  src="/logo.svg"
+                  src="/logo-h.png"
                   alt="Havenley Infrastructure Logo"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="font-bold text-base sm:text-lg  text-[#ffffff]">
-                Hovenley <span className="text-[#cbb392]">Infrastructures</span>
-              </span>
+              <div className="relative h-10 sm:h-12 md:h-14 w-auto shrink-0 flex items-center">
+                <Image
+                  src="/logo-hi.png"
+                  alt="Havenley Infrastructure"
+                  width={160}
+                  height={54}
+                  className="h-full w-auto object-contain brightness-0 invert"
+                />
+              </div>
             </div>
             <p className="text-xs sm:text-sm text-[#a39f99] leading-relaxed max-w-md">
               Architectural Designing, Layout, Plan, Interior Design, New Building, Water Proofing &amp; Renovation Works.

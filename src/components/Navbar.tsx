@@ -26,19 +26,26 @@ export default function Navbar() {
           {/* Brand Logo */}
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-3 group text-left">
-              <div className="w-10 h-10 rounded-lg overflow-hidden flex items-center justify-center shadow-sm border border-[#715a3e]/40 shrink-0 relative bg-[#1c1b19]">
+              <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-[72px] md:h-[72px] shrink-0 flex items-center justify-center">
                 <Image
-                  src="/logo.svg"
+                  src="/logo-h.png"
                   alt="Havenley Infrastructure Logo"
-                  width={40}
-                  height={40}
+                  width={72}
+                  height={72}
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                   priority
                 />
               </div>
-              <span className="font-bold text-md sm:text-xl md:text-2xl text-[#1a1c1a] font-sans">
-                Havenley <span className="text-[#715a3e]">Infrastructure</span>
-              </span>
+              <div className="relative h-9 sm:h-11 md:h-12 w-auto shrink-0 flex items-center">
+                <Image
+                  src="/logo-hi.png"
+                  alt="Havenley Infrastructure"
+                  width={142}
+                  height={48}
+                  className="h-full w-auto object-contain"
+                  priority
+                />
+              </div>
             </Link>
           </div>
 
