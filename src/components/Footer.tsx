@@ -180,7 +180,7 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 {/* YouTube */}
                 <a
-                  href="https://youtube.com"
+                  href="https://www.youtube.com/@HavenleyInfrastructure"
                   target="_blank"
                   rel="noreferrer"
                   title="YouTube"
@@ -193,7 +193,7 @@ export default function Footer() {
 
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/havenley-infrastructure-4802b1443/"
                   target="_blank"
                   rel="noreferrer"
                   title="LinkedIn"
@@ -206,7 +206,7 @@ export default function Footer() {
 
                 {/* Instagram */}
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/infrastructurehavenley/"
                   target="_blank"
                   rel="noreferrer"
                   title="Instagram"
@@ -219,10 +219,10 @@ export default function Footer() {
 
                 {/* Twitter / X */}
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/HavenleyInfra"
                   target="_blank"
                   rel="noreferrer"
-                  title="Twitter / X"
+                  title="X (formerly Twitter)"
                   className="w-9 h-9 rounded-full bg-[#282522] text-[#cbb392] border border-[#383430] flex items-center justify-center hover:bg-[#715a3e] hover:text-[#ffffff] transition-all duration-300 shadow-sm"
                 >
                   <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">

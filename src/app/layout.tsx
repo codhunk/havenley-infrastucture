@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Havenley Infrastructure | Luxury Architectural & Structural Engineering Atelier",
+  title: "Havenley Infrastructure | Luxury Architectural & Structural Engineering Company",
   description:
     "Havenley Infrastructure delivers premier construction engineering, structural design, and luxury interior transformations across private estates, commercial builds, and civil infrastructure globally.",
   icons: {
