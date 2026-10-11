@@ -437,15 +437,17 @@ export default function AdminPage() {
     return !q || sub.email?.toLowerCase().includes(q);
   });
 
+
+
   // Passkey Login View
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen bg-[#1c1b19] text-[#faf9f6] flex items-center justify-center p-4 font-sans">
         <div className="max-w-md w-full bg-[#faf9f6] text-[#1a1c1a] p-8 rounded-2xl shadow-2xl border border-[#715a3e]/40 space-y-6">
           <div className="text-center space-y-2">
-            <div className="w-12 h-12 bg-[#1c1b19] rounded-xl overflow-hidden flex items-center justify-center mx-auto mb-3 border border-[#715a3e]/40 shadow-sm relative">
+            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden flex items-center justify-center mx-auto mb-3 border border-[#715a3e]/40 shadow-sm relative">
               <Image
-                src="/logo.svg"
+                src="/logo-h.png"
                 alt="Havenley Logo"
                 width={48}
                 height={48}
@@ -519,13 +521,24 @@ export default function AdminPage() {
       <header className="bg-[#1c1b19] text-[#faf9f6] border-b border-[#715a3e]/40 sticky top-0 z-40">
         <div className="max-w-[1600px] mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="w-9 h-9 rounded-lg overflow-hidden flex items-center justify-center bg-[#1c1b19] border border-[#715a3e]/40 shadow-sm relative">
+            <div className="relative w-14 h-14 sm:w-16 sm:h-16 md:w-[72px] md:h-[72px] shrink-0 flex items-center justify-center">
               <Image
-                src="/logo.svg"
-                alt="Havenley Logo"
-                width={36}
-                height={36}
-                className="w-full h-full object-contain"
+                src="/logo-h.png"
+                alt="Havenley Infrastructure Logo"
+                width={72}
+                height={72}
+                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                priority
+              />
+            </div>
+            <div className="relative h-9 sm:h-11 md:h-12 w-auto shrink-0 flex items-center">
+              <Image
+                src="/logo-hi.png"
+                alt="Havenley Infrastructure"
+                width={142}
+                height={48}
+                className="h-full w-auto object-contain"
+                priority
               />
             </div>
             <div>
