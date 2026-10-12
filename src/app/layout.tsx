@@ -15,12 +15,11 @@ export const metadata: Metadata = {
     "Havenley Infrastructure delivers premier construction engineering, structural design, and luxury interior transformations across private estates, commercial builds, and civil infrastructure globally.",
   icons: {
     icon: [
+      { url: "/icon-o.png", type: "image/png" },
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/icon.png", type: "image/png" },
     ],
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    shortcut: "/icon-o.png",
+    apple: "/icon-o.png",
   },
 };
 
@@ -40,9 +39,9 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/icon-o.png" type="image/png" />
+        <link rel="shortcut icon" href="/icon-o.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/icon-o.png" />
       </head>
       <body className="min-h-full flex flex-col font-sans bg-[#faf9f6] text-[#1a1c1a]">
         {children}
